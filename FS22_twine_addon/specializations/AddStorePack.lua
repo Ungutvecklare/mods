@@ -1,5 +1,0 @@
--- author: DD ModPassion
--- date: 22.11.2021
--- copyright (C): DD ModPassion, All Rights Reserved
--- version: Farming Simulator 22
-AddStorePack = {} local modDirectory = g_currentModDirectory or "unknown" local modName = g_currentModName function AddStorePack.init() local modDesc = loadXMLFile("ModFile", modDirectory.."modDesc.xml") local key = string.format("modDesc.storePacks.storePack") local name = getXMLString(modDesc, key.."#name") local title = getXMLString(modDesc, key.."#title") local imageFilename = getXMLString(modDesc, key.."#image") if title ~= nil and title:sub(1, 6) == "$l10n_" then title = g_i18n:getText(title:sub(7)) end delete(modDesc) g_storeManager:addPack(name, title, imageFilename, modDirectory) Logging.info("Mod: '%s' Added store packs = '%s'", modName, name) end AddStorePack.init()
