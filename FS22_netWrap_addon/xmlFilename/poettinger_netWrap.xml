@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="palletAttachable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <parentFile xmlFilename="xmlFilename/netWrapPallets.xml">
+        <attributes>
+            <set path="vehicle.storeData.image" value="image/store_poettinger_netWrap.png"/>
+            <set path="vehicle.storeData.brand" value="POETTINGER"/>
+            <set path="vehicle.storeData.showInStore" value="true"/>
+            <set path="vehicle.configurationSets.configurationSet(4)#isDefault" value="true"/>
+         </attributes>
+    </parentFile>
+    <storeData>
+        <name>$l10n_name_netWrap</name>
+        <image>image/store_poettinger_netWrap.png</image>
+        <brand>POETTINGER</brand>
+        <category>pallets</category>
+    </storeData>
+</vehicle>

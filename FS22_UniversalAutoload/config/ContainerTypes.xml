@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<universalAutoLoad>
+    <containerConfigurations>
+	
+		<containerConfiguration containerType="ALL" name="treeSaplingPallet" sizeY="2.500" neverStack="true"/>
+
+		<containerConfiguration containerType="LIQUID_TANK" name="liquidTank"/>
+		<containerConfiguration containerType="BIGBAG_PALLET" name="bigBagPallet"/>
+		<containerConfiguration containerType="BIGBAG" name="bigBag" neverStack="true" alwaysRotate="true"/>
+		
+		<containerConfiguration containerType="EURO_PALLET" name="lettuceBoxPallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="tomatoesBoxPallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="strawberriesBoxPallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="butterBoxPallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="chocolateBoxPallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="furnitureStackPallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="grapeJuicePallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="raisinBoxPallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="grapePallet"/>
+		<containerConfiguration containerType="EURO_PALLET" name="euroPallet" sizeY="0.200"/>
+		<containerConfiguration containerType="EURO_PALLET" name="oliveOilPallet" sizeY="0.450"/>
+		<containerConfiguration containerType="EURO_PALLET" name="canolaOilPallet" sizeY="0.450"/>
+		<containerConfiguration containerType="EURO_PALLET" name="sunflowerOilPallet" sizeY="0.450"/>
+		<containerConfiguration containerType="EURO_PALLET" name="bonsilagePallet" sizeY="0.450"/>
+		<containerConfiguration containerType="EURO_PALLET" name="cakePallet" sizeY="0.475"/>
+		<containerConfiguration containerType="EURO_PALLET" name="eggBoxPallet" sizeY="0.550"/>
+		<containerConfiguration containerType="EURO_PALLET" name="fabricsPallet" sizeY="0.600"/>
+		<containerConfiguration containerType="EURO_PALLET" name="honeyBoxPallet" sizeY="0.650"/>
+		<containerConfiguration containerType="EURO_PALLET" name="boardsStackPallet" sizeY="0.666"/>
+		<containerConfiguration containerType="EURO_PALLET" name="fillablePallet" sizeY="0.800"/>
+		<containerConfiguration containerType="EURO_PALLET" name="bakeryBoxPallet" sizeY="0.920"/>
+		<containerConfiguration containerType="EURO_PALLET" name="cheesePallet" sizeY="1.000"/>
+		<containerConfiguration containerType="EURO_PALLET" name="clothesBoxPallet" sizeY="1.000"/>
+		<containerConfiguration containerType="EURO_PALLET" name="cerealsPallet" sizeY="1.100"/>
+		<containerConfiguration containerType="EURO_PALLET" name="flourBoxPallet" sizeY="1.125"/>
+		<containerConfiguration containerType="EURO_PALLET" name="sugarBoxPallet" sizeY="1.125"/>
+		<containerConfiguration containerType="EURO_PALLET" name="woolPallet" sizeY="1.250"/>
+		<containerConfiguration containerType="EURO_PALLET" name="epsoTop" sizeX="1.350" sizeY="0.600" sizeZ="1.050"/>
+		<containerConfiguration containerType="EURO_PALLET" name="patentkali" sizeX="1.350" sizeY="0.855" sizeZ="1.050"/>
+		<containerConfiguration containerType="EURO_PALLET" name="pioneerPallet" sizeX="1.350" sizeY="0.833" sizeZ="1.050"/>
+		<containerConfiguration containerType="EURO_PALLET" name="schaumannPallet" sizeX="1.350" sizeY="0.770" sizeZ="1.050"/>
+
+		<containerConfiguration containerType="BALE" name="roundbale125" sizeX="1.300" sizeY="1.20" sizeZ="1.300" isRoundbale="true" flipYZ="true"/>
+		<containerConfiguration containerType="BALE" name="roundbale150" sizeX="1.560" sizeY="1.20" sizeZ="1.560" isRoundbale="true" flipYZ="true"/>
+		<containerConfiguration containerType="BALE" name="roundbale180" sizeX="1.835" sizeY="1.20" sizeZ="1.835" isRoundbale="true" flipYZ="true"/>
+		<containerConfiguration containerType="BALE" name="biomassBale125" sizeX="1.310" sizeY="1.20" sizeZ="1.310" isRoundbale="true" flipYZ="true"/>
+		<containerConfiguration containerType="BALE" name="cottonRoundbale238" sizeX="2.38" sizeY="2.38" sizeZ="2.38" isRoundbale="true" flipYZ="true"/>
+		<containerConfiguration containerType="BALE" name="squarebale120" sizeX="0.455" sizeY="0.355" sizeZ="1.20"/>
+		<containerConfiguration containerType="BALE" name="squarebale180" sizeX="1.210" sizeY="0.910" sizeZ="1.80"/>
+		<containerConfiguration containerType="BALE" name="squarebale220" sizeX="1.210" sizeY="0.910" sizeZ="2.20"/>
+		<containerConfiguration containerType="BALE" name="squarebale240" sizeX="1.210" sizeY="0.910" sizeZ="2.40"/>
+		<containerConfiguration containerType="BALE" name="packedSquareBale120" sizeX="1.210" sizeY="0.910" sizeZ="2.40"/>
+		<containerConfiguration containerType="BALE" name="cottonSquarebale488" sizeX="2.40" sizeY="2.40" sizeZ="4.88"/>
+
+		<containerConfiguration containerType="POTATOBOX" name="FS22_Seedpotato_Farm_Pack:PotatoBox"/>
+		<containerConfiguration containerType="POTATOBOX" name="FS22_Seedpotato_Farm_Pack:Potatoboxwaste"/>
+		<containerConfiguration containerType="POTATOBOX" name="FS22_Seedpotato_Farm_Pack:Potatoboxmedium"/>
+		<containerConfiguration containerType="POTATOBOX" name="FS22_Seedpotato_Farm_Pack:Potatoboxpremium"/>
+
+    </containerConfigurations>
+</universalAutoLoad>
+
+<!--
+	local i3d_path = object.i3dFilename
+	local i3d_name = i3d_path:match("[^/]*.i3d$")
+	return i3d_name:sub(0, #i3d_name - 4)
+-->

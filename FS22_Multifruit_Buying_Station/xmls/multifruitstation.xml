@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+			<en>Multifruit Buying Station</en>
+			<de>Multifrucht-Einkaufsstation</de>
+			<es>Estación de compra de frutas múltiples</es>
+		</name>
+        <functions>
+            <function>$l10n_function_multifruit</function>
+        </functions>
+        <image>store/store_multifruit.png</image>
+        <price>2500</price>
+        <dailyUpkeep>100</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>containers</tab>
+        </brush>
+        <vertexBufferMemoryUsage>208128</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>37888</indexBufferMemoryUsage>
+        <textureMemoryUsage>1638400</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>i3ds/multifruitstation.i3d</filename>
+		<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas />
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <buyingStation node="buyingStation" supportsExtension="false">
+        <loadTrigger triggerNode="loadingTrigger" fillTypes="WHEAT BARLEY OAT CANOLA SORGHUM GRAPE OLIVE SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARBEET_CUT COTTON SUGARCANE SEEDS FERTILIZER LIQUIDFERTILIZER MANURE LIQUIDMANURE DIGESTATE PIGFOOD MINERAL_FEED LIME HERBICIDE SILAGE_ADDITIVE EGG WOOL MILK WATER FORAGE FORAGE_MIXING CHAFF TREESAPLINGS WOODCHIPS SILAGE OILSEEDRADISH POPLAR WOOD GRASS MEADOW GRASS_WINDROW DRYGRASS DRYGRASS_WINDROW STRAW DIESEL DEF ELECTRICCHARGE METHANE SNOW ROADSALT STONE FLOUR BREAD CAKE BUTTER CHEESE FABRIC CLOTHES SUGAR HONEY CEREAL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL RAISINS GRAPEJUICE LETTUCE TOMATO STRAWBERRY CHOCOLATE BOARDS FURNITURE" fillLitersPerSecond="5000" infiniteCapacity="true" aiNode="aiNodeLoading">
+			<effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" />
+			<effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+		</loadTrigger>
+		
+		<fillType name="WHEAT" priceScale="0.75"/>
+		<fillType name="BARLEY" priceScale="0.75"/>
+		<fillType name="OAT" priceScale="0.75"/>
+		<fillType name="CANOLA" priceScale="0.75"/>
+		<fillType name="SORGHUM" priceScale="0.75"/>
+		<fillType name="GRAPE" priceScale="0.75"/>
+		<fillType name="OLIVE" priceScale="0.75"/>
+		<fillType name="SUNFLOWER" priceScale="0.75"/>
+		<fillType name="SOYBEAN" priceScale="0.75"/>
+		<fillType name="MAIZE" priceScale="0.75"/>
+		<fillType name="POTATO" priceScale="0.75"/>
+		<fillType name="SUGARBEET" priceScale="0.75"/>
+		<fillType name="SUGARBEET_CUT" priceScale="0.75"/>
+		<fillType name="COTTON" priceScale="0.75"/>
+		<fillType name="SUGARCANE" priceScale="0.75"/>
+		<fillType name="SEEDS" priceScale="0.75"/>			
+		<fillType name="FERTILIZER" priceScale="0.75"/>
+		<fillType name="LIQUIDFERTILIZER" priceScale="0.75"/>
+		<fillType name="MANURE" priceScale="0.75"/>
+		<fillType name="LIQUIDMANURE" priceScale="0.75"/>
+		<fillType name="DIGESTATE" priceScale="0.75"/>
+		<fillType name="PIGFOOD" priceScale="0.50"/>
+		<fillType name="MINERAL_FEED" priceScale="0.50"/>
+		<fillType name="LIME" priceScale="0.75"/>
+		<fillType name="HERBICIDE" priceScale="0.75"/>
+		<fillType name="SILAGE_ADDITIVE" priceScale="0.75"/>
+		<fillType name="EGG" priceScale="0.75"/>
+		<fillType name="WOOL" priceScale="0.75"/>
+		<fillType name="MILK" priceScale="0.75"/>
+		<fillType name="WATER" priceScale="0.75"/>
+		<fillType name="FORAGE" priceScale="0.75"/>
+		<fillType name="FORAGE_MIXING" priceScale="0.75"/>
+		<fillType name="CHAFF" priceScale="0.75"/>
+		<fillType name="TREESAPLINGS" priceScale="0.75"/>
+		<fillType name="WOODCHIPS" priceScale="0.75"/>
+		<fillType name="SILAGE" priceScale="0.75"/>
+		<fillType name="OILSEEDRADISH" priceScale="0.75"/>
+		<fillType name="POPLAR" priceScale="0.75"/>
+		<fillType name="WOOD" priceScale="0.75"/>
+		<fillType name="GRASS" priceScale="0.75"/>
+		<fillType name="MEADOW" priceScale="0.75"/>
+		<fillType name="GRASS_WINDROW" priceScale="0.75"/>
+		<fillType name="DRYGRASS" priceScale="0.75"/>
+		<fillType name="DRYGRASS_WINDROW" priceScale="0.75"/>
+		<fillType name="STRAW" priceScale="0.75"/>
+		<fillType name="DIESEL" priceScale="0.75"/>
+		<fillType name="DEF" priceScale="0.75"/>
+		<fillType name="METHANE" priceScale="0.75"/>
+		<fillType name="SNOW" priceScale="0.75"/>
+		<fillType name="ROADSALT" priceScale="0.75"/>
+		<fillType name="STONE" priceScale="0.75"/>
+		<fillType name="FLOUR" priceScale="0.75"/>
+		<fillType name="BUTTER" priceScale="0.75"/>
+		<fillType name="FABRIC" priceScale="0.75"/>
+		<fillType name="SUGAR" priceScale="0.75"/>
+		<fillType name="HONEY" priceScale="0.75"/>
+		<fillType name="CEREAL" priceScale="0.75"/>
+		<fillType name="SUNFLOWER_OIL" priceScale="0.75"/>
+		<fillType name="CANOLA_OIL" priceScale="0.75"/>
+		<fillType name="OLIVE_OIL" priceScale="0.75"/>
+		<fillType name="RAISINS" priceScale="0.75"/>
+		<fillType name="GRAPEJUICE" priceScale="0.75"/>
+		<fillType name="LETTUCE" priceScale="0.75"/>
+		<fillType name="TOMATO" priceScale="0.75"/>
+		<fillType name="STRAWBERRY" priceScale="0.75"/>
+		<fillType name="CHOCOLATE" priceScale="0.75"/>
+		<fillType name="BOARDS" priceScale="0.75"/>
+    </buyingStation>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+    </triggerMarkers>
+
+	<i3dMappings>
+		<i3dMapping id="limeStation" node="0>" />
+		<i3dMapping id="buyingStation" node="0>0" />
+		<i3dMapping id="mapPosition" node="0>0|0" />
+		<i3dMapping id="loadingStation" node="0>0|1" />
+		<i3dMapping id="loadingTrigger" node="0>0|1|0" />
+		<i3dMapping id="dischargeNode" node="0>0|1|1" />
+		<i3dMapping id="aiNodeLoading" node="0>0|1|2" />
+		<i3dMapping id="dischargeEffect" node="0>0|1|3" />
+		<i3dMapping id="pipeEffect" node="0>0|1|3|0" />
+		<i3dMapping id="pipeEffectSmoke" node="0>0|1|3|1" />
+		<i3dMapping id="clearAreas" node="0>1" />
+		<i3dMapping id="clearArea1Start" node="0>1|0" />
+		<i3dMapping id="clearArea1Width" node="0>1|0|0" />
+		<i3dMapping id="clearArea1Height" node="0>1|0|1" />
+		<i3dMapping id="levelAreas" node="0>2" />
+		<i3dMapping id="levelArea1Start" node="0>2|0" />
+		<i3dMapping id="levelArea1Width" node="0>2|0|0" />
+		<i3dMapping id="levelArea1Height" node="0>2|0|1" />
+		<i3dMapping id="testAreas" node="0>3" />
+		<i3dMapping id="testArea1Start" node="0>3|0" />
+		<i3dMapping id="testArea1End" node="0>3|0|0" />
+		<i3dMapping id="tipOcclusionUpdateAreas" node="0>4" />
+		<i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+		<i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+		<i3dMapping id="markerLoading" node="0>5" />
+		<i3dMapping id="tipCollision_0" node="0>6" />
+		<i3dMapping id="tipCollision_1" node="0>6|0" />
+		<i3dMapping id="visuals" node="0>7" />
+		<i3dMapping id="winter" node="0>7|0" />
+		<i3dMapping id="foodSilo01_small" node="0>7|1" />
+		<i3dMapping id="collisions" node="0>8" />
+		<i3dMapping id="collision" node="0>8|0" />
+	</i3dMappings>
+	
+</placeable>

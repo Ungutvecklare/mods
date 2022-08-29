@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI onOpen="onOpen" onClose="onClose" onCreate="onCreate">
+    <GuiElement type="empty" profile="newLayer" />
+    <GuiElement type="bitmap" profile="dialogFullscreenBg" />
+    <GuiElement type="bitmap" profile="bgVignette"/>
+    <GuiElement type="bitmap" profile="bgGlowDialog" />
+    <GuiElement type="bitmap" profile="selectFieldFrame" id="dialogElement">        
+        <GuiElement type="text" profile="dialogTitle" id="dialogTitle" position="0px -30px" />
+        <GuiElement type="bitmap" profile="selectFieldsHeaderBox">
+            <GuiElement type="text" profile="selectFieldsHeaderCell" position="0px 0px" size="300px 40.77px" id="cellTextField"/>
+            <GuiElement type="text" profile="selectFieldsHeaderCell" position="300px 0px" size="200px 40.77px" id="cellTextArea" />
+        </GuiElement>
+        <GuiElement type="smoothList" profile="selectFieldsList" id="selectFieldsTable" focusInit="onOpen" listSectionHeader="section" onDoubleClick="onDoubleClick">
+            <GuiElement type="listItem" profile="selectFieldsListItem" name="selectFieldsRowTemplate" >
+                <GuiElement type="bitmap" profile="emptyPanel">
+                    <GuiElement type="text" profile="selectFieldsRowCell" position="0px 0px" size="300px 40.77px" name="field" />
+                    <GuiElement type="text" profile="selectFieldsRowCell" position="300px 0px" size="200px 40.77px" name="area" />
+                </GuiElement>
+            </GuiElement>
+            <GuiElement type="listItem" profile="ingameMenuContractsListCategory" name="section">
+                <GuiElement type="text" profile="ingameMenuContractsListCategoryTitle" text="Contracts Title" name="title"/>
+            </GuiElement>
+        </GuiElement>
+        <GuiElement type="threePartBitmap" profile="selectFieldsTableSlider" size="12px 640px" position="-20px -130px">
+            <GuiElement type="slider" profile="verticalListSliderBar" size="6px 630px" dataElementId="selectFieldsTable" id="tableSlider" handleFocus="false" focusInit="onOpen"/>
+        </GuiElement>  
+        <GuiElement type="flowLayout" profile="buttonBoxDialog">
+            <GuiElement type="button" profile="buttonBack" text="$l10n_ui_newInvoice_btnClose" id="btnBack" onClick="onClickBack" />
+            <GuiElement type="button" profile="buttonOK" text="$l10n_ui_selectField_chooseField" id="btnFieldSelect" onClick="onClickSelectField" />
+        </GuiElement>
+    </GuiElement>
+</GUI>

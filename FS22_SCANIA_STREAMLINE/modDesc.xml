@@ -1,0 +1,637 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="65">
+    <author>Erik isac, Agro Mods</author>
+    <version>1.0.0.0</version>
+	<annotation>My team Agro Mods, Erik Isac</annotation>
+    <title>
+        <en>Scania Streamline</en>
+    </title>
+   <description>
+<en><![CDATA[
+SCANIA STREAMLINE
+
+Hello Virtual Farmers, Today I bring you a truck with several options for you to customize it to your liking!
+It is a South American style truck, but we put some options to be similar to the style of other countries, we want to please everyone!
+
+StreamLine:
+- Optional Engine (hp): 530, 590, 660, 700, 730;
+- Optional Color;
+- Optional Decorative Lanterns
+- Optional Bumpers;
+- Optional Radio Antennas;
+- Optional Aerofoil and Deflector;
+- Optional Front Suspension;
+- Optional 6x2, 6x4, 8x2, 8x4 Chassis;
+- Optional Warning Lamps;
+- Optional Wheel Design;
+- Optional Wheels;
+- Optional Grid Color;
+- Features some fun animations.
+
+Power: 530 HP.
+Price: 130000 €.
+Maximum Speed: 83 KM/H
+
+Have a good game!
+]]>
+</en>
+<de><![CDATA[
+SCANIA STREAMLINE
+
+Hallo Virtual Farmers!
+Heute bringe ich euch einen LKW mit verschiedenen Konfigurationen, den ihr nach euren Wünschen anpassen könnt!
+Es ist ein Truck im südamerikanischen Stil, aber wir haben einige Optionen eingebaut, um dem Stil anderer Länder zu ähneln - wir wollen allen gefallen!
+
+StreamLine:
+- Motor (PS) auswählbar: 530, 590, 660, 700, 730
+- Optionale Farbkonfig
+- Optionale dekorative Leuchten
+- Optionale Stoßstangen
+- Optionale Funkantennen
+- Optionale Tragfläche und Deflektor
+- Optionale Vorderradaufhängung
+- Wahlweise mit 6x2, 6x4, 8x2 oder 8x4 Fahrgestell
+- Optionale Warnleuchten
+- Optionales Raddesign
+- Optionale Räder
+- Optionale Rasterfarbe
+- Mit einigen lustigen Animationen
+
+Leistung: 530 PS.
+Preis: 130000 €.
+Höchstgeschwindigkeit: 83 KM/H
+
+Viel Spaß beim Spielen!
+]]>
+    </de>
+<fr><![CDATA[
+SCANIA STREAMLINE
+
+Hello Virtual Farmers, Aujourd'hui je vous apporte un camion avec plusieurs options pour que vous puissiez le personnaliser à votre goût !
+C'est un camion de style sud-américain, mais nous avons mis quelques options pour ressembler au style d'autres pays, nous voulons plaire à tout le monde !
+
+StreamLine :
+- Moteur en option (CV) 530, 590, 660, 700, 730 ;
+- Couleur en option ;
+- Torches décoratives en option
+- Pare-chocs en option ;
+- Antennes radio en option ;
+- Voilure et déflecteur en option ;
+- Suspension avant en option ;
+- Châssis 6x2, 6x4, 8x2, 8x4 en option ;
+- Feux de signalisation en option ;
+- Conception des roues en option ;
+- Roues en option ;
+- Couleur de la grille en option ;
+- Il comporte des animations amusantes.
+
+Puissance : 530 ch.
+Prix : 130000 €.
+Vitesse maximale : 83 KM/H
+
+Bon jeu !
+]]>
+</fr>
+<es><![CDATA[
+SCANIA STREAMLINE
+
+¡Hola granjeros virtuales, Hoy os traigo un camión con varias opciones para que lo personalicéis a vuestro gusto!
+Es un camión de estilo sudamericano, pero ponemos algunas opciones para que se parezca al estilo de otros países, ¡queremos complacer a todos!
+
+StreamLine:
+- Motor opcional (CV) 530, 590, 660, 700, 730;
+- Color opcional;
+- Antorchas decorativas opcionales
+- Parachoques opcionales;
+- Antenas de radio opcionales;
+- Aerofoil y deflector opcionales;
+- Suspensión delantera opcional;
+- Chasis opcional 6x2, 6x4, 8x2, 8x4;
+- Lámparas de advertencia opcionales;
+- Diseño de rueda opcional;
+- Ruedas opcionales;
+- Color de la rejilla opcional;
+- Presenta algunas animaciones divertidas.
+
+Potencia: 530 CV.
+Precio: 130000 €.
+Velocidad máxima: 83 KM/H
+
+¡Que tengas un buen partido!
+]]>
+</es>
+<br><![CDATA[
+SCANIA STREAMLINE
+
+Ola Fazendeiros Virtuais, Hoje trago-lhes Um Caminhão com varios opcionais para você personaliza-lo ao seu Gosto!
+É um caminhão do estilo sul americano, porém colocamos algumas opções para ficar parecido com o estilo de outros paises, queremos agradar a todos!
+
+StreamLine:
+- Opcional de motor(CV) 530, 590, 660, 700, 730;
+- Opcional de Cor;
+- Opcional de Lanternas decorativas;
+- Opcional de Parachoques;
+- Opcional de Antenas de Rádio;
+- Opcional de Aerofólio e Defletor;
+- Opcional de Suspenção Frontal;
+- Opcional de Chassis 6x2, 6x4, 8x2, 8x4;
+- Opcional de Lanternas de alerta;
+- Opcional de Design de roda;
+- Opcional de Rodas;
+- Opcional de Cor de grade;
+- Conta com algumas animações divertidas.
+
+Potência: 530 CV.
+Preço: 130000 €.
+Velocidade Máxima: 83 KM/H
+
+Tenha um Bom jogo!
+]]>
+</br>
+</description>
+
+<l10n>
+<text name="configuration_protecoes">
+<en>Protections</en>
+<de>Schutz</de>
+<br>Proteções</br>
+</text>
+<text name="configuration_protelateral">
+<en>Side protection</en>
+<de>Seitenschutz</de>
+<fr>Protection latérale</fr>
+<br>Proteção lateral</br>
+</text>
+<text name="configuration_protefrontal">
+<en>Front grille</en>
+<de>Frontgitter</de>
+<fr>Grille avant</fr>
+<br>Grade frontal</br>
+</text>
+<text name="configuration_todasprote">
+<en>All</en>
+<de>Alles</de>
+<fr>Tout</fr>
+<br>Todas</br>
+</text>
+<text name="configuration_badana">
+<en>Rubber mudguard</en>
+<de>Gummi-Kotflügel</de>
+<fr>Garde-boue en caoutchouc</fr>
+<br>Lameiro</br>
+</text>
+<text name="configuration_Curto">
+<en>Short mudguard</en>
+<de>Kurzer Schmutzfänger</de>
+<fr>Lameiro court</fr>
+<br>Lameiro Curto</br>
+</text>
+<text name="configuration_Longo">
+<en>Long mudguard</en>
+<de>Langer Schmutzfänger</de>
+<fr>Long Lameiro</fr>
+<br>Lameiro Longo</br>
+</text>
+<text name="configuration_bigode">
+<en>Low bumper</en>
+<de>Niedriger Stoßfänger</de>
+<fr>Pare-chocs bas</fr>
+<br>Bigode</br>
+</text>
+<text name="configuration_pintura">
+<en>Painted bumper</en>
+<de>Lackierte Stoßstange</de>
+<fr>Pare-chocs peint</fr>
+<br>Parachoque Pintado</br>
+</text>
+<text name="configuration_plastico">
+<en>Plastic bumper</en>
+<de>Stoßfänger aus Kunststoff</de>
+<fr>Pare-chocs en plastique</fr>
+<br>Parachoque Plastico</br>
+</text>
+<text name="configuration_paralamaLateral">
+<en>Side Fender</en>
+<de>Seitliche Schutzbleche</de>
+<fr>Déflecteur latéral</fr>
+<br>Paralama Lateral</br>
+</text>
+<text name="configuration_parachoquef">
+<en>Front bumper</en>
+<de>Frontstoßstange</de>
+<fr>Le pare-choc avant</fr>
+<br>Parachoque Frontal</br>
+</text>
+<text name="configuration_paralamascor">
+<en>Fender color</en>
+<de>Kotflügelfarbe</de>
+<fr>Couleur de garde-boue</fr>
+<br>Cor do paralama</br>
+</text>
+<text name="configuration_giroflex">
+<en>Rotating light</en>
+<de>RUL</de>
+<fr>Lumière tournante</fr>
+<br>Giroflex</br>
+</text>
+<text name="configuration_luzdecorativa">
+<en>Decorative light</en>
+<de>Dekoratives Beleuchtung</de>
+<fr>lumière décorative</fr>
+<br>Luz decorativa</br>
+</text>
+<text name="configuration_americanas">
+<en>American</en>
+<de>Amerikanisch</de>
+<fr>Américain</fr>
+<br>Americana</br>
+</text>
+<text name="configuration_brasil">
+<en>Brazilian</en>
+<de>Brasilianisch</de>
+<fr>Brésilien</fr>
+<br>Brasileira</br>
+</text>
+<text name="configuration_rodoar">
+<en>Hubcaps + air</en>
+<de>Radkappen + Luft</de>
+<fr>enjoliveurs + air</fr>
+<br>Calotas + Rodoar</br>
+</text>
+<text name="configuration_calota">
+<en>Hubcaps</en>
+<de>Radkappen</de>
+<fr>Enjoliveurs</fr>
+<br>Calotas</br>
+</text>
+<text name="configuration_DesignRoda">
+<en>Wheel Design</en>
+<de>Raddesign</de>
+<fr>Conception de roue</fr>
+<br>Design da Roda</br>
+</text>
+<text name="configuration_GradeFrontal">
+<en>Grid Design</en>
+<de>Frontgrill-Design</de>
+<fr>Conception de la grille</fr>
+<br>Grade Design</br>
+</text>
+<text name="configuration_faixas">
+<en>Streamline Stickers</en>
+<de>Streamline Aufkleber</de>
+<fr>Streamline Autocollants</fr>
+<br>Adesivos Streamline</br>
+</text>
+<text name="configuration_defletor">
+<en>deflector</en>
+<de>Deflektor</de> 
+<fr>déflecteur</fr>
+<br>Defletor</br>
+</text>
+<text name="configuration_escapamento">
+<en>Exhaust</en>
+<de>Auspuff</de> 
+<fr>Échappement</fr>
+<br>Escapamento</br>
+</text>
+<text name="configuration_duplo">
+<en>Double straight</en>
+<de>Doppelt gerade</de>
+<fr>Double droit</fr>
+<br>Direto duplo</br>
+</text>
+<text name="configuration_canao">
+<en>Long barrel</en>
+<de>Langer Lauf</de>
+<fr>Canon long</fr>
+<br>Cano longo</br>
+</text>
+<text name="configuration_aerofolio">
+<en>Airfoil</en>
+<de>Tragflächenprofil</de>
+<fr>Profil aérodynamique</fr>
+<br>Aerofólio</br>
+</text>
+<text name="configuration_Susp">
+<en>Frontal Suspension</en>
+<de>Vorderradaufhängung</de>
+<fr>Suspension avant</fr>
+<br>Suspensão Frontal</br>
+</text>
+<text name="configuration_ContinentalGarrudo">
+<en>Continental contiCrossTracHD3</en>
+<br>Continental Borrachudo</br>
+</text>
+<text name="configuration_ContinentalGarrudao">
+<en>Continental off road</en>
+<de>Continental abseits der Straße</de>
+<fr>Continental hors route</fr>
+<br>Continental OffRoad</br>
+</text>
+<text name="configuration_ContinentalOriginal">
+<en>Continental tire</en>
+<de>Continental-Reifen</de>
+<br>Pneu Continental</br>
+</text>
+<text name="configuration_Vidros">
+<en>Glass Color</en>
+<de>Glasfarbe</de>
+<fr>Couleur du verre</fr>
+<br>Cor do Vidro</br>
+</text>
+<text name="configuration_Claros">
+<en>Clear Glass</en>
+<de>Sauberes Glas</de>
+<fr>Verre propre</fr>
+<br>Vidro Claro</br>
+</text>
+<text name="configuration_Escuros">
+<en>Dark Glass</en>
+<de>Dunkles Glas</de>
+<fr>Verre foncé</fr>
+<br>Vidro Escuro</br>
+</text>
+<text name="configuration_EsquerdaF">
+<en>Front Left</en>
+<de>Vorne links</de>
+<fr>Avant gauche</fr>
+<br>Frontal Esquerda</br>
+</text>
+<text name="configuration_DireitaF">
+<en>Front Right</en>
+<de>Vorne rechts</de>
+<fr>Avant droit</fr>
+<br>Frontal Direita</br>
+</text>
+<text name="configuration_DuasF">
+<en>Two Front</en>
+<de>Zwei vorne</de>
+<fr>Deux avant</fr>
+<br>Duas Frontal</br>
+</text>
+<text name="configuration_DuasT">
+<en>Two Rear</en>
+<de>Zwei hinten</de>
+<fr>Deux arrière</fr>
+<br>Duas Traseira</br>
+</text>
+<text name="configuration_Antenas">
+<en>Radio antenna</en>
+<de>Radioantenne</de>
+<fr>Antenne radio</fr>
+<br>Antena de Rádio</br>
+</text>
+<text name="EixoElevar">
+<en>Lifting lift axle</en>
+<de>Liftachse heben</de>
+<fr>Axe haut</fr>
+<br>Subir Eixo</br>
+</text>
+<text name="EixoBaixar">
+<en>Lower lift axle</en>
+<de>Liftachse senken</de>
+<fr>Télécharger Axis</fr>
+<br>Baixar Eixo</br>
+</text>	
+<text name="RedColor1">
+<en>Red Metal</en> 
+<de>Rotes Metall</de> 
+<fr>Métal rouge</fr> 
+<br>Vermelho Metal</br>
+</text>
+<text name="Red2Color1">
+<en>Red Wine Metal</en> 
+<de>Rotwein Metall</de> 
+<fr>Vin rouge métal</fr> 
+<br>Vermelho Vinho Metal</br>
+</text>
+<text name="BlueColor1">
+<en>New Holland Metal Blue</en> 
+<de>New Holland Metall Blau</de> 
+<fr>New Holland Metal Blue</fr> 
+<br>Azul New Holland Metal</br>
+</text>
+<text name="Blue2Color1">
+<en>Scania Metal Blue</en> 
+<de>Blauer Scania Metall</de> 
+<fr>Scania métal bleu</fr> 
+<br>Azul Scania Metal</br>
+</text>
+<text name="GreenColor1">
+<en>Lime Green Metal</en> 
+<de>Grün-Kalk-Metall</de> 
+<fr>Métal vert chaux</fr> 
+<br>Verde Lima Metal</br>
+</text>
+<text name="OrangeColor1">
+<en>Orange Metal</en> 
+<de>Orangefarbenes Metall</de> 
+<fr>Métal orange</fr> 
+<br>Laranja Metal</br>
+</text>
+<text name="YellowColor1">
+<en>Yellow Metal</en> 
+<de>Gelbes Metall</de> 
+<fr>Métal jaune</fr> 
+<br>Amarelo Metal</br>
+</text>
+<text name="WhiteColor1">
+<en>White Metal</en> 
+<de>Weißes Metall</de> 
+<fr>Métal blanc</fr> 
+<br>Branco Metal</br>
+</text>
+<text name="RedColor2">
+<en>Bright Red</en> 
+<de>Leuchtendes Rot</de> 
+<fr>Rouge vif</fr> 
+<br>Vermelho Brilhante</br>
+</text>
+<text name="Red2Color2">
+<en>Bright Wine Red</en> 
+<de>Brillanter Rotwein</de> 
+<fr>Vin rouge brillant</fr> 
+<br>Vermelho Vinho Brilhante</br>
+</text>
+<text name="BlueColor2">
+<en>New Holland Blue Brilliant</en> 
+<de>New Holland Blau Glänzend</de> 
+<fr>New Holland Bleu Brillant</fr> 
+<br>Azul New Holland Brilhante</br>
+</text>
+<text name="Blue2Color2">
+<en>Scania Blue Brilliant</en> 
+<de>Scania Blau Glänzend</de> 
+<fr>Scania Bleu Brillant</fr> 
+<br>Azul Scania Brilhante</br>
+</text>
+<text name="GreenColor2">
+<en>Bright Lime Green</en> 
+<de>Helles Limettengrün</de> 
+<fr>Vert citron vif</fr> 
+<br>Verde Lima Brilhante</br>
+</text>
+<text name="OrangeColor2">
+<en>Bright Orange</en> 
+<de>Leuchtendes Orange</de> 
+<fr>Orange vif</fr> 
+<br>Laranja Brilhante</br>
+</text>
+<text name="YellowColor2">
+<en>Brilliant Yellow</en> 
+<de>Leuchtendes Gelb</de> 
+<fr>Jaune brillant</fr> 
+<br>Amarelo Brilhante</br>
+</text>
+<text name="WhiteColor2">
+<en>Brilliant White</en> 
+<de>Helles Weiß</de> 
+<fr>Blanc brillant</fr> 
+<br>Branco Brilhante</br>
+</text>
+<text name="RedColor3">
+<en>Bronze Red</en> 
+<de>Bronze Rot</de> 
+<fr>Rouge bronze</fr> 
+<br>Vermelho Bronze</br>
+</text>
+<text name="Red2Color3">
+<en>Red Wine Bronze</en> 
+<de>Rotwein Bronze</de> 
+<fr>Vin rouge Bronze</fr> 
+<br>Vermelho Vinho Bronze</br>
+</text>
+<text name="BlueColor3">
+<en>New Holland Bronze Blue</en> 
+<de>New Holland Bronze Blau</de> 
+<fr>New Holland bleu bronze</fr> 
+<br>Azul New Holland Bronze</br>
+</text>
+<text name="Blue2Color3">
+<en>Scania Bronze Blue</en> 
+<de>Scania Bronze Blau</de> 
+<fr>Scania Bronze Bleu</fr> 
+<br>Azul Scania Bronze</br>
+</text>
+<text name="GreenColor3">
+<en>Lime Green Bronze</en> 
+<de>Lindgrün bronze</de> 
+<fr>Vert lime Bronze</fr> 
+<br>Verde Lima Bronze</br>
+</text>
+<text name="OrangeColor3">
+<en>Orange Bronze</en> 
+<de>Orange-Bronze</de> 
+<fr>bronze orangé</fr> 
+<br>Laranja Bronze</br>
+</text>
+<text name="YellowColor3">
+<en>Yellow Bronze</en> 
+<de>Gelbe Bronze</de> 
+<fr>Bronze jaune</fr> 
+<br>Amarelo Bronze</br>
+</text>
+<text name="WhiteColor3">
+<en>White Bronze</en> 
+<de>Weiß Bronze</de> 
+<fr>Bronze blanc</fr> 
+<br>Branco Bronze</br>
+</text>
+<text name="RedColor4">
+<en>Metallic Red</en> 
+<de>Metallisch Rot</de> 
+<fr>Rouge Métallique</fr> 
+<br>Vermelho Metálico</br>
+</text>
+<text name="Red2Color4">
+<en>Red Wine Metallic</en> 
+<de>Rotwein Metallisch</de> 
+<fr>Vin rouge Métallique</fr> 
+<br>Vermelho Vinho Metálico</br>
+</text>
+<text name="BlueColor4">
+<en>New Holland Metallic Blue</en> 
+<de>New Holland Metallisch Blau</de> 
+<fr>New Holland Métallique Bleu</fr> 
+<br>Azul New Holland Metálico</br>
+</text>
+<text name="Blue2Color4">
+<en>Scania Metallic Blue</en> 
+<de>Scania Metallisch Blau</de> 
+<fr>Scania Métallique Bleu</fr> 
+<br>Azul Scania Metálico</br>
+</text>
+<text name="GreenColor4">
+<en>Lime Green Metallic</en> 
+<de>Lime Green Metallisch</de> 
+<fr>Vert lime Métallique</fr> 
+<br>Verde Lima Metálico</br>
+</text>
+<text name="OrangeColor4">
+<en>Orange Metallic</en> 
+<de>Orange Metallisch</de> 
+<fr>Orange Métallique</fr> 
+<br>Laranja Metálico</br>
+</text>
+<text name="YellowColor4">
+<en>Yellow Metallic</en> 
+<de>Gelbe Metallisch</de> 
+<fr>Métallique jaune</fr> 
+<br>Amarelo Metálico</br>
+</text>
+<text name="WhiteColor4">
+<en>White Metallic</en> 
+<de>Weiß Metallisch</de> 
+<fr>Métallique blanc</fr> 
+<br>Branco Metálico</br>
+</text>
+<text name="plastic">
+<en>Plastic</en> 
+<de>Kunststoff</de> 
+<fr>Plastique</fr> 
+<br>Plastico</br>
+</text>
+<text name="originalcolor">
+<en>Original Color</en> 
+<de>Original Farbe</de> 
+<fr>Original Farbe</fr> 
+<br>Cor Original</br>
+</text>
+<text name="WhiteGalvanizado">
+<en>Galvanized</en> 
+<de>Verzinkt</de> 
+<fr>Galvanisé</fr> 
+<br>Galvanizado</br>
+</text>
+</l10n>
+
+
+	<brands>
+        <brand name="SCANIA" title="SCANIA" image="textures/brand_scania.dds"/>
+        <brand name="BRAZIL1" title="BRAZIL1" image="textures/brand_brazil1.dds"/>
+        <brand name="BRAZIL2" title="BRAZIL2" image="textures/brand_brazil2.dds"/>
+        <brand name="BRAZIL3" title="BRAZIL3" image="textures/brand_brazil3.dds"/>
+        <brand name="BRAZILpreto" title="BRAZILpreto" image="textures/brand_brazilpreto.dds"/>
+        <brand name="AMERICAN" title="AMERICAN" image="textures/brand_us.dds"/>
+        <brand name="EUROPEAN" title="EUROPEAN" image="textures/brand_eu.dds"/>
+	</brands>
+
+
+	<vehicleTypes>
+        <type name="CaminhaoAGM" parent="tractor" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="foldable" />
+			<specialization name="cover" />
+			<specialization name="attachable" />
+			<specialization name="tensionBelts" />
+        </type>
+    </vehicleTypes>
+
+
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="Streamline.xml"/>
+    </storeItems>
+
+</modDesc>

@@ -1,0 +1,1030 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vehicle type="carFillable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <storeData>
+        <name>Rumbler Van</name>
+        <specs>
+            <power>300</power>
+            <maxSpeed>120</maxSpeed>
+            <capacity unitTextOverride="$l10n_unit_pieces">2</capacity>
+            <fillTypes>netWrap twine wheat fertilizer oat lime pigFood seeds roadSalt barley canola sorghum sunflower soybean maize mineral_feed liquidFertilizer herbicide silage_additive</fillTypes>
+        </specs>
+        <storePacks>
+            <storePack>STARTER_NETWRAP</storePack>
+            <storePack>STARTER_TWINE</storePack>
+        </storePacks>
+        <functions>
+            <function>$l10n_function_car</function>
+            <function>$l10n_function_pallets</function>
+        </functions>
+        <image>../FS22_lizard_rumblerVan_crossplay/image/store_rumblerVan.png</image>
+        <price>78000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>cars</category>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_car</typeDesc>
+        <filename>filename/rumblerVan.i3d</filename>
+        <sounds filename="$data/vehicles/lizard/pickup2017/sounds/pickup2017.xml"/>
+        <size length="6.5" width="3"/>
+        <components count="1">
+            <component centerOfMass="0 0.4 0" mass="1800" solverIterationCount="10"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="CAR"/>
+        <mapHotspot type="CAR"/>
+    </base>
+    <configurationSets title="$l10n_infohud_fillType">
+        <configurationSet name="$l10n_fillType_egg">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="2"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_fillType_milk">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="3"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_fillType_wool">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="4"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_category_bigbags">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="5"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_category_tank">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="6"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_fillType_netWrap">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="7"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_fillType_twine">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="8"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_ui_other">
+            <configuration name="tensionBelts" index="2"/>
+            <configuration name="fillUnit" index="1"/>
+        </configurationSet>
+    </configurationSets>
+    <designConfigurations>
+        <designConfiguration name="$l10n_configuration_valueNone" price="0"/>
+        <designConfiguration name="$l10n_configuration_valueDecals" price="0">
+            <objectChange node="0>12|4|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>12|5|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|7" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|8" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|9" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|10" visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_valueBeaconLight" price="0">
+            <objectChange node="0>15|6|0" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|6|1" visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_valueDecalsBeaconLight" price="0">
+            <objectChange node="0>12|4|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>12|5|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|6|0" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|6|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|7" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|8" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|9" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|10" visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+    <wheels>
+        <wheelConfigurations>
+             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" driveNode="0>0|0" forcePointRatio="0.5" frictionScale="2.5" initialCompression="25" radius="0.42" repr="0>0" restLoad="0.5" rotSpeed="1" spring="14" suspTravel="0.13" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" driveNode="0>1|0" forcePointRatio="0.5" frictionScale="2.5" initialCompression="25" radius="0.42" repr="0>1" restLoad="0.5" rotSpeed="1" spring="14" suspTravel="0.13" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" forcePointRatio="0.5" frictionScale="3" initialCompression="25" radius="0.42" repr="0>2" restLoad="0.7" rotSpeed="0" spring="19" suspTravel="0.14" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" forcePointRatio="0.5" frictionScale="3" initialCompression="25" radius="0.42" repr="0>3" restLoad="0.7" rotSpeed="0" spring="19" suspTravel="0.14" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotCenterWheel1="2" rotCenterWheel2="3" rotMax="42" rotSpeed="65"/>
+        </ackermannSteeringConfigurations>
+    </wheels>
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="0>16|3|0" filename="../FS22_lizard_rumblerVan_crossplay/filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>16|3|1" filename="../FS22_lizard_rumblerVan_crossplay/filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>16|3|2" filename="../FS22_lizard_rumblerVan_crossplay/filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="1" linkNode="0>16|4|0" filename="../FS22_lizard_rumblerVan_crossplay/filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="1" linkNode="0>16|4|1" filename="../FS22_lizard_rumblerVan_crossplay/filename/objects.i3d"/>
+    </dynamicallyLoadedParts>
+    <lights>
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+        </states>
+        <sharedLight linkNode="0>4|11" filename="$data/shared/assets/lights/lizard/rearLight26White.xml" lightTypes="1"/>
+        <realLights>
+            <low>
+                <light lightTypes="0" node="0>4|0"/>
+                <light lightTypes="1" node="0>4|1"/>
+            </low>
+            <high>
+                <light lightTypes="0" node="0>4|2"/>
+                <light lightTypes="1" node="0>4|3"/>
+                <light lightTypes="1" node="0>4|9"/>
+                <light lightTypes="0 3" node="0>4|4"/>
+                <brakeLight node="0>4|4"/>
+                <brakeLight node="0>12|2|0|0"/>
+                <turnLightLeft node="0>4|5"/>
+                <turnLightLeft node="0>4|6"/>
+                <turnLightRight node="0>4|7"/>
+                <turnLightRight node="0>4|8"/>
+                <reverseLight node="0>4|12"/>
+            </high>
+        </realLights>
+        <defaultLights>
+            <defaultLight lightTypes="0 3" node="0>4|10|1"/>
+            <defaultLight lightTypes="0 3" node="0>4|10|0"/>
+            <defaultLight lightTypes="1" node="0>4|10|2"/>
+        </defaultLights>
+        <brakeLights>
+            <brakeLight node="0>4|10|6"/>
+            <brakeLight node="0>12|2|0|1"/>
+        </brakeLights>
+        <reverseLights>
+            <reverseLight node="0>4|10|3" intensity="15"/>
+        </reverseLights>
+        <turnLights>
+            <turnLightLeft node="0>4|10|4" intensity="15"/>
+            <turnLightRight node="0>4|10|5" intensity="15"/>
+        </turnLights>
+		<beaconLights>
+			 <beaconLight node="0>15|6|0" speed="0.015" filename="$data/shared/assets/beaconLights/lizard/beaconLight06.xml"/>
+			 <beaconLight node="0>15|6|1" speed="0.015" filename="$data/shared/assets/beaconLights/lizard/beaconLight06.xml"/>
+		</beaconLights>
+    </lights>
+    <licensePlates defaultPlacement="BOTH">
+        <licensePlate node="0>17" position="FRONT" preferedType="ELONGATED" placementArea="0.10 0.22 0.10 0.22"/>
+        <licensePlate node="0>12|2|3" position="BACK" preferedType="ELONGATED" placementArea="0.05 0.25 0.05 0.25"/>
+    </licensePlates>
+    <enterable isTabbable="true">
+        <enterReferenceNode node="0>"/>
+        <exitPoint node="0>8"/>
+        <cameras count="2">
+            <camera limit="true" node="0>5|0|0" rotMaxX="1" rotMinX="-1.4" rotatable="true" rotateNode="0>5|0" rotation="-17.5 180 0" transMax="40" transMin="4" translation="0 0 5.5" useWorldXZRotation="true">
+                <raycastNode node="0>5|3"/>
+                <raycastNode node="0>5|2"/>
+            </camera>
+            <camera isInside="true" limit="true" node="0>5|1" positionSmoothingParameter="0" rotMaxX="0.4" rotMinX="-1.1" rotatable="true" transMax="0" transMin="0" useMirror="true"/>
+        </cameras>
+        <mirrors>
+            <mirror node="0>10|0" prio="1"/>
+            <mirror node="0>10|1" prio="1"/>
+            <mirror node="0>10|2" prio="1"/>
+        </mirrors>
+        <characterNode cameraMinDistance="1.5" node="0>11|0" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="0>11|2"/>
+            <target ikChain="leftFoot" targetNode="0>11|1"/>
+            <target ikChain="rightArm" poseId="wideFingers" targetNode="0>6|0|1"/>
+            <target ikChain="leftArm" poseId="wideFingers" targetNode="0>6|0|0"/>
+        </characterNode>
+    </enterable>
+    <attacherJoints>
+        <attacherJoint allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1" jointType="trailer" lowerRotLimit="10 70 50" node="0>13|0|0" upperRotationOffset="0">
+            <schema invertX="false" position="1 0" rotation="0"/>
+            <attachSound linkNode="0>" template="ATTACH_01"/>
+        </attacherJoint>
+        <attacherJoint allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1" jointType="trailerLow" lowerRotLimit="10 70 50" node="0>13|0|1" upperRotationOffset="0">
+            <schema invertX="false" position="1 0" rotation="0"/>
+            <attachSound linkNode="0>" template="ATTACH_01"/>
+        </attacherJoint>
+    </attacherJoints>
+    <connectionHoses>
+        <target attacherJointIndices="1 2" node="0>13|0|2" socket="electric" type="electric"/>
+    </connectionHoses>
+    <drivable>
+        <steeringWheel indoorRotation="540" node="0>6|0" outdoorRotation="60"/>
+    </drivable>
+    <motorized statsType="car">
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillType="diesel" fillUnitIndex="1" usage="30"/>
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential maxSpeedRatio="1.8" torqueRatio="0.5" wheelIndex1="1" wheelIndex2="2"/>
+                    <differential maxSpeedRatio="1.8" torqueRatio="0.5" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential differentialIndex1="1" differentialIndex2="2" maxSpeedRatio="1.8" torqueRatio="0.5"/>
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <motorConfigurations>
+            <motorConfiguration hp="300" name="Rumbler Van" price="0">
+                <motor brakeForce="1.5" lowBrakeForceScale="0.22" maxBackwardSpeed="50" maxForwardSpeed="120" maxRpm="6000" minRpm="1000" torqueScale="0.6">
+                    <torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="3480" torque="1"/>
+                    <torque rpm="4560" torque="0.75"/>
+                    <torque rpm="5280" torque="0.63"/>
+                    <torque rpm="6000" torque="0.2"/>
+                </motor>
+                <transmission maxBackwardGearRatio="200" maxForwardGearRatio="200" minBackwardGearRatio="40" minForwardGearRatio="10"/>
+            </motorConfiguration>
+            <motorConfiguration name="Ultra edition" hp="6333" price="25000">
+                <motor torqueScale="11.6" minRpm="850" maxRpm="100000" maxForwardSpeed="450" maxBackwardSpeed="15" brakeForce="14" lowBrakeForceScale="0.12" lowBrakeForceSpeedLimit="1">
+					<torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="13480" torque="1"/>
+                    <torque rpm="14560" torque="0.75"/>
+                    <torque rpm="15280" torque="0.63"/>
+                    <torque rpm="90000" torque="0.2"/>
+                </motor>
+                 <transmission minForwardGearRatio="10" maxForwardGearRatio="280" minBackwardGearRatio="40" maxBackwardGearRatio="280" name="$l10n_info_transmission_automatic"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <exhaustEffects>
+            <exhaustEffect filename="$data/effects/exhaust/exhaust.i3d" maxRpmColor="0.9 0.9 0.9 0.4" maxRpmScale="0.25" minRpmColor="0.9 0.9 0.9 0.1" minRpmScale="0.02" node="0>7"/>
+        </exhaustEffects>
+        <motorStartDuration>3000</motorStartDuration>
+        <dashboards>
+            <dashboard displayType="ROT" valueType="speed" node="0>14|0|0" minRot="0" maxRot="-222" rotAxis="2" doInterpolation="true" interpolationSpeed="10" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="rpm" node="0>14|1|0" minRot="0" maxRot="-195" rotAxis="2" doInterpolation="true" interpolationSpeed="10" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </motorized>
+    <animations>
+        <animation name="backDoorsR">
+            <part node="0>12|2" startTime="0" endTime="1" startRot="0 0 0" endRot="-8.626 -172.835 14.408"/>
+        </animation>
+        <animation name="backDoorsL">
+            <part node="0>12|3" startTime="0" endTime="1" startRot="0 0 0" endRot="-8.626 172.835 -14.408"/>
+        </animation>
+        <animation name="sideDoorsR">
+            <part node="0>12|4" startTime="0.0" endTime="0.1" startTrans="0.914 1.24 0.756" endTrans="0.95 1.24 0.756"/>
+            <part node="0>12|4" startTime="0.1" endTime="1.0" startTrans="0.95 1.24 0.756" endTrans="0.988 1.24 -0.652"/>
+        </animation>
+        <animation name="sideDoorsL">
+            <part node="0>12|5" startTime="0.0" endTime="0.1" startTrans="-0.914 1.24 0.756" endTrans="-0.971 1.24 0.756"/>
+            <part node="0>12|5" startTime="0.1" endTime="1.0" startTrans="-0.971 1.24 0.756" endTrans="-0.991 1.24 -0.635"/>
+        </animation>
+        <animation name="eggAnimation">
+            <part node="0>16|0|0|0|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|0|0|0|0" startTime="0.001" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|0|0|0|1" startTime="0.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|0|0|0|2" startTime="1.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|3" startTime="0.000" endTime="2.999" visibility="false"/>
+            <part node="0>16|0|0|0|3" startTime="2.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|4" startTime="0.000" endTime="3.999" visibility="false"/>
+            <part node="0>16|0|0|0|4" startTime="3.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|5" startTime="0.000" endTime="4.999" visibility="false"/>
+            <part node="0>16|0|0|0|5" startTime="4.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|6" startTime="0.000" endTime="5.999" visibility="false"/>
+            <part node="0>16|0|0|0|6" startTime="5.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|7" startTime="0.000" endTime="6.999" visibility="false"/>
+            <part node="0>16|0|0|0|7" startTime="6.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|8" startTime="0.000" endTime="7.999" visibility="false"/>
+            <part node="0>16|0|0|0|8" startTime="7.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|9" startTime="0.000" endTime="8.999" visibility="false"/>
+            <part node="0>16|0|0|0|9" startTime="8.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|10" startTime="0.000" endTime="9.999" visibility="false"/>
+            <part node="0>16|0|0|0|10" startTime="9.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|11" startTime="0.000" endTime="10.999" visibility="false"/>
+            <part node="0>16|0|0|0|11" startTime="10.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|12" startTime="0.000" endTime="11.999" visibility="false"/>
+            <part node="0>16|0|0|0|12" startTime="11.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|13" startTime="0.000" endTime="12.999" visibility="false"/>
+            <part node="0>16|0|0|0|13" startTime="12.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|14" startTime="0.000" endTime="13.999" visibility="false"/>
+            <part node="0>16|0|0|0|14" startTime="13.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|0|0|15" startTime="0.000" endTime="14.999" visibility="false"/>
+            <part node="0>16|0|0|0|15" startTime="14.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|0" startTime="0.000" endTime="15.999" visibility="false"/>
+            <part node="0>16|0|1|0|0" startTime="15.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|1" startTime="0.000" endTime="16.999" visibility="false"/>
+            <part node="0>16|0|1|0|1" startTime="16.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|2" startTime="0.000" endTime="17.999" visibility="false"/>
+            <part node="0>16|0|1|0|2" startTime="17.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|3" startTime="0.000" endTime="18.999" visibility="false"/>
+            <part node="0>16|0|1|0|3" startTime="18.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|4" startTime="0.000" endTime="19.999" visibility="false"/>
+            <part node="0>16|0|1|0|4" startTime="19.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|5" startTime="0.000" endTime="20.999" visibility="false"/>
+            <part node="0>16|0|1|0|5" startTime="20.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|6" startTime="0.000" endTime="21.999" visibility="false"/>
+            <part node="0>16|0|1|0|6" startTime="21.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|7" startTime="0.000" endTime="22.999" visibility="false"/>
+            <part node="0>16|0|1|0|7" startTime="22.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|8" startTime="0.000" endTime="23.999" visibility="false"/>
+            <part node="0>16|0|1|0|8" startTime="23.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|9" startTime="0.000" endTime="24.999" visibility="false"/>
+            <part node="0>16|0|1|0|9" startTime="24.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|10" startTime="0.000" endTime="25.999" visibility="false"/>
+            <part node="0>16|0|1|0|10" startTime="25.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|11" startTime="0.000" endTime="26.999" visibility="false"/>
+            <part node="0>16|0|1|0|11" startTime="26.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|12" startTime="0.000" endTime="27.999" visibility="false"/>
+            <part node="0>16|0|1|0|12" startTime="27.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|13" startTime="0.000" endTime="28.999" visibility="false"/>
+            <part node="0>16|0|1|0|13" startTime="28.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|14" startTime="0.000" endTime="29.999" visibility="false"/>
+            <part node="0>16|0|1|0|14" startTime="29.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|1|0|15" startTime="0.000" endTime="30.999" visibility="false"/>
+            <part node="0>16|0|1|0|15" startTime="30.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|0" startTime="0.000" endTime="31.999" visibility="false"/>
+            <part node="0>16|0|2|0|0" startTime="31.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|1" startTime="0.000" endTime="32.999" visibility="false"/>
+            <part node="0>16|0|2|0|1" startTime="32.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|2" startTime="0.000" endTime="33.999" visibility="false"/>
+            <part node="0>16|0|2|0|2" startTime="33.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|3" startTime="0.000" endTime="34.999" visibility="false"/>
+            <part node="0>16|0|2|0|3" startTime="34.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|4" startTime="0.000" endTime="35.999" visibility="false"/>
+            <part node="0>16|0|2|0|4" startTime="35.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|5" startTime="0.000" endTime="36.999" visibility="false"/>
+            <part node="0>16|0|2|0|5" startTime="36.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|6" startTime="0.000" endTime="37.999" visibility="false"/>
+            <part node="0>16|0|2|0|6" startTime="37.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|7" startTime="0.000" endTime="38.999" visibility="false"/>
+            <part node="0>16|0|2|0|7" startTime="38.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|8" startTime="0.000" endTime="39.999" visibility="false"/>
+            <part node="0>16|0|2|0|8" startTime="39.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|9" startTime="0.000" endTime="40.999" visibility="false"/>
+            <part node="0>16|0|2|0|9" startTime="40.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|10" startTime="0.000" endTime="41.999" visibility="false"/>
+            <part node="0>16|0|2|0|10" startTime="41.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|11" startTime="0.000" endTime="42.999" visibility="false"/>
+            <part node="0>16|0|2|0|11" startTime="42.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|12" startTime="0.000" endTime="43.999" visibility="false"/>
+            <part node="0>16|0|2|0|12" startTime="43.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|13" startTime="0.000" endTime="44.999" visibility="false"/>
+            <part node="0>16|0|2|0|13" startTime="44.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|14" startTime="0.000" endTime="45.999" visibility="false"/>
+            <part node="0>16|0|2|0|14" startTime="45.999" endTime="47.000" visibility="true"/>
+            <part node="0>16|0|2|0|15" startTime="0.000" endTime="46.999" visibility="false"/>
+            <part node="0>16|0|2|0|15" startTime="46.999" endTime="47.000" visibility="true"/>
+        </animation>
+        <animation name="milkAnimation">
+            <part node="0>16|1|0|0|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|1|0|0|0" startTime="0.001" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|0|0|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|1|0|0|1" startTime="0.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|0|0|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|1|0|0|2" startTime="1.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|0|0|3" startTime="0.000" endTime="2.999" visibility="false"/>
+            <part node="0>16|1|0|0|3" startTime="2.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|0|0|4" startTime="0.000" endTime="3.999" visibility="false"/>
+            <part node="0>16|1|0|0|4" startTime="3.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|0|0|5" startTime="0.000" endTime="4.999" visibility="false"/>
+            <part node="0>16|1|0|0|5" startTime="4.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|1|0|0" startTime="0.000" endTime="5.999" visibility="false"/>
+            <part node="0>16|1|1|0|0" startTime="5.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|1|0|1" startTime="0.000" endTime="6.999" visibility="false"/>
+            <part node="0>16|1|1|0|1" startTime="6.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|1|0|2" startTime="0.000" endTime="7.999" visibility="false"/>
+            <part node="0>16|1|1|0|2" startTime="7.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|1|0|3" startTime="0.000" endTime="8.999" visibility="false"/>
+            <part node="0>16|1|1|0|3" startTime="8.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|1|0|4" startTime="0.000" endTime="9.999" visibility="false"/>
+            <part node="0>16|1|1|0|4" startTime="9.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|1|0|5" startTime="0.000" endTime="10.999" visibility="false"/>
+            <part node="0>16|1|1|0|5" startTime="10.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|2|0|0" startTime="0.000" endTime="11.999" visibility="false"/>
+            <part node="0>16|1|2|0|0" startTime="11.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|2|0|1" startTime="0.000" endTime="12.999" visibility="false"/>
+            <part node="0>16|1|2|0|1" startTime="12.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|2|0|2" startTime="0.000" endTime="13.999" visibility="false"/>
+            <part node="0>16|1|2|0|2" startTime="13.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|2|0|3" startTime="0.000" endTime="14.999" visibility="false"/>
+            <part node="0>16|1|2|0|3" startTime="14.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|2|0|4" startTime="0.000" endTime="15.999" visibility="false"/>
+            <part node="0>16|1|2|0|4" startTime="15.999" endTime="17.000" visibility="true"/>
+            <part node="0>16|1|2|0|5" startTime="0.000" endTime="16.999" visibility="false"/>
+            <part node="0>16|1|2|0|5" startTime="16.999" endTime="17.000" visibility="true"/>
+        </animation>
+        <animation name="woolAnimation">
+            <part node="0>16|2|0|0|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|2|0|0|0" startTime="0.001" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|0|0|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|2|0|0|1" startTime="0.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|0|0|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|2|0|0|2" startTime="1.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|0|0|3" startTime="0.000" endTime="2.999" visibility="false"/>
+            <part node="0>16|2|0|0|3" startTime="2.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|1|0|0" startTime="0.000" endTime="3.999" visibility="false"/>
+            <part node="0>16|2|1|0|0" startTime="3.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|1|0|1" startTime="0.000" endTime="4.999" visibility="false"/>
+            <part node="0>16|2|1|0|1" startTime="4.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|1|0|2" startTime="0.000" endTime="5.999" visibility="false"/>
+            <part node="0>16|2|1|0|2" startTime="5.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|1|0|3" startTime="0.000" endTime="6.999" visibility="false"/>
+            <part node="0>16|2|1|0|3" startTime="6.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|2|0|0" startTime="0.000" endTime="7.999" visibility="false"/>
+            <part node="0>16|2|2|0|0" startTime="7.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|2|0|1" startTime="0.000" endTime="8.999" visibility="false"/>
+            <part node="0>16|2|2|0|1" startTime="8.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|2|0|2" startTime="0.000" endTime="9.999" visibility="false"/>
+            <part node="0>16|2|2|0|2" startTime="9.999" endTime="11.000" visibility="true"/>
+            <part node="0>16|2|2|0|3" startTime="0.000" endTime="10.999" visibility="false"/>
+            <part node="0>16|2|2|0|3" startTime="10.999" endTime="11.000" visibility="true"/>
+        </animation>
+        <animation name="bigBagAnimation">
+            <part node="0>16|3|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|3|0" startTime="0.001" endTime="2.000" visibility="true"/>
+            <part node="0>16|3|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|3|1" startTime="0.999" endTime="2.000" visibility="true"/>
+            <part node="0>16|3|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|3|2" startTime="1.999" endTime="2.000" visibility="true"/>
+        </animation>
+        <animation name="tankAnimation">
+            <part node="0>16|4|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|4|0" startTime="0.001" endTime="1.000" visibility="true"/>
+            <part node="0>16|4|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|4|1" startTime="0.999" endTime="1.000" visibility="true"/>
+        </animation>
+        <animation name="netWrapAnimation">
+            <part node="netWrap001" startTime="0.000" endTime="0.000" visibility="false"/>
+            <part node="netWrap001" startTime="0.001" endTime="2.000" visibility="true"/>
+            <part node="netWrap002" startTime="0.000" endTime="0.084" visibility="false"/>
+            <part node="netWrap002" startTime="0.085" endTime="2.000" visibility="true"/>
+            <part node="netWrap003" startTime="0.000" endTime="0.168" visibility="false"/>
+            <part node="netWrap003" startTime="0.169" endTime="2.000" visibility="true"/>
+            <part node="netWrap004" startTime="0.000" endTime="0.251" visibility="false"/>
+            <part node="netWrap004" startTime="0.252" endTime="2.000" visibility="true"/>
+            <part node="netWrap005" startTime="0.000" endTime="0.334" visibility="false"/>
+            <part node="netWrap005" startTime="0.335" endTime="2.000" visibility="true"/>
+            <part node="netWrap006" startTime="0.000" endTime="0.416" visibility="false"/>
+            <part node="netWrap006" startTime="0.417" endTime="2.000" visibility="true"/>
+            <part node="netWrap007" startTime="0.000" endTime="0.501" visibility="false"/>
+            <part node="netWrap007" startTime="0.502" endTime="2.000" visibility="true"/>
+            <part node="netWrap008" startTime="0.000" endTime="0.584" visibility="false"/>
+            <part node="netWrap008" startTime="0.585" endTime="2.000" visibility="true"/>
+            <part node="netWrap009" startTime="0.000" endTime="0.668" visibility="false"/>
+            <part node="netWrap009" startTime="0.669" endTime="2.000" visibility="true"/>
+            <part node="netWrap010" startTime="0.000" endTime="0.750" visibility="false"/>
+            <part node="netWrap010" startTime="0.751" endTime="2.000" visibility="true"/>
+            <part node="netWrap011" startTime="0.000" endTime="0.834" visibility="false"/>
+            <part node="netWrap011" startTime="0.835" endTime="2.000" visibility="true"/>
+            <part node="netWrap012" startTime="0.000" endTime="0.918" visibility="false"/>
+            <part node="netWrap012" startTime="0.919" endTime="2.000" visibility="true"/>
+            <part node="netWrap101" startTime="0.000" endTime="1.000" visibility="false"/>
+            <part node="netWrap101" startTime="1.001" endTime="2.000" visibility="true"/>
+            <part node="netWrap102" startTime="0.000" endTime="1.084" visibility="false"/>
+            <part node="netWrap102" startTime="1.085" endTime="2.000" visibility="true"/>
+            <part node="netWrap103" startTime="0.000" endTime="1.168" visibility="false"/>
+            <part node="netWrap103" startTime="1.169" endTime="2.000" visibility="true"/>
+            <part node="netWrap104" startTime="0.000" endTime="1.251" visibility="false"/>
+            <part node="netWrap104" startTime="1.252" endTime="2.000" visibility="true"/>
+            <part node="netWrap105" startTime="0.000" endTime="1.334" visibility="false"/>
+            <part node="netWrap105" startTime="1.335" endTime="2.000" visibility="true"/>
+            <part node="netWrap106" startTime="0.000" endTime="1.416" visibility="false"/>
+            <part node="netWrap106" startTime="1.417" endTime="2.000" visibility="true"/>
+            <part node="netWrap107" startTime="0.000" endTime="1.501" visibility="false"/>
+            <part node="netWrap107" startTime="1.502" endTime="2.000" visibility="true"/>
+            <part node="netWrap108" startTime="0.000" endTime="1.584" visibility="false"/>
+            <part node="netWrap108" startTime="1.585" endTime="2.000" visibility="true"/>
+            <part node="netWrap109" startTime="0.000" endTime="1.668" visibility="false"/>
+            <part node="netWrap109" startTime="1.669" endTime="2.000" visibility="true"/>
+            <part node="netWrap110" startTime="0.000" endTime="1.750" visibility="false"/>
+            <part node="netWrap110" startTime="1.751" endTime="2.000" visibility="true"/>
+            <part node="netWrap111" startTime="0.000" endTime="1.834" visibility="false"/>
+            <part node="netWrap111" startTime="1.835" endTime="2.000" visibility="true"/>
+            <part node="netWrap112" startTime="0.000" endTime="1.918" visibility="false"/>
+            <part node="netWrap112" startTime="1.919" endTime="2.000" visibility="true"/>
+        </animation>
+        <animation name="twineAnimation">
+            <part node="twineRoll001" startTime="0.000" endTime="0.000" visibility="false"/>
+            <part node="twineRoll001" startTime="0.001" endTime="2.000" visibility="true"/>
+            <part node="twineRoll002" startTime="0.000" endTime="0.022" visibility="false"/>
+            <part node="twineRoll002" startTime="0.022" endTime="2.000" visibility="true"/>
+            <part node="twineRoll003" startTime="0.000" endTime="0.043" visibility="false"/>
+            <part node="twineRoll003" startTime="0.043" endTime="2.000" visibility="true"/>
+            <part node="twineRoll004" startTime="0.000" endTime="0.064" visibility="false"/>
+            <part node="twineRoll004" startTime="0.064" endTime="2.000" visibility="true"/>
+            <part node="twineRoll005" startTime="0.000" endTime="0.085" visibility="false"/>
+            <part node="twineRoll005" startTime="0.085" endTime="2.000" visibility="true"/>
+            <part node="twineRoll006" startTime="0.000" endTime="0.106" visibility="false"/>
+            <part node="twineRoll006" startTime="0.106" endTime="2.000" visibility="true"/>
+            <part node="twineRoll007" startTime="0.000" endTime="0.127" visibility="false"/>
+            <part node="twineRoll007" startTime="0.127" endTime="2.000" visibility="true"/>
+            <part node="twineRoll008" startTime="0.000" endTime="0.148" visibility="false"/>
+            <part node="twineRoll008" startTime="0.148" endTime="2.000" visibility="true"/>
+            <part node="twineRoll009" startTime="0.000" endTime="0.169" visibility="false"/>
+            <part node="twineRoll009" startTime="0.169" endTime="2.000" visibility="true"/>
+            <part node="twineRoll010" startTime="0.000" endTime="0.190" visibility="false"/>
+            <part node="twineRoll010" startTime="0.190" endTime="2.000" visibility="true"/>
+            <part node="twineRoll011" startTime="0.000" endTime="0.211" visibility="false"/>
+            <part node="twineRoll011" startTime="0.211" endTime="2.000" visibility="true"/>
+            <part node="twineRoll012" startTime="0.000" endTime="0.232" visibility="false"/>
+            <part node="twineRoll012" startTime="0.232" endTime="2.000" visibility="true"/>
+            <part node="twineRoll013" startTime="0.000" endTime="0.253" visibility="false"/>
+            <part node="twineRoll013" startTime="0.253" endTime="2.000" visibility="true"/>
+            <part node="twineRoll014" startTime="0.000" endTime="0.274" visibility="false"/>
+            <part node="twineRoll014" startTime="0.274" endTime="2.000" visibility="true"/>
+            <part node="twineRoll015" startTime="0.000" endTime="0.295" visibility="false"/>
+            <part node="twineRoll015" startTime="0.295" endTime="2.000" visibility="true"/>
+            <part node="twineRoll016" startTime="0.000" endTime="0.316" visibility="false"/>
+            <part node="twineRoll016" startTime="0.316" endTime="2.000" visibility="true"/>
+            <part node="twineRoll017" startTime="0.000" endTime="0.337" visibility="false"/>
+            <part node="twineRoll017" startTime="0.337" endTime="2.000" visibility="true"/>
+            <part node="twineRoll018" startTime="0.000" endTime="0.358" visibility="false"/>
+            <part node="twineRoll018" startTime="0.358" endTime="2.000" visibility="true"/>
+            <part node="twineRoll019" startTime="0.000" endTime="0.379" visibility="false"/>
+            <part node="twineRoll019" startTime="0.379" endTime="2.000" visibility="true"/>
+            <part node="twineRoll020" startTime="0.000" endTime="0.400" visibility="false"/>
+            <part node="twineRoll020" startTime="0.400" endTime="2.000" visibility="true"/>
+            <part node="twineRoll021" startTime="0.000" endTime="0.421" visibility="false"/>
+            <part node="twineRoll021" startTime="0.421" endTime="2.000" visibility="true"/>
+            <part node="twineRoll022" startTime="0.000" endTime="0.442" visibility="false"/>
+            <part node="twineRoll022" startTime="0.442" endTime="2.000" visibility="true"/>
+            <part node="twineRoll023" startTime="0.000" endTime="0.463" visibility="false"/>
+            <part node="twineRoll023" startTime="0.463" endTime="2.000" visibility="true"/>
+            <part node="twineRoll024" startTime="0.000" endTime="0.484" visibility="false"/>
+            <part node="twineRoll024" startTime="0.484" endTime="2.000" visibility="true"/>
+            <part node="twineRoll025" startTime="0.000" endTime="0.505" visibility="false"/>
+            <part node="twineRoll025" startTime="0.505" endTime="2.000" visibility="true"/>
+            <part node="twineRoll026" startTime="0.000" endTime="0.526" visibility="false"/>
+            <part node="twineRoll026" startTime="0.526" endTime="2.000" visibility="true"/>
+            <part node="twineRoll027" startTime="0.000" endTime="0.547" visibility="false"/>
+            <part node="twineRoll027" startTime="0.547" endTime="2.000" visibility="true"/>
+            <part node="twineRoll028" startTime="0.000" endTime="0.568" visibility="false"/>
+            <part node="twineRoll028" startTime="0.568" endTime="2.000" visibility="true"/>
+            <part node="twineRoll029" startTime="0.000" endTime="0.589" visibility="false"/>
+            <part node="twineRoll029" startTime="0.589" endTime="2.000" visibility="true"/>
+            <part node="twineRoll030" startTime="0.000" endTime="0.610" visibility="false"/>
+            <part node="twineRoll030" startTime="0.610" endTime="2.000" visibility="true"/>
+            <part node="twineRoll031" startTime="0.000" endTime="0.631" visibility="false"/>
+            <part node="twineRoll031" startTime="0.631" endTime="2.000" visibility="true"/>
+            <part node="twineRoll032" startTime="0.000" endTime="0.652" visibility="false"/>
+            <part node="twineRoll032" startTime="0.652" endTime="2.000" visibility="true"/>
+            <part node="twineRoll033" startTime="0.000" endTime="0.673" visibility="false"/>
+            <part node="twineRoll033" startTime="0.673" endTime="2.000" visibility="true"/>
+            <part node="twineRoll034" startTime="0.000" endTime="0.694" visibility="false"/>
+            <part node="twineRoll034" startTime="0.694" endTime="2.000" visibility="true"/>
+            <part node="twineRoll035" startTime="0.000" endTime="0.715" visibility="false"/>
+            <part node="twineRoll035" startTime="0.715" endTime="2.000" visibility="true"/>
+            <part node="twineRoll036" startTime="0.000" endTime="0.736" visibility="false"/>
+            <part node="twineRoll036" startTime="0.736" endTime="2.000" visibility="true"/>
+            <part node="twineRoll037" startTime="0.000" endTime="0.757" visibility="false"/>
+            <part node="twineRoll037" startTime="0.757" endTime="2.000" visibility="true"/>
+            <part node="twineRoll038" startTime="0.000" endTime="0.778" visibility="false"/>
+            <part node="twineRoll038" startTime="0.778" endTime="2.000" visibility="true"/>
+            <part node="twineRoll039" startTime="0.000" endTime="0.799" visibility="false"/>
+            <part node="twineRoll039" startTime="0.799" endTime="2.000" visibility="true"/>
+            <part node="twineRoll040" startTime="0.000" endTime="0.820" visibility="false"/>
+            <part node="twineRoll040" startTime="0.820" endTime="2.000" visibility="true"/>
+            <part node="twineRoll041" startTime="0.000" endTime="0.841" visibility="false"/>
+            <part node="twineRoll041" startTime="0.841" endTime="2.000" visibility="true"/>
+            <part node="twineRoll042" startTime="0.000" endTime="0.862" visibility="false"/>
+            <part node="twineRoll042" startTime="0.862" endTime="2.000" visibility="true"/>
+            <part node="twineRoll043" startTime="0.000" endTime="0.883" visibility="false"/>
+            <part node="twineRoll043" startTime="0.883" endTime="2.000" visibility="true"/>
+            <part node="twineRoll044" startTime="0.000" endTime="0.904" visibility="false"/>
+            <part node="twineRoll044" startTime="0.904" endTime="2.000" visibility="true"/>
+            <part node="twineRoll045" startTime="0.000" endTime="0.925" visibility="false"/>
+            <part node="twineRoll045" startTime="0.925" endTime="2.000" visibility="true"/>
+            <part node="twineRoll046" startTime="0.000" endTime="0.946" visibility="false"/>
+            <part node="twineRoll046" startTime="0.946" endTime="2.000" visibility="true"/>
+            <part node="twineRoll047" startTime="0.000" endTime="0.967" visibility="false"/>
+            <part node="twineRoll047" startTime="0.967" endTime="2.000" visibility="true"/>
+            <part node="twineRoll048" startTime="0.000" endTime="0.988" visibility="false"/>
+            <part node="twineRoll048" startTime="0.988" endTime="2.000" visibility="true"/>
+            <part node="twineRoll101" startTime="0.000" endTime="1.000" visibility="false"/>
+            <part node="twineRoll101" startTime="1.001" endTime="2.000" visibility="true"/>
+            <part node="twineRoll102" startTime="0.000" endTime="1.022" visibility="false"/>
+            <part node="twineRoll102" startTime="1.022" endTime="2.000" visibility="true"/>
+            <part node="twineRoll103" startTime="0.000" endTime="1.043" visibility="false"/>
+            <part node="twineRoll103" startTime="1.043" endTime="2.000" visibility="true"/>
+            <part node="twineRoll104" startTime="0.000" endTime="1.064" visibility="false"/>
+            <part node="twineRoll104" startTime="1.064" endTime="2.000" visibility="true"/>
+            <part node="twineRoll105" startTime="0.000" endTime="1.085" visibility="false"/>
+            <part node="twineRoll105" startTime="1.085" endTime="2.000" visibility="true"/>
+            <part node="twineRoll106" startTime="0.000" endTime="1.106" visibility="false"/>
+            <part node="twineRoll106" startTime="1.106" endTime="2.000" visibility="true"/>
+            <part node="twineRoll107" startTime="0.000" endTime="1.127" visibility="false"/>
+            <part node="twineRoll107" startTime="1.127" endTime="2.000" visibility="true"/>
+            <part node="twineRoll108" startTime="0.000" endTime="1.148" visibility="false"/>
+            <part node="twineRoll108" startTime="1.148" endTime="2.000" visibility="true"/>
+            <part node="twineRoll109" startTime="0.000" endTime="1.169" visibility="false"/>
+            <part node="twineRoll109" startTime="1.169" endTime="2.000" visibility="true"/>
+            <part node="twineRoll110" startTime="0.000" endTime="1.190" visibility="false"/>
+            <part node="twineRoll110" startTime="1.190" endTime="2.000" visibility="true"/>
+            <part node="twineRoll111" startTime="0.000" endTime="1.211" visibility="false"/>
+            <part node="twineRoll111" startTime="1.211" endTime="2.000" visibility="true"/>
+            <part node="twineRoll112" startTime="0.000" endTime="1.232" visibility="false"/>
+            <part node="twineRoll112" startTime="1.232" endTime="2.000" visibility="true"/>
+            <part node="twineRoll113" startTime="0.000" endTime="1.253" visibility="false"/>
+            <part node="twineRoll113" startTime="1.253" endTime="2.000" visibility="true"/>
+            <part node="twineRoll114" startTime="0.000" endTime="1.274" visibility="false"/>
+            <part node="twineRoll114" startTime="1.274" endTime="2.000" visibility="true"/>
+            <part node="twineRoll115" startTime="0.000" endTime="1.295" visibility="false"/>
+            <part node="twineRoll115" startTime="1.295" endTime="2.000" visibility="true"/>
+            <part node="twineRoll116" startTime="0.000" endTime="1.316" visibility="false"/>
+            <part node="twineRoll116" startTime="1.316" endTime="2.000" visibility="true"/>
+            <part node="twineRoll117" startTime="0.000" endTime="1.337" visibility="false"/>
+            <part node="twineRoll117" startTime="1.337" endTime="2.000" visibility="true"/>
+            <part node="twineRoll118" startTime="0.000" endTime="1.358" visibility="false"/>
+            <part node="twineRoll118" startTime="1.358" endTime="2.000" visibility="true"/>
+            <part node="twineRoll119" startTime="0.000" endTime="1.379" visibility="false"/>
+            <part node="twineRoll119" startTime="1.379" endTime="2.000" visibility="true"/>
+            <part node="twineRoll120" startTime="0.000" endTime="1.400" visibility="false"/>
+            <part node="twineRoll120" startTime="1.400" endTime="2.000" visibility="true"/>
+            <part node="twineRoll121" startTime="0.000" endTime="1.421" visibility="false"/>
+            <part node="twineRoll121" startTime="1.421" endTime="2.000" visibility="true"/>
+            <part node="twineRoll122" startTime="0.000" endTime="1.442" visibility="false"/>
+            <part node="twineRoll122" startTime="1.442" endTime="2.000" visibility="true"/>
+            <part node="twineRoll123" startTime="0.000" endTime="1.463" visibility="false"/>
+            <part node="twineRoll123" startTime="1.463" endTime="2.000" visibility="true"/>
+            <part node="twineRoll124" startTime="0.000" endTime="1.484" visibility="false"/>
+            <part node="twineRoll124" startTime="1.484" endTime="2.000" visibility="true"/>
+            <part node="twineRoll125" startTime="0.000" endTime="1.505" visibility="false"/>
+            <part node="twineRoll125" startTime="1.505" endTime="2.000" visibility="true"/>
+            <part node="twineRoll126" startTime="0.000" endTime="1.526" visibility="false"/>
+            <part node="twineRoll126" startTime="1.526" endTime="2.000" visibility="true"/>
+            <part node="twineRoll127" startTime="0.000" endTime="1.547" visibility="false"/>
+            <part node="twineRoll127" startTime="1.547" endTime="2.000" visibility="true"/>
+            <part node="twineRoll128" startTime="0.000" endTime="1.568" visibility="false"/>
+            <part node="twineRoll128" startTime="1.568" endTime="2.000" visibility="true"/>
+            <part node="twineRoll129" startTime="0.000" endTime="1.589" visibility="false"/>
+            <part node="twineRoll129" startTime="1.589" endTime="2.000" visibility="true"/>
+            <part node="twineRoll130" startTime="0.000" endTime="1.610" visibility="false"/>
+            <part node="twineRoll130" startTime="1.610" endTime="2.000" visibility="true"/>
+            <part node="twineRoll131" startTime="0.000" endTime="1.631" visibility="false"/>
+            <part node="twineRoll131" startTime="1.631" endTime="2.000" visibility="true"/>
+            <part node="twineRoll132" startTime="0.000" endTime="1.652" visibility="false"/>
+            <part node="twineRoll132" startTime="1.652" endTime="2.000" visibility="true"/>
+            <part node="twineRoll133" startTime="0.000" endTime="1.673" visibility="false"/>
+            <part node="twineRoll133" startTime="1.673" endTime="2.000" visibility="true"/>
+            <part node="twineRoll134" startTime="0.000" endTime="1.694" visibility="false"/>
+            <part node="twineRoll134" startTime="1.694" endTime="2.000" visibility="true"/>
+            <part node="twineRoll135" startTime="0.000" endTime="1.715" visibility="false"/>
+            <part node="twineRoll135" startTime="1.715" endTime="2.000" visibility="true"/>
+            <part node="twineRoll136" startTime="0.000" endTime="1.736" visibility="false"/>
+            <part node="twineRoll136" startTime="1.736" endTime="2.000" visibility="true"/>
+            <part node="twineRoll137" startTime="0.000" endTime="1.757" visibility="false"/>
+            <part node="twineRoll137" startTime="1.757" endTime="2.000" visibility="true"/>
+            <part node="twineRoll138" startTime="0.000" endTime="1.778" visibility="false"/>
+            <part node="twineRoll138" startTime="1.778" endTime="2.000" visibility="true"/>
+            <part node="twineRoll139" startTime="0.000" endTime="1.799" visibility="false"/>
+            <part node="twineRoll139" startTime="1.799" endTime="2.000" visibility="true"/>
+            <part node="twineRoll140" startTime="0.000" endTime="1.820" visibility="false"/>
+            <part node="twineRoll140" startTime="1.820" endTime="2.000" visibility="true"/>
+            <part node="twineRoll141" startTime="0.000" endTime="1.841" visibility="false"/>
+            <part node="twineRoll141" startTime="1.841" endTime="2.000" visibility="true"/>
+            <part node="twineRoll142" startTime="0.000" endTime="1.862" visibility="false"/>
+            <part node="twineRoll142" startTime="1.862" endTime="2.000" visibility="true"/>
+            <part node="twineRoll143" startTime="0.000" endTime="1.883" visibility="false"/>
+            <part node="twineRoll143" startTime="1.883" endTime="2.000" visibility="true"/>
+            <part node="twineRoll144" startTime="0.000" endTime="1.904" visibility="false"/>
+            <part node="twineRoll144" startTime="1.904" endTime="2.000" visibility="true"/>
+            <part node="twineRoll145" startTime="0.000" endTime="1.925" visibility="false"/>
+            <part node="twineRoll145" startTime="1.925" endTime="2.000" visibility="true"/>
+            <part node="twineRoll146" startTime="0.000" endTime="1.946" visibility="false"/>
+            <part node="twineRoll146" startTime="1.946" endTime="2.000" visibility="true"/>
+            <part node="twineRoll147" startTime="0.000" endTime="1.967" visibility="false"/>
+            <part node="twineRoll147" startTime="1.967" endTime="2.000" visibility="true"/>
+            <part node="twineRoll148" startTime="0.000" endTime="1.988" visibility="false"/>
+            <part node="twineRoll148" startTime="1.988" endTime="2.000" visibility="true"/>
+        </animation>
+        <animation name="wipers">
+            <part node="0>18|0|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -90 0"/>
+            <part node="0>18|1|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -90 0"/>
+            <sound template="wiper1" startTime="0" endTime="1" direction="1"  volumeScale="1" pitchScale="0.7" fadeOut="0.1" linkNode="0>18|0"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="1" pitchScale="0.7" fadeOut="0.1" linkNode="0>18|1"/>
+        </animation>
+    </animations>
+    <wipers>
+        <wiper animName="wipers">
+            <state animSpeed="1.2" animPause="2.0"/>
+            <state animSpeed="1.2" animPause="0.0"/>
+            <state animSpeed="1.8" animPause="0.0"/>
+        </wiper>
+    </wipers>
+    <cylindered>
+        <movingTools>
+            <movingTool node="0>12|2" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_ARM" iconName="FRONTLOADER_ARM_ROTATE" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="backDoorsR" animSpeed="0.5"/>
+            </movingTool>
+            <movingTool node="0>12|3" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_ARM2" iconName="FRONTLOADER_ARM_ROTATE" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="backDoorsL" animSpeed="0.5"/>
+            </movingTool>
+            <movingTool node="0>12|4" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_TOOL" iconName="IMPLEMENT_ATTACHER_TRANS" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="sideDoorsR" animSpeed="0.5"/>
+            </movingTool>
+            <movingTool node="0>12|5" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_TOOL2" iconName="IMPLEMENT_ATTACHER_TRANS" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="sideDoorsL" animSpeed="0.5"/>
+            </movingTool>
+        </movingTools>
+    </cylindered>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="diesel" capacity="0"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="egg" capacity="7050" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="eggAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|0" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="milk" capacity="2040" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="milkAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|1" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="wool" capacity="2750" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="woolAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|2" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading node="0>13|2" width="5" offset="0 0 0"/>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="wheat fertilizer oat lime pigFood seeds roadSalt barley canola sorghum sunflower soybean maize mineral_feed" capacity="3000" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="bigBagAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|3" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading node="0>13|2" width="5" offset="0 0 0"/>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="liquidFertilizer herbicide silage_additive" capacity="4000" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="tankAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|4" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration price="0">
+                <fillUnits>
+                    <unloading node="0>13|2" width="5" offset="0 0 0"/>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_miles" fillTypeCategories="netWrap" capacity="67200" showCapacityInShop="false" allowAILoading="true">
+                        <fillLevelAnimation name="netWrapAnimation" resetOnEmpty="true"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                    <fillTrigger litersPerSecond="2800"/>
+                </fillUnits>
+                <objectChange node="0>16|5" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration price="0">
+                <fillUnits>
+                    <unloading node="0>13|2" width="5" offset="0 0 0"/>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_miles" fillTypeCategories="twine" capacity="576000" showCapacityInShop="false" allowAILoading="true">
+                        <fillLevelAnimation name="twineAnimation" resetOnEmpty="true"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                    <fillTrigger litersPerSecond="6000"/>
+                </fillUnits>
+                <objectChange node="0>16|6" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <dischargeable>
+        <dischargeNode node="0>13|3|2" emptySpeed="500" fillUnitIndex="2" canDischargeToGround="false">
+            <info width="2.0" length="0.5"/>
+            <trigger node="0>13|3|3"/>
+        </dischargeNode>
+    </dischargeable>
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration/>
+            <tensionBeltsConfiguration>
+                <tensionBelts activationTrigger="0>13|1|3" defaultHeight="4" defaultOffset="0.1" defaultOffsetSide="0.1" geometryBias="0.01" jointNode="0>" linkNode="0>13|1" maxEdgeLength="0.1" ratchetPosition="0.2" width="0.075">
+                    <tensionBelt endNode="0>13|1|0|0" startNode="0>13|1|0"/>
+                    <tensionBelt endNode="0>13|1|1|0" startNode="0>13|1|1"/>
+                    <tensionBelt endNode="0>13|1|2|0" startNode="0>13|1|2"/>
+                    <sounds>
+                        <addBelt template="beltOpen"/>
+                        <removeBelt template="beltClose"/>
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+    <suspensions>
+        <suspension maxRotation="0 5 5" minRotation="0 -5 -5" suspensionParametersY="7 1" suspensionParametersZ="7 1" useCharacterTorso="true" weight="90"/>
+    </suspensions>
+    <dashboard>
+        <groups>
+            <group isMotorStarting="true" name="MOTOR_STARTING"/>
+            <group isMotorRunning="true" isMotorStarting="true" name="MOTOR_ACTIVE"/>
+        </groups>
+    </dashboard>
+    <ai>
+        <agent width="2.05" length="5.5" height="1.85" lengthOffset="1.35" frontOffset="3.09"/>
+        <collisionTrigger node="0>9" width="2.4" height="1.8"/>
+    </ai>
+    <honk>
+        <sound template="HONK_JD8400R"/>
+    </honk>
+    <foliageBending>
+        <bendingNode maxX="1.15" maxZ="2.8" minX="-1.15" minZ="-2.8" yOffset="0.05"/>
+    </foliageBending>
+    <baseMaterial>
+        <material baseNode="0>15" name="rumblerVan_mat">
+            <shaderParameter name="colorMat0" value="SHARED_GREY2"/>
+        </material>
+        <material baseNode="0>15|2" name="rumblerVan_interior_mat">
+            <shaderParameter name="colorMat0" value="SHARED_GREY2"/>
+        </material>
+        <material baseNode="0>0|0|0|0" name="rumblerVanRims_mat">
+            <shaderParameter name="colorMat0" value="0.5669 0.5669 0.5669 8"/>
+        </material>
+    </baseMaterial>
+    <dischargeable requiresTipOcclusionArea="false"/>
+    <baseMaterialConfigurations defaultColorIndex="3" price="1000" useDefaultColors="true">
+        <material name="rumblerVan_mat" shaderParameter="colorMat0"/>
+        <material name="rumblerVan_interior_mat" shaderParameter="colorMat0"/>
+    </baseMaterialConfigurations>
+    <designMaterialConfigurations defaultColorIndex="0" price="100" useDefaultColors="true">
+        <designMaterialConfiguration color="0.5669 0.5669 0.5669" material="8" name="SILVER"/>
+        <material name="rumblerVanRims_mat" shaderParameter="colorMat0"/>
+    </designMaterialConfigurations>
+	<workshop sellTrigger="0>15|5|1" sellAreaTrigger="0>15|5|0"/>
+    <wearable fieldMultiplier="2" wearDuration="480" workMultiplier="5"/>
+    <washable dirtDuration="90" fieldMultiplier="2" washDuration="1" workMultiplier="3"/>
+    <i3dMappings>
+        <i3dMapping id="netWrap001" node="0>16|5|0|0|0"/>
+        <i3dMapping id="netWrap002" node="0>16|5|0|0|1"/>
+        <i3dMapping id="netWrap003" node="0>16|5|0|0|2"/>
+        <i3dMapping id="netWrap004" node="0>16|5|0|0|3"/>
+        <i3dMapping id="netWrap005" node="0>16|5|0|0|4"/>
+        <i3dMapping id="netWrap006" node="0>16|5|0|0|5"/>
+        <i3dMapping id="netWrap007" node="0>16|5|0|0|6"/>
+        <i3dMapping id="netWrap008" node="0>16|5|0|0|7"/>
+        <i3dMapping id="netWrap009" node="0>16|5|0|0|8"/>
+        <i3dMapping id="netWrap010" node="0>16|5|0|0|9"/>
+        <i3dMapping id="netWrap011" node="0>16|5|0|0|10"/>
+        <i3dMapping id="netWrap012" node="0>16|5|0|0|11"/>
+        <i3dMapping id="netWrap101" node="0>16|5|1|0|0"/>
+        <i3dMapping id="netWrap102" node="0>16|5|1|0|1"/>
+        <i3dMapping id="netWrap103" node="0>16|5|1|0|2"/>
+        <i3dMapping id="netWrap104" node="0>16|5|1|0|3"/>
+        <i3dMapping id="netWrap105" node="0>16|5|1|0|4"/>
+        <i3dMapping id="netWrap106" node="0>16|5|1|0|5"/>
+        <i3dMapping id="netWrap107" node="0>16|5|1|0|6"/>
+        <i3dMapping id="netWrap108" node="0>16|5|1|0|7"/>
+        <i3dMapping id="netWrap109" node="0>16|5|1|0|8"/>
+        <i3dMapping id="netWrap110" node="0>16|5|1|0|9"/>
+        <i3dMapping id="netWrap111" node="0>16|5|1|0|10"/>
+        <i3dMapping id="netWrap112" node="0>16|5|1|0|11"/>
+        <i3dMapping id="twineRoll001" node="0>16|6|0|0|0"/>
+        <i3dMapping id="twineRoll002" node="0>16|6|0|0|1"/>
+        <i3dMapping id="twineRoll003" node="0>16|6|0|0|2"/>
+        <i3dMapping id="twineRoll004" node="0>16|6|0|0|3"/>
+        <i3dMapping id="twineRoll005" node="0>16|6|0|0|4"/>
+        <i3dMapping id="twineRoll006" node="0>16|6|0|0|5"/>
+        <i3dMapping id="twineRoll007" node="0>16|6|0|0|6"/>
+        <i3dMapping id="twineRoll008" node="0>16|6|0|0|7"/>
+        <i3dMapping id="twineRoll009" node="0>16|6|0|0|8"/>
+        <i3dMapping id="twineRoll010" node="0>16|6|0|0|9"/>
+        <i3dMapping id="twineRoll011" node="0>16|6|0|0|10"/>
+        <i3dMapping id="twineRoll012" node="0>16|6|0|0|11"/>
+        <i3dMapping id="twineRoll013" node="0>16|6|0|0|12"/>
+        <i3dMapping id="twineRoll014" node="0>16|6|0|0|13"/>
+        <i3dMapping id="twineRoll015" node="0>16|6|0|0|14"/>
+        <i3dMapping id="twineRoll016" node="0>16|6|0|0|15"/>
+        <i3dMapping id="twineRoll017" node="0>16|6|0|0|16"/>
+        <i3dMapping id="twineRoll018" node="0>16|6|0|0|17"/>
+        <i3dMapping id="twineRoll019" node="0>16|6|0|0|18"/>
+        <i3dMapping id="twineRoll020" node="0>16|6|0|0|19"/>
+        <i3dMapping id="twineRoll021" node="0>16|6|0|0|20"/>
+        <i3dMapping id="twineRoll022" node="0>16|6|0|0|21"/>
+        <i3dMapping id="twineRoll023" node="0>16|6|0|0|22"/>
+        <i3dMapping id="twineRoll024" node="0>16|6|0|0|23"/>
+        <i3dMapping id="twineRoll025" node="0>16|6|0|0|24"/>
+        <i3dMapping id="twineRoll026" node="0>16|6|0|0|25"/>
+        <i3dMapping id="twineRoll027" node="0>16|6|0|0|26"/>
+        <i3dMapping id="twineRoll028" node="0>16|6|0|0|27"/>
+        <i3dMapping id="twineRoll029" node="0>16|6|0|0|28"/>
+        <i3dMapping id="twineRoll030" node="0>16|6|0|0|29"/>
+        <i3dMapping id="twineRoll031" node="0>16|6|0|0|30"/>
+        <i3dMapping id="twineRoll032" node="0>16|6|0|0|31"/>
+        <i3dMapping id="twineRoll033" node="0>16|6|0|0|32"/>
+        <i3dMapping id="twineRoll034" node="0>16|6|0|0|33"/>
+        <i3dMapping id="twineRoll035" node="0>16|6|0|0|34"/>
+        <i3dMapping id="twineRoll036" node="0>16|6|0|0|35"/>
+        <i3dMapping id="twineRoll037" node="0>16|6|0|0|36"/>
+        <i3dMapping id="twineRoll038" node="0>16|6|0|0|37"/>
+        <i3dMapping id="twineRoll039" node="0>16|6|0|0|38"/>
+        <i3dMapping id="twineRoll040" node="0>16|6|0|0|39"/>
+        <i3dMapping id="twineRoll041" node="0>16|6|0|0|40"/>
+        <i3dMapping id="twineRoll042" node="0>16|6|0|0|41"/>
+        <i3dMapping id="twineRoll043" node="0>16|6|0|0|42"/>
+        <i3dMapping id="twineRoll044" node="0>16|6|0|0|43"/>
+        <i3dMapping id="twineRoll045" node="0>16|6|0|0|44"/>
+        <i3dMapping id="twineRoll046" node="0>16|6|0|0|45"/>
+        <i3dMapping id="twineRoll047" node="0>16|6|0|0|46"/>
+        <i3dMapping id="twineRoll048" node="0>16|6|0|0|47"/>
+        <i3dMapping id="twineRoll101" node="0>16|6|1|0|0"/>
+        <i3dMapping id="twineRoll102" node="0>16|6|1|0|1"/>
+        <i3dMapping id="twineRoll103" node="0>16|6|1|0|2"/>
+        <i3dMapping id="twineRoll104" node="0>16|6|1|0|3"/>
+        <i3dMapping id="twineRoll105" node="0>16|6|1|0|4"/>
+        <i3dMapping id="twineRoll106" node="0>16|6|1|0|5"/>
+        <i3dMapping id="twineRoll107" node="0>16|6|1|0|6"/>
+        <i3dMapping id="twineRoll108" node="0>16|6|1|0|7"/>
+        <i3dMapping id="twineRoll109" node="0>16|6|1|0|8"/>
+        <i3dMapping id="twineRoll110" node="0>16|6|1|0|9"/>
+        <i3dMapping id="twineRoll111" node="0>16|6|1|0|10"/>
+        <i3dMapping id="twineRoll112" node="0>16|6|1|0|11"/>
+        <i3dMapping id="twineRoll113" node="0>16|6|1|0|12"/>
+        <i3dMapping id="twineRoll114" node="0>16|6|1|0|13"/>
+        <i3dMapping id="twineRoll115" node="0>16|6|1|0|14"/>
+        <i3dMapping id="twineRoll116" node="0>16|6|1|0|15"/>
+        <i3dMapping id="twineRoll117" node="0>16|6|1|0|16"/>
+        <i3dMapping id="twineRoll118" node="0>16|6|1|0|17"/>
+        <i3dMapping id="twineRoll119" node="0>16|6|1|0|18"/>
+        <i3dMapping id="twineRoll120" node="0>16|6|1|0|19"/>
+        <i3dMapping id="twineRoll121" node="0>16|6|1|0|20"/>
+        <i3dMapping id="twineRoll122" node="0>16|6|1|0|21"/>
+        <i3dMapping id="twineRoll123" node="0>16|6|1|0|22"/>
+        <i3dMapping id="twineRoll124" node="0>16|6|1|0|23"/>
+        <i3dMapping id="twineRoll125" node="0>16|6|1|0|24"/>
+        <i3dMapping id="twineRoll126" node="0>16|6|1|0|25"/>
+        <i3dMapping id="twineRoll127" node="0>16|6|1|0|26"/>
+        <i3dMapping id="twineRoll128" node="0>16|6|1|0|27"/>
+        <i3dMapping id="twineRoll129" node="0>16|6|1|0|28"/>
+        <i3dMapping id="twineRoll130" node="0>16|6|1|0|29"/>
+        <i3dMapping id="twineRoll131" node="0>16|6|1|0|30"/>
+        <i3dMapping id="twineRoll132" node="0>16|6|1|0|31"/>
+        <i3dMapping id="twineRoll133" node="0>16|6|1|0|32"/>
+        <i3dMapping id="twineRoll134" node="0>16|6|1|0|33"/>
+        <i3dMapping id="twineRoll135" node="0>16|6|1|0|34"/>
+        <i3dMapping id="twineRoll136" node="0>16|6|1|0|35"/>
+        <i3dMapping id="twineRoll137" node="0>16|6|1|0|36"/>
+        <i3dMapping id="twineRoll138" node="0>16|6|1|0|37"/>
+        <i3dMapping id="twineRoll139" node="0>16|6|1|0|38"/>
+        <i3dMapping id="twineRoll140" node="0>16|6|1|0|39"/>
+        <i3dMapping id="twineRoll141" node="0>16|6|1|0|40"/>
+        <i3dMapping id="twineRoll142" node="0>16|6|1|0|41"/>
+        <i3dMapping id="twineRoll143" node="0>16|6|1|0|42"/>
+        <i3dMapping id="twineRoll144" node="0>16|6|1|0|43"/>
+        <i3dMapping id="twineRoll145" node="0>16|6|1|0|44"/>
+        <i3dMapping id="twineRoll146" node="0>16|6|1|0|45"/>
+        <i3dMapping id="twineRoll147" node="0>16|6|1|0|46"/>
+        <i3dMapping id="twineRoll148" node="0>16|6|1|0|47"/>
+    </i3dMappings>
+</vehicle>

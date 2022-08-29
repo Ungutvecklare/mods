@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="palletAttachable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <parentFile xmlFilename="xmlFilename/twinePallets.xml">
+        <attributes>
+            <set path="vehicle.storeData.image" value="image/store_claas_twine.png"/>
+            <set path="vehicle.storeData.brand" value="CLAAS"/>
+            <remove path="vehicle.configurationSets"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(13)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(12)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(11)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(10)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(9)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(8)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(7)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(6)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(5)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(4)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(3)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(1)"/>
+            <remove path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0)"/>
+         </attributes>
+    </parentFile>
+    <storeData>
+        <name>$l10n_name_twine</name>
+        <image>image/store_claas_twine.png</image>
+        <brand>CLAAS</brand>
+        <category>pallets</category>
+    </storeData>
+</vehicle>

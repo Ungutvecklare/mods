@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<beaconLight>
+    <filename>HRFFLicht/HRFFBalken/HRFFRulBalken2.i3d</filename>
+    <rootNode  node="0" />
+    <light     shaderNode="0" intensity="250"/>
+	<rotator   node="0|0" speed="0.015" />
+	<realLight node="0|0|0" />
+</beaconLight>
+

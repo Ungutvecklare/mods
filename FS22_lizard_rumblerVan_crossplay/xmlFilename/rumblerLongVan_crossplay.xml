@@ -1,0 +1,673 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vehicle type="carFillable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <storeData>
+        <name>Rumbler Long Van</name>
+        <specs>
+            <power>300</power>
+            <maxSpeed>120</maxSpeed>
+            <capacity unitTextOverride="$l10n_unit_pieces">3</capacity>
+        </specs>
+        <functions>
+            <function>$l10n_function_car</function>
+            <function>$l10n_function_pallets</function>
+        </functions>
+        <image>image/store_rumblerLongVan.png</image>
+        <price>87000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>cars</category>
+        <vertexBufferMemoryUsage>961024</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>222464</indexBufferMemoryUsage>
+        <textureMemoryUsage>3801088</textureMemoryUsage>
+        <audioMemoryUsage>423704</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_car</typeDesc>
+        <filename>filename/rumblerLongVan_crossplay.i3d</filename>
+        <sounds filename="$data/vehicles/lizard/pickup2017/sounds/pickup2017.xml"/>
+        <size length="6.5" width="3"/>
+        <components count="1">
+            <component centerOfMass="0 0.4 0" mass="1800" solverIterationCount="10"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="CAR"/>
+        <mapHotspot type="CAR"/>
+    </base>
+    <configurationSets title="$l10n_infohud_fillType">
+        <configurationSet name="$l10n_fillType_egg">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="2"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_fillType_milk">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="3"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_fillType_wool">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="4"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_category_bigbags">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="5"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_category_tank">
+            <configuration name="tensionBelts" index="1"/>
+            <configuration name="fillUnit" index="6"/>
+            <configuration name="design" index="1"/>
+        </configurationSet>
+        <configurationSet name="$l10n_ui_other">
+            <configuration name="tensionBelts" index="2"/>
+            <configuration name="fillUnit" index="1"/>
+        </configurationSet>
+    </configurationSets>
+    <designConfigurations>
+        <designConfiguration name="$l10n_configuration_valueNone" price="0"/>
+        <designConfiguration name="$l10n_configuration_valueDecals" price="0">
+            <objectChange node="0>12|4|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>12|5|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|7" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|8" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|9" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|10" visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_valueBeaconLight" price="0">
+            <objectChange node="0>15|6|0" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|6|1" visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+        <designConfiguration name="$l10n_configuration_valueDecalsBeaconLight" price="0">
+            <objectChange node="0>12|4|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>12|5|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|6|0" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|6|1" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|7" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|8" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|9" visibilityActive="true" visibilityInactive="false"/>
+            <objectChange node="0>15|10" visibilityActive="true" visibilityInactive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+    <wheels>
+        <wheelConfigurations>
+             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" driveNode="0>0|0" forcePointRatio="0.5" frictionScale="2.5" initialCompression="25" radius="0.42" repr="0>0" restLoad="0.5" rotSpeed="1" spring="14" suspTravel="0.13" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" driveNode="0>1|0" forcePointRatio="0.5" frictionScale="2.5" initialCompression="25" radius="0.42" repr="0>1" restLoad="0.5" rotSpeed="1" spring="14" suspTravel="0.13" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" forcePointRatio="0.5" frictionScale="3" initialCompression="25" radius="0.42" repr="0>2" restLoad="0.7" rotSpeed="0" spring="19" suspTravel="0.14" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics damper="3" forcePointRatio="0.5" frictionScale="3" initialCompression="25" radius="0.42" repr="0>3" restLoad="0.7" rotSpeed="0" spring="19" suspTravel="0.14" width="0.27"/>
+                        <tire tireTrackAtlasIndex="1"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotCenterWheel1="2" rotCenterWheel2="3" rotMax="42" rotSpeed="65"/>
+        </ackermannSteeringConfigurations>
+    </wheels>
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="0>16|3|0" filename="filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>16|3|1" filename="filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>16|3|2" filename="filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="0>16|3|3" filename="filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="1" linkNode="0>16|4|0" filename="filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="1" linkNode="0>16|4|1" filename="filename/objects.i3d"/>
+        <dynamicallyLoadedPart node="1" linkNode="0>16|4|2" filename="filename/objects.i3d"/>
+    </dynamicallyLoadedParts>
+    <lights>
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+        </states>
+        <sharedLight linkNode="0>4|11" filename="$data/shared/assets/lights/lizard/rearLight26White.xml" lightTypes="1"/>
+        <realLights>
+            <low>
+                <light lightTypes="0" node="0>4|0"/>
+                <light lightTypes="1" node="0>4|1"/>
+            </low>
+            <high>
+                <light lightTypes="0" node="0>4|2"/>
+                <light lightTypes="1" node="0>4|3"/>
+                <light lightTypes="1" node="0>4|9"/>
+                <light lightTypes="0 3" node="0>4|4"/>
+                <brakeLight node="0>4|4"/>
+                <brakeLight node="0>12|2|0|0"/>
+                <turnLightLeft node="0>4|5"/>
+                <turnLightLeft node="0>4|6"/>
+                <turnLightRight node="0>4|7"/>
+                <turnLightRight node="0>4|8"/>
+                <reverseLight node="0>4|12"/>
+            </high>
+        </realLights>
+        <defaultLights>
+            <defaultLight lightTypes="0 3" node="0>4|10|1"/>
+            <defaultLight lightTypes="0 3" node="0>4|10|0"/>
+            <defaultLight lightTypes="1" node="0>4|10|2"/>
+        </defaultLights>
+        <brakeLights>
+            <brakeLight node="0>4|10|6"/>
+            <brakeLight node="0>12|2|0|1"/>
+        </brakeLights>
+        <reverseLights>
+            <reverseLight node="0>4|10|3" intensity="15"/>
+        </reverseLights>
+        <turnLights>
+            <turnLightLeft node="0>4|10|4" intensity="15"/>
+            <turnLightRight node="0>4|10|5" intensity="15"/>
+        </turnLights>
+		<beaconLights>
+			 <beaconLight node="0>15|6|0" speed="0.015" filename="$data/shared/assets/beaconLights/lizard/beaconLight06.xml"/>
+			 <beaconLight node="0>15|6|1" speed="0.015" filename="$data/shared/assets/beaconLights/lizard/beaconLight06.xml"/>
+		</beaconLights>
+    </lights>
+    <licensePlates defaultPlacement="BOTH">
+        <licensePlate node="0>17" position="FRONT" preferedType="ELONGATED" placementArea="0.10 0.22 0.10 0.22"/>
+        <licensePlate node="0>12|2|3" position="BACK" preferedType="ELONGATED" placementArea="0.05 0.25 0.05 0.25"/>
+    </licensePlates>
+    <enterable isTabbable="true">
+        <enterReferenceNode node="0>"/>
+        <exitPoint node="0>8"/>
+        <cameras count="2">
+            <camera limit="true" node="0>5|0|0" rotMaxX="1" rotMinX="-1.4" rotatable="true" rotateNode="0>5|0" rotation="-17.5 180 0" transMax="40" transMin="4" translation="0 0 7.65" useWorldXZRotation="true">
+                <raycastNode node="0>5|3"/>
+                <raycastNode node="0>5|2"/>
+            </camera>
+            <camera isInside="true" limit="true" node="0>5|1" positionSmoothingParameter="0" rotMaxX="0.4" rotMinX="-1.1" rotatable="true" transMax="0" transMin="0" useMirror="true"/>
+        </cameras>
+        <mirrors>
+            <mirror node="0>10|0" prio="1"/>
+            <mirror node="0>10|1" prio="1"/>
+            <mirror node="0>10|2" prio="1"/>
+        </mirrors>
+        <characterNode cameraMinDistance="1.5" node="0>11|0" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="0>11|2"/>
+            <target ikChain="leftFoot" targetNode="0>11|1"/>
+            <target ikChain="rightArm" poseId="wideFingers" targetNode="0>6|0|1"/>
+            <target ikChain="leftArm" poseId="wideFingers" targetNode="0>6|0|0"/>
+        </characterNode>
+    </enterable>
+    <attacherJoints>
+        <attacherJoint allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1" jointType="trailer" lowerRotLimit="10 70 50" node="0>13|0|0" upperRotationOffset="0">
+            <schema invertX="false" position="1 0" rotation="0"/>
+            <attachSound linkNode="0>" template="ATTACH_01"/>
+        </attacherJoint>
+        <attacherJoint allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1" jointType="trailerLow" lowerRotLimit="10 70 50" node="0>13|0|1" upperRotationOffset="0">
+            <schema invertX="false" position="1 0" rotation="0"/>
+            <attachSound linkNode="0>" template="ATTACH_01"/>
+        </attacherJoint>
+    </attacherJoints>
+    <connectionHoses>
+        <target attacherJointIndices="1 2" node="0>13|0|2" socket="electric" type="electric"/>
+    </connectionHoses>
+    <drivable>
+        <steeringWheel indoorRotation="540" node="0>6|0" outdoorRotation="60"/>
+    </drivable>
+    <motorized statsType="car">
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillType="diesel" fillUnitIndex="1" usage="30"/>
+            </consumerConfiguration>
+        </consumerConfigurations>
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential maxSpeedRatio="1.8" torqueRatio="0.5" wheelIndex1="1" wheelIndex2="2"/>
+                    <differential maxSpeedRatio="1.8" torqueRatio="0.5" wheelIndex1="3" wheelIndex2="4"/>
+                    <differential differentialIndex1="1" differentialIndex2="2" maxSpeedRatio="1.8" torqueRatio="0.5"/>
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+        <motorConfigurations>
+            <motorConfiguration hp="300" name="Rumbler Van" price="0">
+                <motor brakeForce="1.5" lowBrakeForceScale="0.22" maxBackwardSpeed="50" maxForwardSpeed="120" maxRpm="6000" minRpm="1000" torqueScale="0.6">
+                    <torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="3480" torque="1"/>
+                    <torque rpm="4560" torque="0.75"/>
+                    <torque rpm="5280" torque="0.63"/>
+                    <torque rpm="6000" torque="0.2"/>
+                </motor>
+                <transmission maxBackwardGearRatio="200" maxForwardGearRatio="200" minBackwardGearRatio="40" minForwardGearRatio="10"/>
+            </motorConfiguration>
+        </motorConfigurations>
+        <exhaustEffects>
+            <exhaustEffect filename="$data/effects/exhaust/exhaust.i3d" maxRpmColor="0.9 0.9 0.9 0.4" maxRpmScale="0.25" minRpmColor="0.9 0.9 0.9 0.1" minRpmScale="0.02" node="0>7"/>
+        </exhaustEffects>
+        <motorStartDuration>3000</motorStartDuration>
+        <dashboards>
+            <dashboard displayType="ROT" valueType="speed" node="0>14|0|0" minRot="0" maxRot="-222" rotAxis="2" doInterpolation="true" interpolationSpeed="10" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="rpm" node="0>14|1|0" minRot="0" maxRot="-195" rotAxis="2" doInterpolation="true" interpolationSpeed="10" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </motorized>
+    <animations>
+        <animation name="backDoorsR">
+            <part node="0>12|2" startTime="0" endTime="1" startRot="0 0 0" endRot="-8.626 -172.835 14.408"/>
+        </animation>
+        <animation name="backDoorsL">
+            <part node="0>12|3" startTime="0" endTime="1" startRot="0 0 0" endRot="-8.626 172.835 -14.408"/>
+        </animation>
+        <animation name="sideDoorsR">
+            <part node="0>12|4" startTime="0.0" endTime="0.1" startTrans="0.914 1.24 0.756" endTrans="0.95 1.24 0.756"/>
+            <part node="0>12|4" startTime="0.1" endTime="1.0" startTrans="0.95 1.24 0.756" endTrans="0.988 1.24 -0.652"/>
+        </animation>
+        <animation name="sideDoorsL">
+            <part node="0>12|5" startTime="0.0" endTime="0.1" startTrans="-0.914 1.24 0.756" endTrans="-0.971 1.24 0.756"/>
+            <part node="0>12|5" startTime="0.1" endTime="1.0" startTrans="-0.971 1.24 0.756" endTrans="-0.991 1.24 -0.635"/>
+        </animation>
+        <animation name="eggAnimation">
+            <part node="0>16|0|0|0|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|0|0|0|0" startTime="0.001" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|0|0|0|1" startTime="0.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|0|0|0|2" startTime="1.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|3" startTime="0.000" endTime="2.999" visibility="false"/>
+            <part node="0>16|0|0|0|3" startTime="2.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|4" startTime="0.000" endTime="3.999" visibility="false"/>
+            <part node="0>16|0|0|0|4" startTime="3.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|5" startTime="0.000" endTime="4.999" visibility="false"/>
+            <part node="0>16|0|0|0|5" startTime="4.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|6" startTime="0.000" endTime="5.999" visibility="false"/>
+            <part node="0>16|0|0|0|6" startTime="5.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|7" startTime="0.000" endTime="6.999" visibility="false"/>
+            <part node="0>16|0|0|0|7" startTime="6.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|8" startTime="0.000" endTime="7.999" visibility="false"/>
+            <part node="0>16|0|0|0|8" startTime="7.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|9" startTime="0.000" endTime="8.999" visibility="false"/>
+            <part node="0>16|0|0|0|9" startTime="8.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|10" startTime="0.000" endTime="9.999" visibility="false"/>
+            <part node="0>16|0|0|0|10" startTime="9.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|11" startTime="0.000" endTime="10.999" visibility="false"/>
+            <part node="0>16|0|0|0|11" startTime="10.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|12" startTime="0.000" endTime="11.999" visibility="false"/>
+            <part node="0>16|0|0|0|12" startTime="11.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|13" startTime="0.000" endTime="12.999" visibility="false"/>
+            <part node="0>16|0|0|0|13" startTime="12.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|14" startTime="0.000" endTime="13.999" visibility="false"/>
+            <part node="0>16|0|0|0|14" startTime="13.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|0|0|15" startTime="0.000" endTime="14.999" visibility="false"/>
+            <part node="0>16|0|0|0|15" startTime="14.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|0" startTime="0.000" endTime="15.999" visibility="false"/>
+            <part node="0>16|0|1|0|0" startTime="15.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|1" startTime="0.000" endTime="16.999" visibility="false"/>
+            <part node="0>16|0|1|0|1" startTime="16.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|2" startTime="0.000" endTime="17.999" visibility="false"/>
+            <part node="0>16|0|1|0|2" startTime="17.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|3" startTime="0.000" endTime="18.999" visibility="false"/>
+            <part node="0>16|0|1|0|3" startTime="18.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|4" startTime="0.000" endTime="19.999" visibility="false"/>
+            <part node="0>16|0|1|0|4" startTime="19.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|5" startTime="0.000" endTime="20.999" visibility="false"/>
+            <part node="0>16|0|1|0|5" startTime="20.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|6" startTime="0.000" endTime="21.999" visibility="false"/>
+            <part node="0>16|0|1|0|6" startTime="21.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|7" startTime="0.000" endTime="22.999" visibility="false"/>
+            <part node="0>16|0|1|0|7" startTime="22.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|8" startTime="0.000" endTime="23.999" visibility="false"/>
+            <part node="0>16|0|1|0|8" startTime="23.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|9" startTime="0.000" endTime="24.999" visibility="false"/>
+            <part node="0>16|0|1|0|9" startTime="24.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|10" startTime="0.000" endTime="25.999" visibility="false"/>
+            <part node="0>16|0|1|0|10" startTime="25.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|11" startTime="0.000" endTime="26.999" visibility="false"/>
+            <part node="0>16|0|1|0|11" startTime="26.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|12" startTime="0.000" endTime="27.999" visibility="false"/>
+            <part node="0>16|0|1|0|12" startTime="27.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|13" startTime="0.000" endTime="28.999" visibility="false"/>
+            <part node="0>16|0|1|0|13" startTime="28.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|14" startTime="0.000" endTime="29.999" visibility="false"/>
+            <part node="0>16|0|1|0|14" startTime="29.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|1|0|15" startTime="0.000" endTime="30.999" visibility="false"/>
+            <part node="0>16|0|1|0|15" startTime="30.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|0" startTime="0.000" endTime="31.999" visibility="false"/>
+            <part node="0>16|0|2|0|0" startTime="31.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|1" startTime="0.000" endTime="32.999" visibility="false"/>
+            <part node="0>16|0|2|0|1" startTime="32.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|2" startTime="0.000" endTime="33.999" visibility="false"/>
+            <part node="0>16|0|2|0|2" startTime="33.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|3" startTime="0.000" endTime="34.999" visibility="false"/>
+            <part node="0>16|0|2|0|3" startTime="34.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|4" startTime="0.000" endTime="35.999" visibility="false"/>
+            <part node="0>16|0|2|0|4" startTime="35.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|5" startTime="0.000" endTime="36.999" visibility="false"/>
+            <part node="0>16|0|2|0|5" startTime="36.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|6" startTime="0.000" endTime="37.999" visibility="false"/>
+            <part node="0>16|0|2|0|6" startTime="37.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|7" startTime="0.000" endTime="38.999" visibility="false"/>
+            <part node="0>16|0|2|0|7" startTime="38.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|8" startTime="0.000" endTime="39.999" visibility="false"/>
+            <part node="0>16|0|2|0|8" startTime="39.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|9" startTime="0.000" endTime="40.999" visibility="false"/>
+            <part node="0>16|0|2|0|9" startTime="40.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|10" startTime="0.000" endTime="41.999" visibility="false"/>
+            <part node="0>16|0|2|0|10" startTime="41.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|11" startTime="0.000" endTime="42.999" visibility="false"/>
+            <part node="0>16|0|2|0|11" startTime="42.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|12" startTime="0.000" endTime="43.999" visibility="false"/>
+            <part node="0>16|0|2|0|12" startTime="43.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|13" startTime="0.000" endTime="44.999" visibility="false"/>
+            <part node="0>16|0|2|0|13" startTime="44.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|14" startTime="0.000" endTime="45.999" visibility="false"/>
+            <part node="0>16|0|2|0|14" startTime="45.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|2|0|15" startTime="0.000" endTime="46.999" visibility="false"/>
+            <part node="0>16|0|2|0|15" startTime="46.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|0" startTime="0.000" endTime="47.999" visibility="false"/>
+            <part node="0>16|0|3|0|0" startTime="47.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|1" startTime="0.000" endTime="48.999" visibility="false"/>
+            <part node="0>16|0|3|0|1" startTime="48.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|2" startTime="0.000" endTime="49.999" visibility="false"/>
+            <part node="0>16|0|3|0|2" startTime="49.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|3" startTime="0.000" endTime="50.999" visibility="false"/>
+            <part node="0>16|0|3|0|3" startTime="20.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|4" startTime="0.000" endTime="51.999" visibility="false"/>
+            <part node="0>16|0|3|0|4" startTime="51.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|5" startTime="0.000" endTime="52.999" visibility="false"/>
+            <part node="0>16|0|3|0|5" startTime="52.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|6" startTime="0.000" endTime="53.999" visibility="false"/>
+            <part node="0>16|0|3|0|6" startTime="53.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|7" startTime="0.000" endTime="54.999" visibility="false"/>
+            <part node="0>16|0|3|0|7" startTime="54.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|8" startTime="0.000" endTime="55.999" visibility="false"/>
+            <part node="0>16|0|3|0|8" startTime="55.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|9" startTime="0.000" endTime="56.999" visibility="false"/>
+            <part node="0>16|0|3|0|9" startTime="56.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|10" startTime="0.000" endTime="57.999" visibility="false"/>
+            <part node="0>16|0|3|0|10" startTime="57.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|11" startTime="0.000" endTime="58.999" visibility="false"/>
+            <part node="0>16|0|3|0|11" startTime="58.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|12" startTime="0.000" endTime="59.999" visibility="false"/>
+            <part node="0>16|0|3|0|12" startTime="59.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|13" startTime="0.000" endTime="60.999" visibility="false"/>
+            <part node="0>16|0|3|0|13" startTime="60.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|14" startTime="0.000" endTime="61.999" visibility="false"/>
+            <part node="0>16|0|3|0|14" startTime="61.999" endTime="63.000" visibility="true"/>
+            <part node="0>16|0|3|0|15" startTime="0.000" endTime="62.999" visibility="false"/>
+            <part node="0>16|0|3|0|15" startTime="62.999" endTime="63.000" visibility="true"/>
+        </animation>
+        <animation name="milkAnimation">
+            <part node="0>16|1|0|0|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|1|0|0|0" startTime="0.001" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|0|0|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|1|0|0|1" startTime="0.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|0|0|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|1|0|0|2" startTime="1.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|0|0|3" startTime="0.000" endTime="2.999" visibility="false"/>
+            <part node="0>16|1|0|0|3" startTime="2.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|0|0|4" startTime="0.000" endTime="3.999" visibility="false"/>
+            <part node="0>16|1|0|0|4" startTime="3.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|0|0|5" startTime="0.000" endTime="4.999" visibility="false"/>
+            <part node="0>16|1|0|0|5" startTime="4.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|1|0|0" startTime="0.000" endTime="5.999" visibility="false"/>
+            <part node="0>16|1|1|0|0" startTime="5.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|1|0|1" startTime="0.000" endTime="6.999" visibility="false"/>
+            <part node="0>16|1|1|0|1" startTime="6.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|1|0|2" startTime="0.000" endTime="7.999" visibility="false"/>
+            <part node="0>16|1|1|0|2" startTime="7.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|1|0|3" startTime="0.000" endTime="8.999" visibility="false"/>
+            <part node="0>16|1|1|0|3" startTime="8.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|1|0|4" startTime="0.000" endTime="9.999" visibility="false"/>
+            <part node="0>16|1|1|0|4" startTime="9.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|1|0|5" startTime="0.000" endTime="10.999" visibility="false"/>
+            <part node="0>16|1|1|0|5" startTime="10.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|2|0|0" startTime="0.000" endTime="11.999" visibility="false"/>
+            <part node="0>16|1|2|0|0" startTime="11.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|2|0|1" startTime="0.000" endTime="12.999" visibility="false"/>
+            <part node="0>16|1|2|0|1" startTime="12.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|2|0|2" startTime="0.000" endTime="13.999" visibility="false"/>
+            <part node="0>16|1|2|0|2" startTime="13.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|2|0|3" startTime="0.000" endTime="14.999" visibility="false"/>
+            <part node="0>16|1|2|0|3" startTime="14.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|2|0|4" startTime="0.000" endTime="15.999" visibility="false"/>
+            <part node="0>16|1|2|0|4" startTime="15.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|2|0|5" startTime="0.000" endTime="16.999" visibility="false"/>
+            <part node="0>16|1|2|0|5" startTime="16.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|3|0|0" startTime="0.000" endTime="17.999" visibility="false"/>
+            <part node="0>16|1|3|0|0" startTime="17.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|3|0|1" startTime="0.000" endTime="18.999" visibility="false"/>
+            <part node="0>16|1|3|0|1" startTime="18.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|3|0|2" startTime="0.000" endTime="19.999" visibility="false"/>
+            <part node="0>16|1|3|0|2" startTime="19.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|3|0|3" startTime="0.000" endTime="20.999" visibility="false"/>
+            <part node="0>16|1|3|0|3" startTime="20.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|3|0|4" startTime="0.000" endTime="21.999" visibility="false"/>
+            <part node="0>16|1|3|0|4" startTime="21.999" endTime="23.000" visibility="true"/>
+            <part node="0>16|1|3|0|5" startTime="0.000" endTime="22.999" visibility="false"/>
+            <part node="0>16|1|3|0|5" startTime="22.999" endTime="23.000" visibility="true"/>
+        </animation>
+        <animation name="woolAnimation">
+            <part node="0>16|2|0|0|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|2|0|0|0" startTime="0.001" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|0|0|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|2|0|0|1" startTime="0.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|0|0|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|2|0|0|2" startTime="1.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|0|0|3" startTime="0.000" endTime="2.999" visibility="false"/>
+            <part node="0>16|2|0|0|3" startTime="2.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|1|0|0" startTime="0.000" endTime="3.999" visibility="false"/>
+            <part node="0>16|2|1|0|0" startTime="3.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|1|0|1" startTime="0.000" endTime="4.999" visibility="false"/>
+            <part node="0>16|2|1|0|1" startTime="4.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|1|0|2" startTime="0.000" endTime="5.999" visibility="false"/>
+            <part node="0>16|2|1|0|2" startTime="5.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|1|0|3" startTime="0.000" endTime="6.999" visibility="false"/>
+            <part node="0>16|2|1|0|3" startTime="6.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|2|0|0" startTime="0.000" endTime="7.999" visibility="false"/>
+            <part node="0>16|2|2|0|0" startTime="7.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|2|0|1" startTime="0.000" endTime="8.999" visibility="false"/>
+            <part node="0>16|2|2|0|1" startTime="8.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|2|0|2" startTime="0.000" endTime="9.999" visibility="false"/>
+            <part node="0>16|2|2|0|2" startTime="9.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|2|0|3" startTime="0.000" endTime="10.999" visibility="false"/>
+            <part node="0>16|2|2|0|3" startTime="10.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|3|0|0" startTime="0.000" endTime="11.999" visibility="false"/>
+            <part node="0>16|2|3|0|0" startTime="11.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|3|0|1" startTime="0.000" endTime="12.999" visibility="false"/>
+            <part node="0>16|2|3|0|1" startTime="12.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|3|0|2" startTime="0.000" endTime="13.999" visibility="false"/>
+            <part node="0>16|2|3|0|2" startTime="13.999" endTime="15.000" visibility="true"/>
+            <part node="0>16|2|3|0|3" startTime="0.000" endTime="14.999" visibility="false"/>
+            <part node="0>16|2|3|0|3" startTime="14.999" endTime="15.000" visibility="true"/>
+        </animation>
+        <animation name="bigBagAnimation">
+            <part node="0>16|3|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|3|0" startTime="0.001" endTime="3.000" visibility="true"/>
+            <part node="0>16|3|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|3|1" startTime="0.999" endTime="3.000" visibility="true"/>
+            <part node="0>16|3|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|3|2" startTime="1.999" endTime="3.000" visibility="true"/>
+            <part node="0>16|3|3" startTime="0.000" endTime="2.999" visibility="false"/>
+            <part node="0>16|3|3" startTime="2.999" endTime="3.000" visibility="true"/>
+        </animation>
+        <animation name="tankAnimation">
+            <part node="0>16|4|0" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="0>16|4|0" startTime="0.001" endTime="2.000" visibility="true"/>
+            <part node="0>16|4|1" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="0>16|4|1" startTime="0.999" endTime="2.000" visibility="true"/>
+            <part node="0>16|4|2" startTime="0.000" endTime="1.999" visibility="false"/>
+            <part node="0>16|4|2" startTime="1.999" endTime="2.000" visibility="true"/>
+        </animation>
+        <animation name="wipers">
+            <part node="0>18|0|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -90 0"/>
+            <part node="0>18|1|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 -90 0"/>
+            <sound template="wiper1" startTime="0" endTime="1" direction="1"  volumeScale="1" pitchScale="0.7" fadeOut="0.1" linkNode="0>18|0"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="1" pitchScale="0.7" fadeOut="0.1" linkNode="0>18|1"/>
+        </animation>
+    </animations>
+    <wipers>
+        <wiper animName="wipers">
+            <state animSpeed="1.2" animPause="2.0"/>
+            <state animSpeed="1.2" animPause="0.0"/>
+            <state animSpeed="1.8" animPause="0.0"/>
+        </wiper>
+    </wipers>
+    <cylindered>
+        <movingTools>
+            <movingTool node="0>12|2" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_ARM" iconName="FRONTLOADER_ARM_ROTATE" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="backDoorsR" animSpeed="0.5"/>
+            </movingTool>
+            <movingTool node="0>12|3" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_ARM2" iconName="FRONTLOADER_ARM_ROTATE" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="backDoorsL" animSpeed="0.5"/>
+            </movingTool>
+            <movingTool node="0>12|4" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_TOOL" iconName="IMPLEMENT_ATTACHER_TRANS" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="sideDoorsR" animSpeed="0.5"/>
+            </movingTool>
+            <movingTool node="0>12|5" playSound="true">
+                <controls axis="AXIS_FRONTLOADER_TOOL2" iconName="IMPLEMENT_ATTACHER_TRANS" invertAxis="false" mouseSpeedFactor="0.7"/>
+                <animation animName="sideDoorsL" animSpeed="0.5"/>
+            </movingTool>
+        </movingTools>
+    </cylindered>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="diesel" capacity="0"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="egg" capacity="9040" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="eggAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|0" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="milk" capacity="2720" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="milkAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|1" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="wool" capacity="4000" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="woolAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|2" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading node="0>13|2" width="5" offset="0 0 0"/>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="wheat fertilizer oat lime pigFood seeds roadSalt barley canola sorghum sunflower soybean maize mineral_feed" capacity="4000" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="bigBagAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|3" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <unloading node="0>13|2" width="5" offset="0 0 0"/>
+                    <fillUnit capacity="120" fillTypes="diesel" showInShop="false" showOnHud="false" unitTextOverride="$l10n_unit_literShort">
+                        <dashboard displayType="ROT" valueType="fillLevel" node="0>14|2|0" minRot="0" maxRot="68" rotAxis="2" doInterpolation="true" interpolationSpeed="0.3" groups="MOTOR_ACTIVE"/>
+                    </fillUnit>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="liquidfertilizer herbicide silage_additive" capacity="6000" allowAILoading="true">
+                        <dashboard displayType="ANIMATION" valueType="fillLevel" animName="tankAnimation"/>
+                        <exactFillRootNode node="0>13|3|0"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="0>16|4" visibilityActive="true" visibilityInactive="false"/>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <dischargeable>
+        <dischargeNode node="0>13|3|2" emptySpeed="500" fillUnitIndex="2" canDischargeToGround="false">
+            <info width="2.0" length="0.5"/>
+            <trigger node="0>13|3|3"/>
+        </dischargeNode>
+    </dischargeable>
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration/>
+            <tensionBeltsConfiguration>
+                <tensionBelts activationTrigger="0>13|1|3" defaultHeight="4" defaultOffset="0.1" defaultOffsetSide="0.1" geometryBias="0.01" jointNode="0>" linkNode="0>13|1" maxEdgeLength="0.1" ratchetPosition="0.2" width="0.075">
+                    <tensionBelt endNode="0>13|1|0|0" startNode="0>13|1|0"/>
+                    <tensionBelt endNode="0>13|1|1|0" startNode="0>13|1|1"/>
+                    <tensionBelt endNode="0>13|1|2|0" startNode="0>13|1|2"/>
+                    <sounds>
+                        <addBelt template="beltOpen"/>
+                        <removeBelt template="beltClose"/>
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+    <suspensions>
+        <suspension maxRotation="0 5 5" minRotation="0 -5 -5" suspensionParametersY="7 1" suspensionParametersZ="7 1" useCharacterTorso="true" weight="90"/>
+    </suspensions>
+    <dashboard>
+        <groups>
+            <group isMotorStarting="true" name="MOTOR_STARTING"/>
+            <group isMotorRunning="true" isMotorStarting="true" name="MOTOR_ACTIVE"/>
+        </groups>
+    </dashboard>
+    <ai>
+        <agent width="2.05" length="7.5" height="1.85" lengthOffset="1.35" frontOffset="3.09"/>
+        <collisionTrigger node="0>9" width="2.4" height="1.8"/>
+    </ai>
+    <honk>
+        <sound template="HONK_JD8400R"/>
+    </honk>
+    <foliageBending>
+        <bendingNode maxX="1.15" maxZ="2.8" minX="-1.15" minZ="-2.8" yOffset="0.05"/>
+    </foliageBending>
+    <baseMaterial>
+        <material baseNode="0>15" name="rumblerVan_mat">
+            <shaderParameter name="colorMat0" value="SHARED_GREY2"/>
+        </material>
+        <material baseNode="0>15|2" name="rumblerVan_interior_mat">
+            <shaderParameter name="colorMat0" value="SHARED_GREY2"/>
+        </material>
+        <material baseNode="0>0|0|0|0" name="rumblerVanRims_mat">
+            <shaderParameter name="colorMat0" value="0.5669 0.5669 0.5669 8"/>
+        </material>
+    </baseMaterial>
+    <dischargeable requiresTipOcclusionArea="false"/>
+    <baseMaterialConfigurations defaultColorIndex="3" price="1000" useDefaultColors="true">
+        <material name="rumblerVan_mat" shaderParameter="colorMat0"/>
+        <material name="rumblerVan_interior_mat" shaderParameter="colorMat0"/>
+    </baseMaterialConfigurations>
+    <designMaterialConfigurations defaultColorIndex="0" price="100" useDefaultColors="true">
+        <designMaterialConfiguration color="0.5669 0.5669 0.5669" material="8" name="SILVER"/>
+        <material name="rumblerVanRims_mat" shaderParameter="colorMat0"/>
+    </designMaterialConfigurations>
+    <wearable fieldMultiplier="2" wearDuration="480" workMultiplier="5"/>
+    <washable dirtDuration="90" fieldMultiplier="2" washDuration="1" workMultiplier="3"/>
+</vehicle>

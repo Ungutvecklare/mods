@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="67">
+
+    <author>johnwayne1930</author>
+    <version>1.1.1.0</version>
+
+    <title>
+        <en>Autoload Stock Trailer Pack</en>
+    </title>
+
+	<description>
+		<en><![CDATA[
+Various pure stock FS22 trailer with autoload for pallets, round- and squarebales, cotton roundbales:
+FS22 Pallet Autoloader Specialization is required to make the autoload work!
+
+- Boeckmann KK 3018/27 H
+Capacity: max. 12 pallets
+Price: 12,000$
+
+- Boeckmann MH-AL-4320
+Capacity: max. 24 pallets
+Price: 8,000$
+
+- Brantner DD 24073/2 XXL
+Capacity: max. 64 pallets, 3 Cotton roundbales (bale wagon configuration)
+Price: 39,650$
+
+- Bremer Transportwagen TP 500 S
+Capacity: max. 40 pallets, 2 Cotton roundbales
+Price: 15,000$
+
+- Farmtech DPW 1800
+Capacity: max. 66 pallets, 4 Cotton roundbales
+Price: 19,500$
+
+- Kroeger PWO 24
+Capacity: max. 66 pallets, 4 Cotton roundbales (Design 1)
+Price: 21,500$
+
+- Krone Profi Liner
+Capacity: max. 75 pallets, 5 Cotton roundbales
+Price: 29,500$
+
+- Salek ANS-1900
+Capacity: max. 4 pallets
+Price: 3,500$
+
+- Welger DK 115
+Capacity: max. 18 pallets (bale wagon configuration)
+Price: 11,500$
+
+(*Number of pallets can vary depending on the product.)
+
+Changelog:
+1.1.1.0
+- Adjusted maximum objects for various cargo in all trailers. (requires FS22_aPalletAutoLoader v1.8.0.0 or above)
+- Squarebales-120 are now supported (requires FS22_aPalletAutoLoader v1.8.0.0 or above)
+- Adopted xml ajustments from basegame for ans1600 and profiLiner
+- Adjusted mod description
+
+1.1.0.0
+- added Salek ANS-1900
+- update descVersion
+- adopted xml ajustments from basegame for dd24073, dpw1800, mhal4320, pwo24 and transportwagen
+- adjusted unloading positions
+]]></en>
+		<de><![CDATA[
+Verschiedene standard FS22 Anhänger mit Autoloader für Paletten, Rund- und Quaderballen sowie Baumwollrundballen:
+FS22 Paletten Autoloader Spezialisierung ist erforderlich, damit der Autoload funktioniert!
+
+- Boeckmann KK 3018/27 H
+Kapazität: max. 12 Paletten
+Preis: 12.000€
+
+- Boeckmann MH-AL-4320
+Kapazität: max. 24 Paletten
+Preis: 8.000€
+
+- Brantner DD 24073/2 XXL
+Kapazität: max. 64 Paletten, 3 Baumwollrundballen  (Ballenwagen Konfiguration)
+Preis: 39.650€
+
+- Bremer Transportwagen TP 500 S
+Kapazität: max. 40 Paletten, 2 Baumwollrundballen
+Preis: 15.000€
+
+- Farmtech DPW 1800
+Kapazität: max. 66 Paletten, 4 Baumwollrundballen
+Preis: 19.500€
+
+- Kroeger PWO 24
+Kapazität: max. 66 Paletten, 4 Baumwollrundballen (Design 1)
+Preis: 21.500€
+
+- Krone Profi Liner
+Kapazität: max. 80 Paletten, 5 Baumwollrundballen
+Preis: 29.500€
+
+- Salek ANS-1900
+Kapazität: max. 4 Paletten
+Preis: 3.500€
+
+- Welger DK 115
+Kapazität: max. 18 Paletten  (Ballenwagen Konfiguration)
+Preis: 11.500€
+
+(*Anzahl der Paletten kann abhängig vom Produkt variieren.)
+
+Changelog:
+1.1.1.0
+- Maximale Objekte für diverses Ladegut in allen Anhängern angepasst. (benötigt FS22_aPalletAutoLoader v1.8.0.0 oder höher)
+- Support für Quaderballen-120 (benötigt FS22_aPalletAutoLoader v1.8.0.0 oder höher)
+- Xml anpassungen aus dem Basisspiel übernommen für ans1600 und profiLiner
+- Modbeschreibung angepasst
+
+1.1.0.0
+- Salek ANS-1900 hinzugefügt
+- Update descVersion
+- Xml anpassungen aus dem Basisspiel übernommen für dd24073, dpw1800, mhal4320, pwo24 und transportwagen
+- Abladepositionen angepasst
+]]></de>
+	</description>
+
+	<dependencies>
+		<dependency>FS22_aPalletAutoLoader</dependency>
+	</dependencies>	
+
+	<iconFilename>icon_autoLoadStockTrailerPack.png</iconFilename>
+
+	<multiplayer supported="true" />
+
+	<l10n>
+		<text name="configuration_valueAutoload">
+			<en>Autoload</en>
+		</text>
+		<text name="configuration_aPalletAutoloader_active">
+			<en>AL: Bale loading</en>
+			<de>AL: Ballen laden</de>
+		</text>
+		<text name="configuration_bales_on">
+			<en>On</en>
+			<de>Ein</de>
+		</text>
+		<text name="configuration_bales_off">
+			<en>Off</en>
+			<de>Aus</de>
+		</text>
+	</l10n>		
+		
+	<storeItems>
+		<storeItem xmlFilename="ans1900/ans1900.xml"/>
+		<storeItem xmlFilename="dd24073/dd24073.xml"/>
+		<storeItem xmlFilename="dk115/dk115.xml"/>
+		<storeItem xmlFilename="dpw1800/dpw1800.xml"/>
+		<storeItem xmlFilename="kk301827H/kk301827H.xml"/>
+		<storeItem xmlFilename="mhal4320/mhal4320.xml"/>
+		<storeItem xmlFilename="profiLiner/profiLiner.xml"/>
+		<storeItem xmlFilename="pwo24/pwo24.xml"/>
+		<storeItem xmlFilename="transportwagen/transportwagen.xml"/>
+	</storeItems>
+
+	<vehicleTypes>
+		<type name="PalletAutoLoaderTrailer" parent="trailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+		</type>
+		<type name="PalletAutoLoaderDynMATrailer" parent="dynamicMountAttacherTrailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+		</type>
+	</vehicleTypes>	
+
+</modDesc>

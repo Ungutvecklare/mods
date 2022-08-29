@@ -1,0 +1,5 @@
+-- author: DD ModPassion
+-- date: 22.11.2021
+-- copyright (C): DD ModPassion, All Rights Reserved
+-- version: Farming Simulator 22
+RemoveDuplicateModStoreItem = {} local modName = g_currentModName function RemoveDuplicateModStoreItem.removeDuplicateItem(modName) for item = 1, #g_storeManager.items do if string.match(g_storeManager.items[item].xmlFilename, modName) and string.match(g_storeManager.items[item].rawXMLFilename, "crossplay") then g_storeManager.items[item].showInStore = false end end end function RemoveDuplicateModStoreItem.loadMap() RemoveDuplicateModStoreItem.removeDuplicateItem(modName) end function RemoveDuplicateModStoreItem.init() FSBaseMission.loadMap = Utils.prependedFunction(FSBaseMission.loadMap, RemoveDuplicateModStoreItem.loadMap) end RemoveDuplicateModStoreItem.init()

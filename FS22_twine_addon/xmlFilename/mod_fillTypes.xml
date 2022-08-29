@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/fillTypes.xsd">
+    <fillTypes>
+        <fillType name="TWINE" title="$l10n_fillType_twineLizard" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.0008" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.005"/>
+            <image hud="image/hud_fill_twine.png"/>
+            <pallet filename="xmlFilename/twinePallet.xml"/>
+        </fillType>
+        <fillType name="CASEIH_TWINE" title="$l10n_fillType_twineCaseIH" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.0008" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.005"/>
+            <image hud="image/hud_fill_twine.png"/>
+            <pallet filename="xmlFilename/caseIH_twinePallet.xml"/>
+        </fillType>
+        <fillType name="CLAAS_TWINE" title="$l10n_fillType_twineClaas" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.0008" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.005"/>
+            <image hud="image/hud_fill_twine.png"/>
+            <pallet filename="xmlFilename/claas_twinePallet.xml"/>
+        </fillType>
+        <fillType name="KRONE_TWINE" title="$l10n_fillType_twineKrone" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.0008" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.005"/>
+            <image hud="image/hud_fill_twine.png"/>
+            <pallet filename="xmlFilename/krone_twinePallet.xml"/>
+        </fillType>
+        <fillType name="KUHN_TWINE" title="$l10n_fillType_twineKuhn" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.0008" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.005"/>
+            <image hud="image/hud_fill_twine.png"/>
+            <pallet filename="xmlFilename/kuhn_twinePallet.xml"/>
+        </fillType>
+        <fillType name="MASSEYFERGUSON_TWINE" title="$l10n_fillType_twineMasseyFerguson" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.0008" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.005"/>
+            <image hud="image/hud_fill_twine.png"/>
+            <pallet filename="xmlFilename/masseyFerguson_twinePallet.xml"/>
+        </fillType>
+        <fillType name="NEWHOLLAND_TWINE" title="$l10n_fillType_twineNewHolland" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.0008" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.005"/>
+            <image hud="image/hud_fill_twine.png"/>
+            <pallet filename="xmlFilename/newHolland_twinePallet.xml"/>
+        </fillType>
+    </fillTypes>
+    <fillTypeCategories>
+        <fillTypeCategory name="TWINE">TWINE CASEIH_TWINE CLAAS_TWINE KRONE_TWINE KUHN_TWINE MASSEYFERGUSON_TWINE NEWHOLLAND_TWINE</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">TWINE CASEIH_TWINE CLAAS_TWINE KRONE_TWINE KUHN_TWINE MASSEYFERGUSON_TWINE NEWHOLLAND_TWINE</fillTypeCategory>
+    </fillTypeCategories>
+</map>

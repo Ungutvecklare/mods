@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<beaconLight>
+    <filename>HRFFLicht/HRFFFlasher/Blitz2.i3d</filename>
+    <rootNode  node="0" />
+    <light     shaderNode="0|1" intensity="175"/>
+	<device    mode="BLINK" rpm="80" numLEDScale="1" brightnessScale="1" />
+</beaconLight>
+

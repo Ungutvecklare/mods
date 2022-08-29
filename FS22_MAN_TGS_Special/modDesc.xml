@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="67">
+    <author>HR Forst und Fahrzeugbau</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>MAN TGS Special</en>
+		<de>MAN TGS Spezial</de>
+    </title>
+	
+    <description>
+        <en>
+            <![CDATA[MAN TGS Special Pack
+
+MAN TGS Spezial,thanks to its rotating cab, is ideal for forestry and agriculture.
+Thanks to it, it is much easier to work with the crane or other equipment.
+
+The TGS can drive just as fast with the cab reversed as it can forward.
+The fifth wheel plate can be moved for a better load distribution.
+
+The pack includes
+- TGS Special 4x4
+- TGS Special 6x4
+
+Store Options:
+- Windshield Decal
+- 4 tire manufacturers
+- Front flashers
+- Bullbar with different configurations
+- Trailer hitch
+- Engine design
+- Color change for bullbar, chassis, seat, rims
+- License Plate
+
+Power: from 500 HP
+Prices: from 130.000 $
+]]>
+        </en>
+        <de>
+            <![CDATA[MAN TGS Spezial Pack
+
+Der MAN TGS Spezial ist, dank seiner Drehkabine, ideal für den Forst- und Agrarbereich.
+Dank ihr ist ein viel einfacheres arbeiuten mit dem Kran oder sonstigen Geräten möglich.
+
+Der TGS kann bei umgedrehter Kabine genauso schnell fahren wie vorwärts.
+Die Sattelplatte ist für eine bessere Lastverteilung verschiebbar.
+
+Das Pack beinhaltet
+- TGS Spezial 4x4
+- TGS Spezial 6x4
+
+Shop Optionen:
+- Frontscheibenaufkleber
+- 4 Reifenhersteller
+- Frontblitzer
+- Bullbar mit verschiedenen Konfigurationen
+- Anhängerkupplung
+- Motorausführung
+- Farbwahlen für Bullbar, Fahrgestell, Sitz, Felgen
+- Nummernschild
+
+Leistung: ab 500 PS
+Preise: ab: 130.000 €
+]]>
+        </de>
+    </description>
+	
+    <iconFilename>iconPack.dds</iconFilename>
+	
+	<vehicleTypes>
+		<type name="MRFTGSSattel" parent="woodTruck" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+		</type>
+	</vehicleTypes>
+	
+	<multiplayer supported="true"/>
+	
+    <storeItems>
+        <storeItem xmlFilename="tgsPferd.xml"/>
+		<storeItem xmlFilename="tgsPferd_6x4.xml"/>
+    </storeItems>
+	
+	<l10n>	
+		<text name="Flasher">
+			<en>Flash Lights</en>
+			<de>Frontblitzer</de>
+		</text>
+		<text name="Seat">
+			<en>Seat Color</en>
+			<de>Sitzfarbe</de>
+		</text>
+		<text name="DecalColor">
+			<en>Decal Color</en>
+			<de>Aufkleberfarbe</de>
+		</text>
+		<text name="Decal">
+			<en>Front Window Decal</en>
+			<de>Frontscheibenaufkleber</de>
+		</text>
+		<text name="FrontBack">
+			<en>Front- and  Rear-wheel steering</en>
+			<de>Vorder- und Hinterradlenkung</de>
+		</text>
+		<text name="POLISHEDMETAL"  >		<en>POLISHED METAL</en>				<de>Poliertes Metal</de>			</text>
+		<text name="SPECIALBLUE1" >			<en>SPECIAL BLUE 1</en>				<de>Spezial Blau 1</de>				</text>
+		<text name="SPECIALYELLOW" >		<en>SPECIAL YELLOW</en>				<de>Spezial Gelb</de>				</text>
+		<text name="SPECIALBLUE2" >			<en>SPECIAL BLUE 2</en>				<de>Spezial Blau 2</de>				</text>
+		<text name="SPECIALGREEN" >			<en>SPECIAL GREEN</en>				<de>Spezial Grün</de>				</text>
+		<text name="BLACK" >				<en>BLACK</en>						<de>Schwarz</de>					</text>
+		<text name="MANRED" >				<en>MAN RED</en>					<de>MAN Rot</de>					</text>
+		<text name="MANOLDGREEN" >			<en>MAN OLDGREEN</en>				<de>MAN Altgrün</de>				</text>
+		<text name="BROWN" >				<en>BROWN</en>						<de>Braun</de>						</text>
+		<text name="BLUE" >					<en>BLUE</en>						<de>Blau</de>						</text>
+		<text name="BLUE1" >				<en>BLUE 1</en>						<de>Blau 1</de>						</text>
+		<text name="BLUE2" >				<en>BLUE 2</en>						<de>Blau 2</de>						</text>
+		<text name="BLUE3" >				<en>BLUE 3</en>						<de>Blau 3</de>						</text>
+		<text name="GREEN1" >				<en>GREEN 1</en>					<de>Grün 1</de>						</text>
+		<text name="GREEN2" >				<en>GREEN 2</en>					<de>Grün 2</de>						</text>
+		<text name="GREEN3" >				<en>GREEN 3</en>					<de>Grün 3</de>						</text>
+		<text name="GREEN4" >				<en>GREEN 4</en>					<de>Grün 4</de>						</text>
+		<text name="PINK/RED" >				<en>PINK/RED</en>					<de>Pink/Rot</de>					</text>
+		<text name="BERRY" >				<en>BERRY</en>						<de>Beere</de>						</text>
+		<text name="WHITE" >				<en>WHITE</en>						<de>Weiß</de>						</text>
+		<text name="DARKGRAY" >				<en>DARKGRAY</en>					<de>Dunkelgrau</de>					</text>
+		<text name="YELLOW1" >				<en>YELLOW 1</en>					<de>Gelb 1</de>						</text>
+		<text name="YELLOW2" >				<en>YELLOW 2</en>					<de>Gelb 2</de>						</text>
+		<text name="YELLOW3" >				<en>YELLOW 3</en>					<de>Gelb 3</de>						</text>
+		<text name="SPECIALBLUE1METAL" >	<en>SPECIAL BLUE 1 METAL</en>		<de>Spezial Blau 1 Metal</de>		</text>
+		<text name="SPECIALYELLOWMETAL" >	<en>SPECIAL YELLOW METAL</en>		<de>Spezial Gelb Metal</de>			</text>
+		<text name="SPECIALBLUE2METAL" >	<en>SPECIAL BLUE 2 METAL</en>		<de>Spezial Blau 2 Metal</de>		</text>
+		<text name="SPECIALGREENMETAL" >	<en>SPECIAL GREEN METAL</en>		<de>Spezial Grün Metal</de>			</text>
+		<text name="BLACKMETAL" >			<en>BLACK METAL</en>				<de>Schwarz Metal</de>				</text>
+		<text name="MANREDMETAL" >			<en>MAN RED METAL</en>				<de>MAN Rot Metal</de>				</text>
+		<text name="MANOLDGREENMETAL" >		<en>MAN OLDGREEN METAL</en>			<de>MAN Altgrün Metal</de>			</text>
+		<text name="BROWNMETAL" >			<en>BROWN METAL</en>				<de>Braun Metal</de>				</text>
+		<text name="BLUEMETAL" >			<en>BLUE METAL</en>					<de>Blau Metal</de>					</text>
+		<text name="BLUE1METAL" >			<en>BLUE 1 METAL</en>				<de>Blau 1 Metal</de>				</text>
+		<text name="BLUE2METAL" >			<en>BLUE 2 METAL</en>				<de>Blau 2 Metal</de>				</text>
+		<text name="BLUE3METAL" >			<en>BLUE 3 METAL</en>				<de>Blau 3 Metal</de>				</text>
+		<text name="GREEN1METAL" >			<en>GREEN 1 METAL</en>				<de>Grün 1 Metal</de>				</text>
+		<text name="GREEN2METAL" >			<en>GREEN 2 METAL</en>				<de>Grün 2 Metal</de>				</text>
+		<text name="GREEN3METAL" >			<en>GREEN 3 METAL</en>				<de>Grün 3 Metal</de>				</text>
+		<text name="GREEN4METAL" >			<en>GREEN 4 METAL</en>				<de>Grün 4 Metal</de>				</text>
+		<text name="PINK/REDMETAL" >		<en>PINK/RED METAL</en>				<de>Pink/Rot Metal</de>				</text>
+		<text name="BERRYMETAL" >			<en>BERRY METAL</en>				<de>Beere Metal</de>				</text>
+		<text name="WHITEMETAL" >			<en>WHITE METAL</en>				<de>Weiß Metal</de>					</text>
+		<text name="DARKGRAYMETAL" >		<en>DARKGRAY METAL</en>				<de>Dunkelgrau Metal</de>			</text>
+		<text name="YELLOW1METAL" >			<en>YELLOW 1 METAL</en>				<de>Gelb 1 Metal</de>				</text>
+		<text name="YELLOW2METAL" >			<en>YELLOW 2 METAL</en>				<de>Gelb 2 Metal</de>				</text>
+		<text name="YELLOW3METAL" >			<en>YELLOW 3 METAL</en>				<de>Gelb 3 Metal</de>				</text>
+	</l10n>
+</modDesc>

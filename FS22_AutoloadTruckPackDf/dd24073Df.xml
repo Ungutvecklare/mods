@@ -1,0 +1,992 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="PalletAutoLoaderTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>DD 24073 Autoload</name>
+        <functions>
+            <function>$l10n_function_tipper</function>
+        </functions>
+        <image>store_dd24073Df.png</image>
+        <price>39650</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>BRANTNER</brand>
+        <category>trailers</category>
+		
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_tipper</typeDesc>
+        <filename>dd24073df.i3d</filename>
+        <size width="3.5" length="10.5"/>
+        <sounds volumeFactor="1.8"/>
+        <components maxMass="24000">
+            <component centerOfMass="0 0.6 -2"  solverIterationCount="30" mass="2500"/>
+            <component centerOfMass="0 0 0" solverIterationCount="20" mass="3500"/>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="800"/>
+            <joint component1="1" component2="2" node="axisJoint"     rotLimit="0 120 0" transLimit="0 0 0" />
+            <joint component1="2" component2="3" node="drawbarJoint"  rotLimit="0 0 0" transLimit="0 0 0" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TRAILER" />
+    </base>
+
+    <configurationSets>
+        <configurationSet name="$l10n_configuration_palletLoadingWagon" isDefault="true">
+            <configuration name="fillVolume"    index="1" />
+            <configuration name="fillUnit"      index="1" />
+            <configuration name="trailer"       index="1" />
+            <configuration name="cover"         index="2" />
+            <configuration name="tensionBelts"  index="1" />
+            <configuration name="dischargeable" index="1" />
+            <configuration name="aPalletAutoLoader" index="1" />
+        </configurationSet>
+        <configurationSet name="$l10n_configuration_valueDefault">
+            <configuration name="fillVolume"    index="2" />
+            <configuration name="fillUnit"      index="2" />
+            <configuration name="trailer"       index="2" />
+            <configuration name="tensionBelts"  index="2" />
+            <configuration name="dischargeable" index="2" />
+            <configuration name="aPalletAutoLoader" index="2" />
+        </configurationSet>
+        <configurationSet name="$l10n_configuration_valueExtension">
+            <configuration name="fillVolume"    index="3" />
+            <configuration name="fillUnit"      index="3" />
+            <configuration name="trailer"       index="2" />
+            <configuration name="tensionBelts"  index="2" />
+            <configuration name="dischargeable" index="2" />
+            <configuration name="aPalletAutoLoader" index="2" />
+        </configurationSet>
+    </configurationSets>
+	
+	<aPalletAutoLoader>
+		<aPalletAutoLoaderConfigurations>
+		
+			<aPalletAutoLoaderConfiguration maxObjects="80" useBales="false" useTensionBelts="false" supportedObject="data/objects/pallets" UnloadRightOffset="-3 -1 0" UnloadLeftOffset="3 -1 0">
+				<trigger node="triggerNode"/>
+				<pickupTriggers>
+					<pickupTrigger node="pickupTriggerNode"/>
+					<pickupTrigger node="pickupTriggerNode2"/>
+				</pickupTriggers>
+                <loadArea baseNode="loadingBase" leftRightCornerOffset="1.225 0 0" lenght="7.3" width="2.45" height="2.5"/>
+			</aPalletAutoLoaderConfiguration>
+		
+            <aPalletAutoLoaderConfiguration>
+            </aPalletAutoLoaderConfiguration>
+			
+		</aPalletAutoLoaderConfigurations>        
+	</aPalletAutoLoader>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.2" repr="wheelFrontLeft"   forcePointRatio="0.5" initialCompression="42" suspTravel="0.12" spring="40" damper="50" yOffset="-0.015"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="2.2" repr="wheelFrontRight"  forcePointRatio="0.5" initialCompression="42" suspTravel="0.12" spring="40" damper="50" yOffset="-0.015"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleLeft"  forcePointRatio="0.5" initialCompression="10" suspTravel="0.12" spring="50" damper="50" yOffset="-0.011" brakeFactor="0.5" frictionScale="1.75"/>
+                        <wheelChock parkingNode="wheelChock01"/>
+                        <wheelChock parkingNode="wheelChock02" isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="false" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.7" repr="wheelMiddleRight" forcePointRatio="0.5" initialCompression="10" suspTravel="0.12" spring="50" damper="50" yOffset="-0.011" brakeFactor="0.5" frictionScale="1.75"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackLeft"    forcePointRatio="0.5" initialCompression="08" suspTravel="0.12" spring="50" damper="50" yOffset="-0.01" brakeFactor="0.5" frictionScale="1.9"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics tipOcclusionAreaGroupId="1" restLoad="0.6" repr="wheelBackRight"   forcePointRatio="0.5" initialCompression="08" suspTravel="0.12" spring="50" damper="50" yOffset="-0.01" brakeFactor="0.5" frictionScale="1.9"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1200" brand="TRELLEBORG" saveId="TRELLEBORG_BROAD">
+                <wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml">
+                        <physics yOffset="-0.013"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml">
+                        <physics yOffset="-0.013"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml">
+                        <physics yOffset="-0.009"/>
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml">
+                        <physics yOffset="-0.009"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml">
+                        <physics yOffset="-0.008"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/560_45R22_5.xml">
+                        <physics yOffset="-0.008"/>
+                    </wheel>
+                </wheels>
+                <foliageBendingModifier index="1" minX="-1.35" maxX="1.35" />
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1200" brand="MICHELIN" saveId="MICHELIN_BROAD">
+                <wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.007"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.007"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.003"/>
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.003"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.002"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/michelin/cargoXBibHD/560_45R22_5.xml">
+                        <physics yOffset="-0.002"/>
+                    </wheel>
+                </wheels>
+                <foliageBendingModifier index="1" minX="-1.35" maxX="1.35" />
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1200" brand="BKT" saveId="BKT_BROAD">
+                <wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="-0.013"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="-0.013"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="-0.009"/>
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="-0.009"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="-0.008"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/bkt/ridemaxFL693M/560_45R22_5.xml">
+                        <physics yOffset="-0.008"/>
+                    </wheel>
+                </wheels>
+                <foliageBendingModifier index="1" minX="-1.35" maxX="1.35" />
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_valueWheelBroad" price="1200" brand="VREDESTEIN" saveId="VREDESTEIN_BROAD">
+                <wheels baseConfig="CONTINENTAL_DEFAULT">
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml">
+                        <physics yOffset="-0.007"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml">
+                        <physics yOffset="-0.007"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml">
+                        <physics yOffset="-0.003"/>
+                        <wheelChock/>
+                        <wheelChock/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml">
+                        <physics yOffset="-0.003"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml">
+                        <physics yOffset="-0.002"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/vredestein/flotationTrac/560_45R22_5.xml">
+                        <physics yOffset="-0.002"/>
+                    </wheel>
+                </wheels>
+                <foliageBendingModifier index="1" minX="-1.35" maxX="1.35" />
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimColor material="18">SHARED_WHITE1</rimColor>
+
+        <hubs>
+            <color0>SHARED_DA_METAL_BLACK</color0>
+            <color1 material="1">SHARED_DA_METAL_BLACK</color1>
+            <hub linkNode="wheelFrontLeft"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelFrontRight"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelMiddleLeft"  filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelMiddleRight" filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelBackLeft"    filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="true"  scale="0.28 0.335 0.335" offset="0.008"/>
+            <hub linkNode="wheelBackRight"   filename="$data/shared/wheels/hubs/hub_n10_5.xml" isLeft="false" scale="0.28 0.335 0.335" offset="0.008"/>
+        </hubs>
+    </wheels>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" rootNode="dd24073_drawbar_component3" attacherHeight="0.94" />
+        </inputAttacherJoints>
+        <brakeForce force="0.7" maxForce="1.7" maxForceMass="24000"/>
+        <support animationName="moveSupport" />
+    </attachable>
+
+    <connectionHoses>
+        <target attacherJointIndices="1" type="airDoubleRed"  node="airDoubleRed_out" socket="air_red"/>
+        <target attacherJointIndices="1" type="airDoubleYellow"  node="airDoubleYellow_out" socket="air_yellow"/>
+        <target attacherJointIndices="1" type="electric"  node="electric_back" socket="electric"/>
+
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01" adapterNode="hydraulicIn01_detached"  length="0.5" diameter="0.015" straighteningFactor="1.5" >
+            <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" adapterNode="hydraulicOut01_detached" length="1" diameter="0.015" straighteningFactor="1.5">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed"  node="airDoubleRed" adapterNode="airDoubleRed_detached"  length="1" diameter="0.015" straighteningFactor="1.5">
+            <objectChange node="airDoubleRed_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airDoubleYellow" adapterNode="airDoubleYellow_detached" length="1" diameter="0.015" straighteningFactor="1.5">
+            <objectChange node="airDoubleYellow_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" adapterNode="electric_detached" length="1" diameter="0.01" straighteningFactor="3.2">
+            <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <attacherJoints>
+        <attacherJoint node="trailerAttacherJoint" jointType="trailer" lowerRotLimit="10 70 55" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" >
+            <schema position="1 0" rotation="0" invertX="false" />
+        </attacherJoint>
+        <sounds>
+            <attach template="ATTACH_01" linkNode="dd24073_main_component1" />
+        </sounds>
+    </attacherJoints>
+
+    <lights>
+        <sharedLight linkNode="rearMultipointLight_01Left"  filename="$data/shared/assets/lights/lizard/rearLight31_left.xml" />
+        <sharedLight linkNode="rearMultipointLight_01Right" filename="$data/shared/assets/lights/lizard/rearLight31_right.xml" />
+        <sharedLight linkNode="sideMarker03Left" filename="$data/shared/assets/lights/lizard/sideMarker03_left.xml" />
+        <sharedLight linkNode="sideMarker03Right" filename="$data/shared/assets/lights/lizard/sideMarker03_right.xml" />
+        <sharedLight linkNode="sideMarker05Orange_01" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_02" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_03" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_04" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_05" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+        <sharedLight linkNode="sideMarker05Orange_06" filename="$data/shared/assets/lights/lizard/sideMarker05Orange.xml" />
+
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0" />
+                <light node="licensePlateLightHigh" lightTypes="0" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <brakeLight node="backLightsHigh1" />
+                <reverseLight node="reverseLightHigh1" />
+            </high>
+        </realLights>
+    </lights>
+
+    <licensePlates>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="SQUARISH" placementArea="0.08 0.19 0.22 0.2"/>
+    </licensePlates>
+
+    <animations>
+        <animation name="tipAnimationBack">
+            <part node="body"         startTime="0.0" endTime="14" startRot="0 0 0" endRot="-37 0 0" />
+            <part node="doorBackLock" startTime="0.0" endTime="0.2" startRot="0 0 0" endRot="-22 0 0" />
+            <part node="doorBack"     direction="-1" startTime="0.0" endTime="14" startRot="0 0 0" endRot="37 0 0" />
+            <part node="doorBack"     direction="1"  startTime="5.0" endTime="5.5" startRot="0 0 0" endRot="37 0 0" />
+            <part node="doorBack"     direction="1"  startTime="5.5" endTime="12.5" startRot="37 0 0" endRot="55 0 0" />
+
+            <sound template="metalLowVar2"           startTime="0.15"  direction="-1"  volumeScale="2.2" pitchScale="1.2"/>
+            <sound template="metalClose"             startTime="0.15"  direction="-1"  volumeScale="1.2" pitchScale="0.8"/>
+            <sound template="metalOpen"              startTime="0.15"  direction="1"   volumeScale="1.5" pitchScale="0.6"/>
+            <sound template="metalLowVar2"           startTime="13.99" direction="1"   volumeScale="2.5" pitchScale="1.2"/>
+            <sound template="metalClose"             startTime="13.99" direction="1"   volumeScale="1.2" pitchScale="0.7"/>
+            <sound template="thudVar2"               startTime="13.9"  direction="-1"  volumeScale="1.4" pitchScale="0.7"/>
+            <sound template="clackVar6"              startTime="13.99" direction="-1"  volumeScale="0.7" pitchScale="0.3"/>
+            <sound template="latchSmall"             startTime="0.01"  direction="-1"  volumeScale="0.1" pitchScale="0.9"/>
+            <sound template="clackVar2"              startTime="0.01"  direction="0"   volumeScale="1.0" pitchScale="1.7"/>
+            <sound template="metalOpen"              startTime="5.1"   direction="1"   volumeScale="2.5" pitchScale="0.7"/>
+            <sound template="metalClose"             startTime="0.01"  direction="-1"  volumeScale="1.5" pitchScale="0.7"/>
+            <sound template="hingeMedium"            startTime="5.1"   direction="1"   volumeScale="1.4" pitchScale="0.8"/>
+            <sound template="cylinderPunch" startTime="0.01"  direction="0"/>
+            <sound template="cylinderPunch" startTime="13.99" direction="1"/>
+        </animation>
+        <animation name="tipAnimationLeft">
+            <part node="bodyLeft"     startTime="0.0" endTime="12" startRot="0 0 0" endRot="0 0 -45" />
+            <part node="doorLeftLock" startTime="0.0" endTime="0.2" startRot="0 0 0" endRot="0 0 -35" />
+            <part node="doorLeft"     direction="-1" startTime="0.0" endTime="12" startRot="0 0 0" endRot="0 0 40" />
+            <part node="doorLeft"     direction="1"  startTime="2.2" endTime="2.5" startRot="0 0 0" endRot="0 0 30" />
+            <part node="doorLeft"     direction="1"  startTime="2.5" endTime="12" startRot="0 0 30" endRot="0 0 40" />
+
+            <sound template="metalLowVar2"           startTime="0.15"  direction="-1"  volumeScale="2.2" pitchScale="1.2"/>
+            <sound template="metalClose"             startTime="0.15"  direction="-1"  volumeScale="1.2" pitchScale="0.8"/>
+            <sound template="metalOpen"              startTime="0.15"  direction="1"   volumeScale="1.5" pitchScale="0.6"/>
+            <sound template="metalLowVar2"           startTime="11.99" direction="0"   volumeScale="2.5" pitchScale="1.2"/>
+            <sound template="metalClose"             startTime="11.99" direction="1"   volumeScale="1.2" pitchScale="0.7"/>
+            <sound template="metalClose"             startTime="11.99" direction="-1"  volumeScale="2"   pitchScale="0.6"/>
+            <sound template="latchSmall"             startTime="0.01"  direction="0"   volumeScale="0.2" pitchScale="0.9"/>
+            <sound template="clackVar2"              startTime="0.01"  direction="0"   volumeScale="1.0" pitchScale="1.7"/>
+            <sound template="metalOpen"              startTime="2.1"   direction="1"   volumeScale="2.5" pitchScale="0.7"/>
+            <sound template="metalClose"             startTime="0.01"  direction="-1"  volumeScale="1.5" pitchScale="0.7"/>
+            <sound template="hingeMedium"            startTime="2.1"   direction="1"   volumeScale="1.4" pitchScale="0.8"/>
+            <sound template="cylinderPunch" startTime="11.99" direction="0"/>
+            <sound template="cylinderPunch" startTime="0.01"  direction="0"/>
+        </animation>
+        <animation name="tipAnimationRight">
+          <part node="bodyRight"     startTime="0.0" endTime="12" startRot="0 0 0" endRot="0 0 45" />
+          <part node="doorRightLock" startTime="0.0" endTime="0.2" startRot="0 0 0" endRot="0 0 35" />
+          <part node="doorRight"     direction="-1" startTime="0.0" endTime="12" startRot="0 0 0" endRot="0 0 -40" />
+          <part node="doorRight"     direction="1"  startTime="2.2" endTime="2.5" startRot="0 0 0" endRot="0 0 -30" />
+          <part node="doorRight"     direction="1"  startTime="2.5" endTime="12" startRot="0 0 -30" endRot="0 0 -40" />
+
+          <sound template="metalLowVar2"           startTime="0.15"  direction="-1"  volumeScale="2.2" pitchScale="1.2"/>
+          <sound template="metalClose"             startTime="0.15"  direction="-1"  volumeScale="1.2" pitchScale="0.8"/>
+          <sound template="metalOpen"              startTime="0.15"  direction="1"   volumeScale="1.5" pitchScale="0.6"/>
+          <sound template="metalLowVar2"           startTime="11.99" direction="0"   volumeScale="2.5" pitchScale="1.2"/>
+          <sound template="metalClose"             startTime="11.99" direction="1"   volumeScale="1.2" pitchScale="0.7"/>
+          <sound template="metalClose"             startTime="11.99" direction="-1"  volumeScale="2"   pitchScale="0.6"/>
+          <sound template="latchSmall"             startTime="0.01"  direction="0"   volumeScale="0.2" pitchScale="0.9"/>
+          <sound template="clackVar2"              startTime="0.01"  direction="0"   volumeScale="1.0" pitchScale="1.7"/>
+          <sound template="metalOpen"              startTime="2.1"   direction="1"   volumeScale="2.5" pitchScale="0.7"/>
+          <sound template="metalClose"             startTime="0.01"  direction="-1"  volumeScale="1.5" pitchScale="0.7"/>
+          <sound template="hingeMedium"            startTime="2.1"   direction="1"   volumeScale="1.4" pitchScale="0.8"/>
+          <sound template="cylinderPunch" startTime="11.99" direction="0"/>
+          <sound template="cylinderPunch" startTime="0.01"  direction="0"/>
+        </animation>
+        <animation name="tipAnimationGrainDoor">
+            <part node="body"     startTime="0.0" endTime="35" startRot="0 0 0" endRot="-37 0 0" />
+            <part node="grainEffectGrainDoorJoint"     startTime="0.0" endTime="35" startRot="0 0 0" endRot="37 0 0" />
+
+            <sound template="metalLowVar2"           startTime="0.15"  direction="-1"  volumeScale="2.2" pitchScale="1.2"/>
+            <sound template="metalClose"             startTime="0.15"  direction="-1"  volumeScale="1.2" pitchScale="0.8"/>
+            <sound template="metalOpen"              startTime="0.15"  direction="1"   volumeScale="1.5" pitchScale="0.6"/>
+            <sound template="metalLowVar2"           startTime="34.99" direction="1"   volumeScale="2.5" pitchScale="1.2"/>
+            <sound template="metalClose"             startTime="34.99" direction="1"   volumeScale="1.2" pitchScale="0.7"/>
+            <sound template="thudVar2"               startTime="34.9"  direction="-1"  volumeScale="1.4" pitchScale="0.7"/>
+            <sound template="clackVar6"              startTime="34.99" direction="-1"  volumeScale="0.7" pitchScale="0.3"/>
+            <sound template="cylinderPunch" startTime="34.99" direction="1"/>
+            <sound template="cylinderPunch" startTime="0.01"  direction="0"/>
+        </animation>
+        <animation name="tipAnimationGrainDoorDoor">
+            <part node="grainDoor"     startTime="0.0" endTime="0.5" startTrans="0 0 0" endTrans="0 0.176 0" />
+
+            <sound template="latchSmall" startTime="0.01" direction="1"  volumeScale="0.4" pitchScale="0.5"/>
+            <sound template="latchSmall" startTime="0.0"  direction="-1" volumeScale="0.2" pitchScale="0.7"/>
+            <sound template="slideOpen"  startTime="0.01" direction="1"  volumeScale="3.5" pitchScale="2.5"/>
+            <sound template="slideClose" startTime="0.49" direction="-1" volumeScale="3.5" pitchScale="2.5"/>
+            <sound template="metalClose" startTime="0.49" direction="1"  volumeScale="0.8" pitchScale="2"/>
+            <sound template="metalClose" startTime="0.0"  direction="-1" volumeScale="0.8" pitchScale="1.8"/>
+        </animation>
+        <animation name="toggleCover">
+            <part node="coversClosed" startTime="0"    endTime="0.05" visibility="true" />
+            <part node="coversOpen"   startTime="0"    endTime="0.05" visibility="false" />
+            <part node="coversClosed" startTime="0.05" endTime="0.1"  visibility="false" />
+            <part node="coversOpen"   startTime="0.05" endTime="0.1"  visibility="true" />
+
+            <sound template="fabricCover2" startTime="0.01" direction="1"  volumeScale="1.4" pitchScale="1.5"/>
+            <sound template="fabricCover1" startTime="0.05" direction="-1" volumeScale="1.4" pitchScale="1.8"/>
+        </animation>
+        <animation name="moveSupport">
+            <part componentJointIndex="2" startTime="0.0" endTime="0.15" startRotLimit="15 0 0" endRotLimit="0 0 0" />
+
+            <sound template="clackVar2Small" startTime="0.05" direction="-1" volumeScale="1.2" pitchScale="1.5" linkNode="attacherJoint"/>
+            <sound template="latchSmall"     startTime="0.1"  direction="1"  volumeScale="0.7" pitchScale="1.2" linkNode="attacherJoint"/>
+            <sound template="metalClose"     startTime="0.01" direction="-1" volumeScale="0.7" pitchScale="1.0" linkNode="attacherJoint"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+          <movingTool node="bodyLeft" playSound="true" >
+              <dependentPart node="hydraulic01Body" />
+              <dependentPart node="hydraulic02Body" />
+          </movingTool>
+          <movingTool node="bodyRight" playSound="true" >
+              <dependentPart node="hydraulic01Body" />
+              <dependentPart node="hydraulic02Body" />
+          </movingTool>
+          <movingTool node="body" playSound="true" >
+              <dependentPart node="hydraulic01Body" />
+              <dependentPart node="hydraulic02Body" />
+          </movingTool>
+          <movingTool node="grainDoor" playSound="false" >
+              <dependentPart node="grainDoorArm01" />
+          </movingTool>
+          <movingTool node="doorRightLock" playSound="false" >
+              <dependentPart node="doorRightLockArm01" />
+          </movingTool>
+          <movingTool node="doorLeftLock" playSound="false" >
+              <dependentPart node="doorLeftLockArm01" />
+          </movingTool>
+        </movingTools>
+
+        <movingParts>
+          <movingPart node="hydraulic01Body" referencePoint="hydraulic01BodyRef" referenceFrame="hydraulic01BodyRefFrame" limitedAxis="2" >
+              <dependentPart node="hydraulic01BodyPart" />
+          </movingPart>
+
+          <movingPart node="hydraulic01BodyPart" referencePoint="hydraulic01BodyRef" referenceFrame="hydraulic01BodyRef" limitedAxis="1" divideTranslatingDistance="false">
+              <translatingPart node="bodyHydraulic01Punch01" maxZTrans="0.34"/>
+              <translatingPart node="bodyHydraulic01Punch02" maxZTrans="0.34"/>
+              <translatingPart node="bodyHydraulic01Punch03" maxZTrans="0.36"/>
+              <translatingPart node="bodyHydraulic01Punch04" maxZTrans="0.36"/>
+              <translatingPart node="bodyHydraulic01Punch05" maxZTrans="0.36"/>
+              <translatingPart node="bodyHydraulic01Punch06" maxZTrans="0.36"/>
+          </movingPart>
+
+          <movingPart node="hydraulic02Body" referencePoint="hydraulic02BodyRef" referenceFrame="hydraulic01BodyRefFrame" limitedAxis="2" >
+              <dependentPart node="hydraulic02BodyPart" />
+          </movingPart>
+
+          <movingPart node="hydraulic02BodyPart" referencePoint="hydraulic02BodyRef" referenceFrame="hydraulic02BodyRef" limitedAxis="1" divideTranslatingDistance="false">
+              <translatingPart node="bodyHydraulic02Punch01" maxZTrans="0.34"/>
+              <translatingPart node="bodyHydraulic02Punch02" maxZTrans="0.34"/>
+              <translatingPart node="bodyHydraulic02Punch03" maxZTrans="0.36"/>
+              <translatingPart node="bodyHydraulic02Punch04" maxZTrans="0.36"/>
+              <translatingPart node="bodyHydraulic02Punch05" maxZTrans="0.36"/>
+              <translatingPart node="bodyHydraulic02Punch06" maxZTrans="0.36"/>
+          </movingPart>
+
+          <movingPart node="drawbarSpringHolder" referencePoint="drawbarSpringHolderRef" referenceFrame="drawbarSpringHolderRef" isActiveDirty="true" maxUpdateDistance="300"/>
+          <movingPart node="drawbarSpring" referencePoint="drawbarSpringHolderRef" referenceFrame="drawbarSpringHolderRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="300"/>
+
+          <movingPart node="grainDoorArm01" localReferencePoint="grainDoorArm02" referencePoint="grainDoorArm02Ref" referenceFrame="grainDoorArm01RefFrame" limitedAxis="1" >
+              <dependentPart node="grainDoorArm02" />
+          </movingPart>
+          <movingPart node="grainDoorArm02" referencePoint="grainDoorArm02Ref" referenceFrame="grainDoorArm02Ref" />
+
+          <movingPart node="doorLeftLockArm01" localReferencePoint="doorLeftLockArm02" referencePoint="doorLeftLockArm01Ref" referenceFrame="doorLeftLockArm01RefFrame">
+              <dependentPart node="doorLeftLockArm02" />
+          </movingPart>
+          <movingPart node="doorLeftLockArm02" referencePoint="doorLeftLockArm01Ref" referenceFrame="doorLeftLockArm01Ref" />
+
+          <movingPart node="doorRightLockArm01" localReferencePoint="doorRightLockArm02" referencePoint="doorRightLockArm01Ref" referenceFrame="doorRightLockArm01RefFrame">
+              <dependentPart node="doorRightLockArm02" />
+          </movingPart>
+          <movingPart node="doorRightLockArm02" referencePoint="doorRightLockArm01Ref" referenceFrame="doorRightLockArm01Ref" />
+        </movingParts>
+
+        <sounds>
+            <actionSound template="defaultHydraulicSound" pitchScale="0.4" volumeScale="0.9" linkNode="hydraulic01BodyPart" actionNames="TRANSLATING_NEG" nodes="hydraulic01BodyPart"/>
+            <actionSound template="hydraulicLayerTone"    pitchScale="0.5" volumeScale="1.0" linkNode="hydraulic01BodyPart" actionNames="TRANSLATING_POS" nodes="hydraulic01BodyPart">
+                <pitch dropOffFactor="1.1" dropOffTime="0.2" />
+            </actionSound>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeBack" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch02"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeBack" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch03"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeBack" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch04"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeBack" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch05"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeBack" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch06"/>
+
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch02"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch03"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch04"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch05"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic01BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic02Punch06"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic02BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic01Punch02"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic02BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic01Punch03"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic02BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic01Punch04"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic02BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic01Punch05"/>
+            <actionSound template="cylinderPunch" pitchScale="0.7" linkNode="hydraulic02BodyPartSoundNodeSide" actionNames="TRANSLATING_END_NEG" nodes="bodyHydraulic01Punch06"/>
+        </sounds>
+    </cylindered>
+
+    <tensionBelts>
+        <tensionBeltsConfigurations>
+            <!-- config baletrailer -->
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="tensionBelts" jointNode="dd24073_main_component1" width="0.05" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="startPoint01" endNode="startPoint01End" >
+                        <intersectionNode node="tensionBelt01Intersection01"/>
+                        <intersectionNode node="tensionBelt01Intersection02"/>
+                    </tensionBelt>
+                    <tensionBelt startNode="startPoint02" endNode="startPoint02End" >
+                        <intersectionNode node="tensionBelt02Intersection01"/>
+                        <intersectionNode node="tensionBelt02Intersection02"/>
+                    </tensionBelt>
+                    <tensionBelt startNode="startPoint03" endNode="startPoint03End" >
+                        <intersectionNode node="tensionBelt03Intersection01"/>
+                        <intersectionNode node="tensionBelt03Intersection02"/>
+                    </tensionBelt>
+                    <tensionBelt startNode="startPoint04" endNode="startPoint04End" >
+                        <intersectionNode node="tensionBelt04Intersection01"/>
+                        <intersectionNode node="tensionBelt04Intersection02"/>
+                    </tensionBelt>
+                    <tensionBelt startNode="startPoint05" endNode="startPoint05End" >
+                        <intersectionNode node="tensionBelt05Intersection01"/>
+                        <intersectionNode node="tensionBelt05Intersection02"/>
+                    </tensionBelt>
+                    <tensionBelt startNode="startPoint06" endNode="startPoint06End" >
+                        <intersectionNode node="tensionBelt06Intersection01"/>
+                        <intersectionNode node="tensionBelt06Intersection02"/>
+                    </tensionBelt>
+                    <tensionBelt startNode="startPoint07" endNode="startPoint07End" >
+                        <intersectionNode node="tensionBelt07Intersection01"/>
+                        <intersectionNode node="tensionBelt07Intersection02"/>
+                    </tensionBelt>
+                    <tensionBelt startNode="startPoint08" endNode="startPoint08End" >
+                        <intersectionNode node="tensionBelt08Intersection01"/>
+                        <intersectionNode node="tensionBelt08Intersection02"/>
+                    </tensionBelt>
+                    <sounds>
+                        <addBelt    template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+
+            <!-- config default and extension -->
+            <tensionBeltsConfiguration />
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <!-- config baletrailer -->
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="0" allowAILoading="false"/>
+                </fillUnits>
+                <objectChange node="colPart05" compoundChildActive="false" compoundChildInactive="true"/>
+                <objectChange node="colPart06" compoundChildActive="false" compoundChildInactive="true"/>
+                <objectChange node="colPart07" compoundChildActive="false" compoundChildInactive="true"/>
+                <objectChange node="colPart04Config01" compoundChildActive="true" compoundChildInactive="false"/>
+            </fillUnitConfiguration>
+
+            <!-- config default -->
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="17850" allowAILoading="true">
+                        <exactFillRootNode node="exactFillRootNodeConfig01" />
+                        <autoAimTargetNode node="fillAutoAimTargetConfig01" startZ="2.93" endZ="-2.9" invert="false" startPercentage="25"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="doorLeft"     visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="doorRight"    visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="doorBack"     visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="bodyConfig01" visibilityActive="true" visibilityInactive="false"/>
+
+                <objectChange node="coverConfig01_closed"  visibilityActive="true"/>
+                <objectChange node="coverConfig02_closed"  visibilityActive="false"/>
+                <objectChange node="coverConfig01_open"    visibilityActive="true"/>
+                <objectChange node="coverConfig02_open"    visibilityActive="false"/>
+                <objectChange node="coverConfig01MountRot" visibilityActive="true"/>
+                <objectChange node="coverConfig02MountRot" visibilityActive="false"/>
+
+                <objectChange node="colPartCoverConfig01Front" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPartCoverConfig01Back"  compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart02Config01" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart03Config01" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart04Config01" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart05Config01" compoundChildActive="true" compoundChildInactive="false"/>
+            </fillUnitConfiguration>
+
+            <!-- config extension -->
+            <fillUnitConfiguration price="5000">
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypeCategories="BULK" capacity="25500" allowAILoading="true">
+                        <exactFillRootNode node="exactFillRootNodeConfig02" />
+                        <autoAimTargetNode node="fillAutoAimTargetConfig02" startZ="2.93" endZ="-2.9" invert="false" startPercentage="25"/>
+                    </fillUnit>
+                </fillUnits>
+                <objectChange node="doorLeft"     visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="doorRight"    visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="doorBack"     visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="bodyConfig01" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="bodyConfig02" visibilityActive="true" visibilityInactive="false"/>
+
+                <objectChange node="coverConfig01_closed"  visibilityActive="false"/>
+                <objectChange node="coverConfig02_closed"  visibilityActive="true"/>
+                <objectChange node="coverConfig01_open"    visibilityActive="false"/>
+                <objectChange node="coverConfig02_open"    visibilityActive="true"/>
+                <objectChange node="coverConfig01MountRot" visibilityActive="false"/>
+                <objectChange node="coverConfig02MountRot" visibilityActive="true"/>
+
+                <objectChange node="colPartCoverConfig02Front" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPartCoverConfig02Back"  compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart02Config02" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart03Config02" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart04Config02" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="colPart05Config02" compoundChildActive="true" compoundChildInactive="false"/>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+             <!-- config baletrailer -->
+            <fillVolumeConfiguration />
+
+            <!-- config default -->
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolumeConfig01" maxDelta="0.12" maxAllowedHeapAngle="15" fillUnitIndex="1" />
+                </volumes>
+            </fillVolumeConfiguration>
+
+            <!-- config extension -->
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolumeConfig02" maxDelta="0.12" maxAllowedHeapAngle="15" fillUnitIndex="1" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+
+        <unloadInfos>
+            <unloadInfo>
+                <node node="unloadInfoBack" width="1.0" length="4.5" />
+            </unloadInfo>
+            <unloadInfo>
+                <node node="unloadInfoLeft" width="1.0" length="4.5" />
+            </unloadInfo>
+            <unloadInfo>
+                <node node="unloadInfoRight" width="1.0" length="4.5" />
+            </unloadInfo>
+        </unloadInfos>
+    </fillVolume>
+
+    <trailer>
+        <trailerConfigurations>
+            <!-- config baletrailer -->
+            <trailerConfiguration />
+
+            <!-- config default and extension -->
+            <trailerConfiguration>
+                <trailer>
+                  <tipSide name="$l10n_info_tipSideBack" dischargeNodeIndex="1">
+                      <animation name="tipAnimationBack" speedScale="1" startTipTime="0.4"/>
+
+                      <objectChange node="hydraulic01BodyPartSoundNodeBack" visibilityActive="true"/>
+                      <objectChange node="hydraulic01BodyPartSoundNodeSide" visibilityActive="false"/>
+                      <objectChange node="hydraulic02BodyPartSoundNodeSide" visibilityActive="false"/>
+                  </tipSide>
+                  <tipSide name="$l10n_info_tipSideBackGrainDoor" dischargeNodeIndex="2" >
+                      <animation name="tipAnimationGrainDoor" speedScale="1" />
+                      <doorAnimation name="tipAnimationGrainDoorDoor" speedScale="1.0" startTipTime="0.4"/>
+
+                      <objectChange node="hydraulic01BodyPartSoundNodeBack" visibilityActive="true"/>
+                      <objectChange node="hydraulic01BodyPartSoundNodeSide" visibilityActive="false"/>
+                      <objectChange node="hydraulic02BodyPartSoundNodeSide" visibilityActive="false"/>
+                  </tipSide>
+                    <tipSide name="$l10n_info_tipSideLeft" dischargeNodeIndex="3">
+                        <animation name="tipAnimationLeft" speedScale="1" startTipTime="0.2"/>
+
+                        <objectChange node="hydraulic01BodyPartSoundNodeBack" visibilityActive="false"/>
+                        <objectChange node="hydraulic01BodyPartSoundNodeSide" visibilityActive="true"/>
+                        <objectChange node="hydraulic02BodyPartSoundNodeSide" visibilityActive="true"/>
+                    </tipSide>
+                    <tipSide name="$l10n_info_tipSideRight" dischargeNodeIndex="4">
+                        <animation name="tipAnimationRight" speedScale="1" startTipTime="0.2"/>
+
+                        <objectChange node="hydraulic01BodyPartSoundNodeBack" visibilityActive="false"/>
+                        <objectChange node="hydraulic01BodyPartSoundNodeSide" visibilityActive="true"/>
+                        <objectChange node="hydraulic02BodyPartSoundNodeSide" visibilityActive="true"/>
+                    </tipSide>
+                </trailer>
+            </trailerConfiguration>
+        </trailerConfigurations>
+    </trailer>
+
+    <dischargeable>
+        <dischargeableConfigurations>
+            <!-- config baletrailer -->
+            <dischargeableConfiguration>
+                <objectChange node="unloadingEffects"     visibilityActive="false" />
+                <objectChange node="grainEffectBack"      visibilityActive="false" />
+                <objectChange node="grainEffectLeft"      visibilityActive="false" />
+                <objectChange node="grainEffectRight"     visibilityActive="false" />
+                <objectChange node="grainEffectGrainDoor" visibilityActive="false" />
+            </dischargeableConfiguration>
+
+            <!-- config default and extension -->
+            <dischargeableConfiguration>
+                <dischargeNode node="dischargeNodeBack" emptySpeed="1820" fillUnitIndex="1" unloadInfoIndex="1" allowAIDischarge="true">
+                    <info width="2.5" length="0.5" />
+                    <effects>
+                        <effectNode effectClass="TipEffect">
+                            <effectNode effectNode="emitterShapeBack" effectClass="ParticleEffect" materialType="unloadingParticle" emitCountScale="2"/>
+                            <effectNode effectNode="grainEffectBack" materialType="unloading" fadeTime="0.5" extraDistanceNode="dischargeNodeBack" extraDistance="0.35"/>
+                        </effectNode>
+                        <effectNode effectNode="smokeEffectBack" materialType="unloadingSmoke" fadeTime="0.5" />
+                    </effects>
+                </dischargeNode>
+                <dischargeNode node="dischargeNodeGrainDoor" emptySpeed="637" fillUnitIndex="1" unloadInfoIndex="1" >
+                    <info width="0.3" length="0.5" />
+                    <effects>
+                        <effectNode effectClass="TipEffect">
+                            <effectNode effectNode="emitterShapeGrainDoor" effectClass="ParticleEffect" materialType="unloadingParticle" emitCountScale="3"/>
+                            <effectNode effectNode="grainEffectGrainDoor" materialType="unloading"  fadeTime="0.5" extraDistanceNode="dischargeNodeGrainDoor" extraDistance="0.7"/>
+                        </effectNode>
+                        <effectNode effectNode="smokeEffectGrainDoor" materialType="unloadingSmoke"      fadeTime="0.5"/>
+                    </effects>
+                </dischargeNode>
+                <dischargeNode node="dischargeNodeLeft" emptySpeed="1820"  fillUnitIndex="1" unloadInfoIndex="2" >
+                    <info width="7" length="0.5" />
+                    <effects>
+                        <effectNode effectClass="TipEffect">
+                            <effectNode effectNode="emitterShapeLeft" effectClass="ParticleEffect" materialType="unloadingParticle"/>
+                            <effectNode effectNode="grainEffectLeft" materialType="unloading"  fadeTime="0.5" extraDistanceNode="dischargeNodeLeft" extraDistance="0.5"/>
+                        </effectNode>
+                        <effectNode effectNode="smokeEffectLeft" materialType="unloadingSmoke"  stopDelay="0" fadeTime="0.5" />
+                    </effects>
+                </dischargeNode>
+                <dischargeNode node="dischargeNodeRight" emptySpeed="1820"  fillUnitIndex="1" unloadInfoIndex="3" >
+                    <info width="7" length="0.5" />
+                    <effects>
+                        <effectNode effectClass="TipEffect">
+                            <effectNode effectNode="emitterShapeRight" effectClass="ParticleEffect"  materialType="unloadingParticle"/>
+                            <effectNode effectNode="grainEffectRight" materialType="unloading"  fadeTime="0.5" extraDistanceNode="dischargeNodeRight" extraDistance="0.35"/>
+                        </effectNode>
+                        <effectNode effectNode="smokeEffectRight" materialType="unloadingSmoke" fadeTime="0.5" />
+                    </effects>
+                </dischargeNode>
+            </dischargeableConfiguration>
+        </dischargeableConfigurations>
+    </dischargeable>
+
+    <cover>
+        <coverConfigurations>
+            <coverConfiguration name="$l10n_configuration_valueYes" price="500" openCoverWhileTipping="true">
+                <cover openAnimation="toggleCover" fillUnitIndices="1" />
+                <objectChange node="coverConfiguration" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="coverConfig01Mount" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="coverConfig02Mount" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="coverConfigBelts"   visibilityActive="true" visibilityInactive="false"/>
+            </coverConfiguration>
+
+            <coverConfiguration name="$l10n_configuration_valueNo"/>
+        </coverConfigurations>
+    </cover>
+
+    <ai>
+        <allowTurnBackward value="false"/>
+        <turningRadiusLimitation radius="7"/>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2" width="2.7" height="3.8" length="2.7" lengthOffset="0" hasCollision="false"/>
+        <agentAttachment jointNode="axisJoint"     rotCenterWheelIndices="3 4" width="2.7" height="3.8" length="8" lengthOffset="0.95"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.25" maxX="1.25" minZ="-4.7" maxZ="3" yOffset="0.6" />
+        <bendingNode minX="-0.2" maxX="0.2" minZ="0" maxZ="2.2" yOffset="-0.1" node="drawbar"/>
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="dd24073_mat" baseNode="dd24073_vis">
+            <shaderParameter name="colorMat0" material="0" value="BRANTNER_GREEN2"/>
+            <shaderParameter name="colorMat1" material="7" value="0.3050 0.3050 0.3050 1"/>
+        </material>
+    </baseMaterial>
+
+    <baseMaterialConfigurations>
+        <material name="dd24073_mat" shaderParameter="colorMat0" />
+        <baseMaterialConfiguration name="MAN"  					color="MAN_OLDGREEN"/>
+        <baseMaterialConfiguration name="Tatra"  				color="0.0200 0.2800 0.1900 1" />
+        <baseMaterialConfiguration name="Brantner"  			color="BRANTNER_GREEN2"/>
+        <baseMaterialConfiguration name="$l10n_ui_colorBlack"  	color="SHARED_BLACK1"/>
+        <baseMaterialConfiguration name="$l10n_ui_colorOrange" 	color="BRANTNER_ORANGE1"/>
+        <baseMaterialConfiguration name="$l10n_ui_colorRed"    	color="BRANTNER_RED1"/>
+    </baseMaterialConfigurations>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="dd24073_main_component1" node="0>" />
+        <i3dMapping id="dd24073_vis" node="0>0" />
+        <i3dMapping id="trailerAttacherJoint" node="0>0|0|0" />
+        <i3dMapping id="airDoubleRed_out" node="0>0|0|1|0" />
+        <i3dMapping id="airDoubleYellow_out" node="0>0|0|1|1" />
+        <i3dMapping id="electric_back" node="0>0|0|1|2" />
+        <i3dMapping id="wheelMiddleLeft" node="0>0|1|0" />
+        <i3dMapping id="wheelMiddleRight" node="0>0|1|1" />
+        <i3dMapping id="wheelBackLeft" node="0>0|1|2" />
+        <i3dMapping id="wheelBackRight" node="0>0|1|3" />
+        <i3dMapping id="wheelChock01" node="0>0|1|4" />
+        <i3dMapping id="wheelChock02" node="0>0|1|5" />
+        <i3dMapping id="sideMarker05Orange_01" node="0>0|2|0|0" />
+        <i3dMapping id="sideMarker05Orange_02" node="0>0|2|0|1" />
+        <i3dMapping id="sideMarker05Orange_03" node="0>0|2|0|2" />
+        <i3dMapping id="sideMarker05Orange_04" node="0>0|2|0|3" />
+        <i3dMapping id="rearMultipointLight_01Left" node="0>0|2|0|4" />
+        <i3dMapping id="rearMultipointLight_01Right" node="0>0|2|0|5" />
+        <i3dMapping id="sideMarker03Left" node="0>0|2|0|6" />
+        <i3dMapping id="sideMarker03Right" node="0>0|2|0|7" />
+        <i3dMapping id="backLightsHigh1" node="0>0|2|1|0" />
+        <i3dMapping id="licensePlateLightHigh" node="0>0|2|1|1" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|2|2|0" />
+        <i3dMapping id="turnLightRightBack" node="0>0|2|2|1" />
+        <i3dMapping id="reverseLightHigh1" node="0>0|2|3|0" />
+        <i3dMapping id="axisJoint" node="0>0|3" />
+        <i3dMapping id="licensePlateBack" node="0>0|4" />
+        <i3dMapping id="bodyLeft" node="0>0|5|0|0" />
+        <i3dMapping id="bodyRight" node="0>0|5|0|0|0" />
+        <i3dMapping id="body" node="0>0|5|0|0|0|0" />
+        <i3dMapping id="unloadInfoBack" node="0>0|5|0|0|0|0|0|0|0" />
+        <i3dMapping id="unloadInfoRight" node="0>0|5|0|0|0|0|0|0|1" />
+        <i3dMapping id="unloadInfoLeft" node="0>0|5|0|0|0|0|0|0|2" />
+        <i3dMapping id="fillVolumeConfig01" node="0>0|5|0|0|0|0|0|1" />
+        <i3dMapping id="fillVolumeConfig02" node="0>0|5|0|0|0|0|0|2" />
+        <i3dMapping id="exactFillRootNodeConfig01" node="0>0|5|0|0|0|0|0|3" />
+        <i3dMapping id="exactFillRootNodeConfig02" node="0>0|5|0|0|0|0|0|4" />
+        <i3dMapping id="fillAutoAimTargetConfig01" node="0>0|5|0|0|0|0|0|5|0" />
+        <i3dMapping id="fillAutoAimTargetConfig02" node="0>0|5|0|0|0|0|0|6|0" />
+        <i3dMapping id="doorLeftLock" node="0>0|5|0|0|0|0|1|0" />
+        <i3dMapping id="doorLeftLockArm01Ref" node="0>0|5|0|0|0|0|1|0|0" />
+        <i3dMapping id="doorLeft" node="0>0|5|0|0|0|0|1|1" />
+        <i3dMapping id="coverConfigBelts" node="0>0|5|0|0|0|0|1|1|0" />
+        <i3dMapping id="colPart06" node="0>0|5|0|0|0|0|1|1|2" />
+        <i3dMapping id="doorBackLock" node="0>0|5|0|0|0|0|1|2" />
+        <i3dMapping id="doorBack" node="0>0|5|0|0|0|0|1|3" />
+        <i3dMapping id="grainDoor" node="0>0|5|0|0|0|0|1|3|1|0" />
+        <i3dMapping id="grainDoorArm02Ref" node="0>0|5|0|0|0|0|1|3|1|0|0" />
+        <i3dMapping id="grainDoorArm01RefFrame" node="0>0|5|0|0|0|0|1|3|2" />
+        <i3dMapping id="grainDoorArm01" node="0>0|5|0|0|0|0|1|3|3" />
+        <i3dMapping id="grainDoorArm02" node="0>0|5|0|0|0|0|1|3|3|0" />
+        <i3dMapping id="colPart07" node="0>0|5|0|0|0|0|1|3|5" />
+        <i3dMapping id="doorRight" node="0>0|5|0|0|0|0|1|4" />
+        <i3dMapping id="colPart05" node="0>0|5|0|0|0|0|1|4|1" />
+        <i3dMapping id="doorRightLock" node="0>0|5|0|0|0|0|1|5" />
+        <i3dMapping id="doorRightLockArm01Ref" node="0>0|5|0|0|0|0|1|5|0" />
+        <i3dMapping id="doorRightLockArm01RefFrame" node="0>0|5|0|0|0|0|1|6" />
+        <i3dMapping id="doorRightLockArm01" node="0>0|5|0|0|0|0|1|7" />
+        <i3dMapping id="doorRightLockArm02" node="0>0|5|0|0|0|0|1|7|0" />
+        <i3dMapping id="doorLeftLockArm01RefFrame" node="0>0|5|0|0|0|0|1|8" />
+        <i3dMapping id="doorLeftLockArm01" node="0>0|5|0|0|0|0|1|9" />
+        <i3dMapping id="doorLeftLockArm02" node="0>0|5|0|0|0|0|1|9|0" />
+        <i3dMapping id="bodyConfig01" node="0>0|5|0|0|0|0|2|0" />
+        <i3dMapping id="coverConfig01MountRot" node="0>0|5|0|0|0|0|2|0|0" />
+        <i3dMapping id="coverConfig01Mount" node="0>0|5|0|0|0|0|2|0|0|0" />
+        <i3dMapping id="bodyConfig02" node="0>0|5|0|0|0|0|2|1" />
+        <i3dMapping id="coverConfig02MountRot" node="0>0|5|0|0|0|0|2|1|0" />
+        <i3dMapping id="coverConfig02Mount" node="0>0|5|0|0|0|0|2|1|0|0" />
+        <i3dMapping id="coverConfiguration" node="0>0|5|0|0|0|0|2|2" />
+        <i3dMapping id="coversOpen" node="0>0|5|0|0|0|0|2|2|0" />
+        <i3dMapping id="coverConfig01_open" node="0>0|5|0|0|0|0|2|2|0|0" />
+        <i3dMapping id="coverConfig02_open" node="0>0|5|0|0|0|0|2|2|0|1" />
+        <i3dMapping id="coversClosed" node="0>0|5|0|0|0|0|2|2|1" />
+        <i3dMapping id="coverConfig01_closed" node="0>0|5|0|0|0|0|2|2|1|0" />
+        <i3dMapping id="coverConfig02_closed" node="0>0|5|0|0|0|0|2|2|1|1" />
+        <i3dMapping id="unloadingEffects" node="0>0|5|0|0|0|0|3" />
+        <i3dMapping id="effectNodesBack" node="0>0|5|0|0|0|0|3|0|0" />
+        <i3dMapping id="smokeEffectBack" node="0>0|5|0|0|0|0|3|0|0|0" />
+        <i3dMapping id="emitterShapeBack" node="0>0|5|0|0|0|0|3|0|1|0" />
+        <i3dMapping id="effectNodesGrainDoor" node="0>0|5|0|0|0|0|3|1|0" />
+        <i3dMapping id="smokeEffectGrainDoor" node="0>0|5|0|0|0|0|3|1|0|0" />
+        <i3dMapping id="grainEffectGrainDoorJoint" node="0>0|5|0|0|0|0|3|1|0|2" />
+        <i3dMapping id="emitterShapeGrainDoor" node="0>0|5|0|0|0|0|3|1|1|0" />
+        <i3dMapping id="effectNodesLeft" node="0>0|5|0|0|0|0|3|2|0" />
+        <i3dMapping id="smokeEffectLeft" node="0>0|5|0|0|0|0|3|2|0|0" />
+        <i3dMapping id="emitterShapeLeft" node="0>0|5|0|0|0|0|3|2|1|0" />
+        <i3dMapping id="effectNodesRight" node="0>0|5|0|0|0|0|3|3|0" />
+        <i3dMapping id="smokeEffectRight" node="0>0|5|0|0|0|0|3|3|0|0" />
+        <i3dMapping id="emitterShapeRight" node="0>0|5|0|0|0|0|3|3|1|0" />
+        <i3dMapping id="tensionBelts" node="0>0|5|0|0|0|0|4" />
+        <i3dMapping id="beltActivationTrigger" node="0>0|5|0|0|0|0|4|0" />
+        <i3dMapping id="startPoint01" node="0>0|5|0|0|0|0|4|1" />
+        <i3dMapping id="tensionBelt01Intersection01" node="0>0|5|0|0|0|0|4|1|0" />
+        <i3dMapping id="tensionBelt01Intersection02" node="0>0|5|0|0|0|0|4|1|1" />
+        <i3dMapping id="startPoint01End" node="0>0|5|0|0|0|0|4|1|2" />
+        <i3dMapping id="startPoint02" node="0>0|5|0|0|0|0|4|2" />
+        <i3dMapping id="tensionBelt02Intersection01" node="0>0|5|0|0|0|0|4|2|0" />
+        <i3dMapping id="tensionBelt02Intersection02" node="0>0|5|0|0|0|0|4|2|1" />
+        <i3dMapping id="startPoint02End" node="0>0|5|0|0|0|0|4|2|2" />
+        <i3dMapping id="startPoint03" node="0>0|5|0|0|0|0|4|3" />
+        <i3dMapping id="tensionBelt03Intersection01" node="0>0|5|0|0|0|0|4|3|0" />
+        <i3dMapping id="tensionBelt03Intersection02" node="0>0|5|0|0|0|0|4|3|1" />
+        <i3dMapping id="startPoint03End" node="0>0|5|0|0|0|0|4|3|2" />
+        <i3dMapping id="startPoint04" node="0>0|5|0|0|0|0|4|4" />
+        <i3dMapping id="tensionBelt04Intersection01" node="0>0|5|0|0|0|0|4|4|0" />
+        <i3dMapping id="tensionBelt04Intersection02" node="0>0|5|0|0|0|0|4|4|1" />
+        <i3dMapping id="startPoint04End" node="0>0|5|0|0|0|0|4|4|2" />
+        <i3dMapping id="startPoint05" node="0>0|5|0|0|0|0|4|5" />
+        <i3dMapping id="tensionBelt05Intersection01" node="0>0|5|0|0|0|0|4|5|0" />
+        <i3dMapping id="tensionBelt05Intersection02" node="0>0|5|0|0|0|0|4|5|1" />
+        <i3dMapping id="startPoint05End" node="0>0|5|0|0|0|0|4|5|2" />
+        <i3dMapping id="startPoint06" node="0>0|5|0|0|0|0|4|6" />
+        <i3dMapping id="tensionBelt06Intersection01" node="0>0|5|0|0|0|0|4|6|0" />
+        <i3dMapping id="tensionBelt06Intersection02" node="0>0|5|0|0|0|0|4|6|1" />
+        <i3dMapping id="startPoint06End" node="0>0|5|0|0|0|0|4|6|2" />
+        <i3dMapping id="startPoint07" node="0>0|5|0|0|0|0|4|7" />
+        <i3dMapping id="tensionBelt07Intersection01" node="0>0|5|0|0|0|0|4|7|0" />
+        <i3dMapping id="tensionBelt07Intersection02" node="0>0|5|0|0|0|0|4|7|1" />
+        <i3dMapping id="startPoint07End" node="0>0|5|0|0|0|0|4|7|2" />
+        <i3dMapping id="startPoint08" node="0>0|5|0|0|0|0|4|8" />
+        <i3dMapping id="tensionBelt08Intersection01" node="0>0|5|0|0|0|0|4|8|0" />
+        <i3dMapping id="tensionBelt08Intersection02" node="0>0|5|0|0|0|0|4|8|1" />
+        <i3dMapping id="startPoint08End" node="0>0|5|0|0|0|0|4|8|2" />
+        <i3dMapping id="hydraulic01BodyRef" node="0>0|5|0|0|0|0|5" />
+        <i3dMapping id="hydraulic02BodyRef" node="0>0|5|0|0|0|0|6" />
+        <i3dMapping id="colPartCoverConfig01Front" node="0>0|5|0|0|0|0|7|0" />
+        <i3dMapping id="colPartCoverConfig01Back" node="0>0|5|0|0|0|0|7|1" />
+        <i3dMapping id="colPartCoverConfig02Front" node="0>0|5|0|0|0|0|7|2" />
+        <i3dMapping id="colPartCoverConfig02Back" node="0>0|5|0|0|0|0|7|3" />
+        <i3dMapping id="colPart01" node="0>0|5|0|0|0|0|7|4" />
+        <i3dMapping id="colPart02Config01" node="0>0|5|0|0|0|0|7|5" />
+        <i3dMapping id="colPart03Config01" node="0>0|5|0|0|0|0|7|6" />
+        <i3dMapping id="colPart04Config01" node="0>0|5|0|0|0|0|7|7" />
+        <i3dMapping id="colPart05Config01" node="0>0|5|0|0|0|0|7|8" />
+        <i3dMapping id="colPart02Config02" node="0>0|5|0|0|0|0|7|9" />
+        <i3dMapping id="colPart03Config02" node="0>0|5|0|0|0|0|7|10" />
+        <i3dMapping id="colPart04Config02" node="0>0|5|0|0|0|0|7|11" />
+        <i3dMapping id="colPart05Config02" node="0>0|5|0|0|0|0|7|12" />
+        <i3dMapping id="sideMarker05Orange_05" node="0>0|5|0|0|0|0|10|0" />
+        <i3dMapping id="sideMarker05Orange_06" node="0>0|5|0|0|0|0|10|1" />
+        <i3dMapping id="hydraulic01BodyRefFrame" node="0>0|6|0" />
+        <i3dMapping id="hydraulic01Body" node="0>0|6|1|0" />
+        <i3dMapping id="hydraulic01BodyPart" node="0>0|6|1|0|0" />
+        <i3dMapping id="bodyHydraulic01Punch01" node="0>0|6|1|0|0|0" />
+        <i3dMapping id="bodyHydraulic01Punch02" node="0>0|6|1|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic01Punch03" node="0>0|6|1|0|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic01Punch04" node="0>0|6|1|0|0|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic01Punch05" node="0>0|6|1|0|0|0|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic01Punch06" node="0>0|6|1|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulic01BodyPartSoundNodeBack" node="0>0|6|1|0|0|2" />
+        <i3dMapping id="hydraulic01BodyPartSoundNodeSide" node="0>0|6|1|0|0|3" />
+        <i3dMapping id="hydraulic02Body" node="0>0|6|2|0" />
+        <i3dMapping id="hydraulic02BodyPart" node="0>0|6|2|0|0" />
+        <i3dMapping id="bodyHydraulic02Punch01" node="0>0|6|2|0|0|0" />
+        <i3dMapping id="bodyHydraulic02Punch02" node="0>0|6|2|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic02Punch03" node="0>0|6|2|0|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic02Punch04" node="0>0|6|2|0|0|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic02Punch05" node="0>0|6|2|0|0|0|0|0|0|0" />
+        <i3dMapping id="bodyHydraulic02Punch06" node="0>0|6|2|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulic02BodyPartSoundNodeSide" node="0>0|6|2|0|0|2" />
+        <i3dMapping id="dischargeNodeBack" node="0>0|7|0" />
+        <i3dMapping id="dischargeNodeLeft" node="0>0|7|1" />
+        <i3dMapping id="dischargeNodeRight" node="0>0|7|2" />
+        <i3dMapping id="dischargeNodeGrainDoor" node="0>0|7|3" />
+        <i3dMapping id="grainEffectBack" node="0>1|1" />
+        <i3dMapping id="grainEffectLeft" node="0>1|2" />
+        <i3dMapping id="grainEffectRight" node="0>1|3" />
+        <i3dMapping id="grainEffectGrainDoor" node="0>1|4" />
+        <i3dMapping id="dd24073_axis_component2" node="1>" />
+        <i3dMapping id="axis" node="1>0" />
+        <i3dMapping id="drawbarJoint" node="1>1" />
+        <i3dMapping id="wheelFrontLeft" node="1>2|0" />
+        <i3dMapping id="wheelFrontRight" node="1>2|1" />
+        <i3dMapping id="drawbarSpringHolder" node="1>3" />
+        <i3dMapping id="drawbarSpring" node="1>3|0" />
+        <i3dMapping id="dd24073_drawbar_component3" node="2>" />
+        <i3dMapping id="attacherJoint" node="2>0" />
+        <i3dMapping id="drawbar" node="2>1" />
+        <i3dMapping id="airDoubleYellow_detached" node="2>1|2|0" />
+        <i3dMapping id="airDoubleRed_detached" node="2>1|2|1" />
+        <i3dMapping id="hydraulicIn01_detached" node="2>1|2|2" />
+        <i3dMapping id="hydraulicOut01_detached" node="2>1|2|3" />
+        <i3dMapping id="electric_detached" node="2>1|2|4" />
+        <i3dMapping id="airDoubleYellow" node="2>1|2|5" />
+        <i3dMapping id="airDoubleRed" node="2>1|2|6" />
+        <i3dMapping id="hydraulicIn01" node="2>1|2|7" />
+        <i3dMapping id="hydraulicOut01" node="2>1|2|8" />
+        <i3dMapping id="electric" node="2>1|2|9" />
+        <i3dMapping id="drawbarSpringHolderRef" node="2>2" />
+		
+        <i3dMapping id="pickupTriggerNode" node="0>0|10|0" />
+        <i3dMapping id="triggerNode" node="0>0|10|1" />
+        <i3dMapping id="pickupTriggerNode2" node="0>0|10|2" />
+        <i3dMapping id="loadingBase" node="0>0|10|3" />
+		
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="palletAttachable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <storeData>
+        <name>$l10n_name_netWrap</name>
+        <specs>
+            <fillTypes>netWrap</fillTypes>
+            <workingWidth>33600</workingWidth>
+        </specs>
+        <functions>
+            <function>$l10n_function_netWrap</function>
+        </functions>
+        <storePacks>
+            <storePack>STARTER_NETWRAP</storePack>
+        </storePacks>
+        <specs>
+            <weight ignore="true"/>
+        </specs>
+        <image>image/store_netWrap.png</image>
+        <price>3000</price>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>pallets</category>
+        <financeCategory>OTHER</financeCategory>
+        <showInStore>false</showInStore>
+        <shopDynamicTitle>true</shopDynamicTitle>
+        <shopHeight>2</shopHeight>
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="35"/>
+        </storeIconRendering>
+    </storeData>
+    <base>
+        <filename>filename/netWrap.i3d</filename>
+        <size width="2" length="2" lengthOffset="0"/>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100"/>
+        </components>
+        <mapHotspot type="TOOL_TRAILED"/>
+    </base>
+    <configurationSets title="$l10n_ui_brands">
+        <configurationSet name="Lizard">
+            <configuration name="fillUnit" index="7"/>
+        </configurationSet>
+        <configurationSet name="Claas">
+            <configuration name="fillUnit" index="8"/>
+        </configurationSet>
+        <configurationSet name="Kuhn">
+            <configuration name="fillUnit" index="9"/>
+        </configurationSet>
+        <configurationSet name="Kverneland">
+            <configuration name="fillUnit" index="10"/>
+        </configurationSet>
+        <configurationSet name="Poettinger">
+            <configuration name="fillUnit" index="11"/>
+        </configurationSet>
+        <configurationSet name="Vicon">
+            <configuration name="fillUnit" index="12"/>
+        </configurationSet>
+    </configurationSets>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>3" jointType="loaderFork"/>
+        </inputAttacherJoints>
+    </attachable>
+    <animations>
+        <animation name="fillAnimation">
+            <part node="0>4|0" startTime="0.000" endTime="0.000" visibility="false"/>
+            <part node="0>4|0" startTime="0.001" endTime="1.000" visibility="true"/>
+            <part node="0>4|1" startTime="0.000" endTime="0.084" visibility="false"/>
+            <part node="0>4|1" startTime="0.085" endTime="1.000" visibility="true"/>
+            <part node="0>4|2" startTime="0.000" endTime="0.168" visibility="false"/>
+            <part node="0>4|2" startTime="0.169" endTime="1.000" visibility="true"/>
+            <part node="0>4|3" startTime="0.000" endTime="0.251" visibility="false"/>
+            <part node="0>4|3" startTime="0.252" endTime="1.000" visibility="true"/>
+            <part node="0>4|4" startTime="0.000" endTime="0.334" visibility="false"/>
+            <part node="0>4|4" startTime="0.335" endTime="1.000" visibility="true"/>
+            <part node="0>4|5" startTime="0.000" endTime="0.416" visibility="false"/>
+            <part node="0>4|5" startTime="0.417" endTime="1.000" visibility="true"/>
+            <part node="0>4|6" startTime="0.000" endTime="0.501" visibility="false"/>
+            <part node="0>4|6" startTime="0.502" endTime="1.000" visibility="true"/>
+            <part node="0>4|7" startTime="0.000" endTime="0.584" visibility="false"/>
+            <part node="0>4|7" startTime="0.585" endTime="1.000" visibility="true"/>
+            <part node="0>4|8" startTime="0.000" endTime="0.668" visibility="false"/>
+            <part node="0>4|8" startTime="0.669" endTime="1.000" visibility="true"/>
+            <part node="0>4|9" startTime="0.000" endTime="0.750" visibility="false"/>
+            <part node="0>4|9" startTime="0.751" endTime="1.000" visibility="true"/>
+            <part node="0>4|10" startTime="0.000" endTime="0.834" visibility="false"/>
+            <part node="0>4|10" startTime="0.835" endTime="1.000" visibility="true"/>
+            <part node="0>4|11" startTime="0.000" endTime="0.918" visibility="false"/>
+            <part node="0>4|11" startTime="0.919" endTime="1.000" visibility="true"/>
+        </animation>
+    </animations>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration vehicleBrand="LIZARD" vehicleIcon="image/store_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="netWrap" capacity="33600" showCapacityInShop="false">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="netWrap" node="0>4|0|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|0|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|1|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|1|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|2|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|2|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|3|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|3|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|4|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|4|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|5|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|5|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|6|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|6|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|7|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|7|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|8|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|8|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|9|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|9|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|10|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|10|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|11|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|11|1" refNode="0>5|0|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="CLAAS" vehicleIcon="image/store_claas_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="claas_netWrap" capacity="33600" showCapacityInShop="false">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="claas_netWrap" node="0>4|0|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|0|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|1|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|1|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|2|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|2|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|3|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|3|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|4|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|4|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|5|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|5|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|6|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|6|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|7|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|7|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|8|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|8|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|9|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|9|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|10|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|10|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|11|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|11|1" refNode="0>5|1|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="KUHN" vehicleIcon="image/store_kuhn_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="kuhn_netWrap" capacity="33600" showCapacityInShop="false">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="kuhn_netWrap" node="0>4|0|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|0|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|1|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|1|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|2|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|2|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|3|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|3|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|4|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|4|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|5|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|5|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|6|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|6|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|7|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|7|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|8|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|8|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|9|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|9|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|10|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|10|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|11|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|11|1" refNode="0>5|2|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="KVERNELAND" vehicleIcon="image/store_kverneland_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="kverneland_netWrap" capacity="33600" showCapacityInShop="false">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="kverneland_netWrap" node="0>4|0|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|0|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|1|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|1|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|2|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|2|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|3|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|3|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|4|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|4|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|5|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|5|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|6|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|6|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|7|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|7|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|8|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|8|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|9|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|9|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|10|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|10|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|11|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|11|1" refNode="0>5|3|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="POETTINGER" vehicleIcon="image/store_poettinger_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="poettinger_netWrap" capacity="33600" showCapacityInShop="false">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="poettinger_netWrap" node="0>4|0|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|0|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|1|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|1|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|2|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|2|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|3|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|3|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|4|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|4|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|5|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|5|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|6|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|6|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|7|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|7|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|8|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|8|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|9|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|9|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|10|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|10|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|11|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|11|1" refNode="0>5|4|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="VICON" vehicleIcon="image/store_vicon_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="vicon_netWrap" capacity="33600" showCapacityInShop="false">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="vicon_netWrap" node="0>4|0|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|0|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|1|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|1|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|2|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|2|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|3|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|3|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|4|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|4|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|5|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|5|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|6|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|6|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|7|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|7|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|8|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|8|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|9|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|9|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|10|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|10|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|11|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|11|1" refNode="0>5|5|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="LIZARD" vehicleIcon="image/store_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="netWrap" capacity="33600" showCapacityInShop="false" startFillType="netWrap" startFillLevel="33600">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="netWrap" node="0>4|0|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|0|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|1|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|1|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|2|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|2|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|3|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|3|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|4|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|4|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|5|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|5|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|6|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|6|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|7|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|7|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|8|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|8|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|9|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|9|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|10|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|10|1" refNode="0>5|0|0"/>
+                            <material fillType="netWrap" node="0>4|11|0" refNode="0>5|0"/>
+                            <material fillType="netWrap" node="0>4|11|1" refNode="0>5|0|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="CLAAS" vehicleIcon="image/store_claas_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="claas_netWrap" capacity="33600" showCapacityInShop="false" startFillType="claas_netWrap" startFillLevel="33600">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="claas_netWrap" node="0>4|0|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|0|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|1|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|1|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|2|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|2|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|3|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|3|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|4|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|4|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|5|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|5|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|6|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|6|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|7|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|7|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|8|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|8|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|9|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|9|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|10|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|10|1" refNode="0>5|1|0"/>
+                            <material fillType="claas_netWrap" node="0>4|11|0" refNode="0>5|1"/>
+                            <material fillType="claas_netWrap" node="0>4|11|1" refNode="0>5|1|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="KUHN" vehicleIcon="image/store_kuhn_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="kuhn_netWrap" capacity="33600" showCapacityInShop="false" startFillType="kuhn_netWrap" startFillLevel="33600">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="kuhn_netWrap" node="0>4|0|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|0|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|1|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|1|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|2|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|2|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|3|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|3|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|4|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|4|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|5|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|5|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|6|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|6|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|7|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|7|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|8|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|8|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|9|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|9|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|10|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|10|1" refNode="0>5|2|0"/>
+                            <material fillType="kuhn_netWrap" node="0>4|11|0" refNode="0>5|2"/>
+                            <material fillType="kuhn_netWrap" node="0>4|11|1" refNode="0>5|2|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="KVERNELAND" vehicleIcon="image/store_kverneland_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="kverneland_netWrap" capacity="33600" showCapacityInShop="false" startFillType="kverneland_netWrap" startFillLevel="33600">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="kverneland_netWrap" node="0>4|0|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|0|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|1|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|1|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|2|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|2|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|3|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|3|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|4|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|4|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|5|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|5|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|6|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|6|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|7|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|7|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|8|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|8|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|9|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|9|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|10|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|10|1" refNode="0>5|3|0"/>
+                            <material fillType="kverneland_netWrap" node="0>4|11|0" refNode="0>5|3"/>
+                            <material fillType="kverneland_netWrap" node="0>4|11|1" refNode="0>5|3|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="POETTINGER" vehicleIcon="image/store_poettinger_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="poettinger_netWrap" capacity="33600" showCapacityInShop="false" startFillType="poettinger_netWrap" startFillLevel="33600">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="poettinger_netWrap" node="0>4|0|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|0|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|1|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|1|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|2|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|2|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|3|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|3|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|4|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|4|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|5|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|5|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|6|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|6|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|7|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|7|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|8|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|8|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|9|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|9|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|10|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|10|1" refNode="0>5|4|0"/>
+                            <material fillType="poettinger_netWrap" node="0>4|11|0" refNode="0>5|4"/>
+                            <material fillType="poettinger_netWrap" node="0>4|11|1" refNode="0>5|4|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+            <fillUnitConfiguration vehicleBrand="VICON" vehicleIcon="image/store_vicon_netWrap.png" price="0">
+                <fillUnits removeVehicleIfEmpty="true" removeVehicleDelay="0.5">
+                    <fillUnit unitTextOverride="$l10n_unit_meterShort" fillTypes="vicon_netWrap" capacity="33600" showCapacityInShop="false" startFillType="vicon_netWrap" startFillLevel="33600">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                        <fillTypeMaterials>
+                            <material fillType="vicon_netWrap" node="0>4|0|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|0|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|1|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|1|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|2|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|2|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|3|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|3|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|4|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|4|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|5|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|5|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|6|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|6|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|7|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|7|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|8|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|8|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|9|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|9|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|10|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|10|1" refNode="0>5|5|0"/>
+                            <material fillType="vicon_netWrap" node="0>4|11|0" refNode="0>5|5"/>
+                            <material fillType="vicon_netWrap" node="0>4|11|1" refNode="0>5|5|0"/>
+                        </fillTypeMaterials>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <dischargeable requiresTipOcclusionArea="false"/>
+    <fillTriggerVehicle triggerNode="0>0|1" fillUnitIndex="1" litersPerSecond="2800"/>
+    <dynamicMount triggerNode="0>0|0" triggerForceAcceleration="4" additionalMountDistance="0.5" jointTransY="0.11" jointLimitToRotY="true"/>
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="0>0|2"/>
+        </meshNodes>
+    </tensionBeltObject>
+    <ai>
+        <agentAttachment width="2" height="2" length="2"/>
+    </ai>
+</vehicle>

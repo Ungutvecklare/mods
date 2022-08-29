@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="65">
+    <author>Dogface</author>
+    <version>1.0.0.1</version>
+	<title>
+		<en>Trucks And Trailer With Pallet Autoload</en>
+		<de>LKW Und Anhänger Mit Paletten Autoload</de>
+		<fr>Camion Et Remorque Avec Chargement Automatique De Palettes</fr>
+		<ru>Грузовик И Прицеп С Автозагрузкой Поддонов</ru>
+		<it>Camion E Rimorchio Con Caricamento Automatico Del Pallet</it>
+	</title>
+	<description>
+		<en>
+<![CDATA[This mod includes two all-wheel-drive trucks with truck beds added to carry pallets. Both have support for Pallet Autoload by Achimobil. The mod also includes a trailer with support for Pallet Autoload.
+
+Tatra Phoenix 6x6 Agro-Truck is a six wheel drive truck and MAN TGS18500 is a four wheel drive truck, both should be able to get you anywhere on your farm. Both trucks have an truck bed added to carry multiple pallets. The Brantner DD24073 trailer is also included in the mod.
+
+This mod requires Pallet Autoload by Achimobil to also be downloaded and activated.
+
+Tatra Phoenix 6x6 Agro-Truck:
+Price: 129.000 $
+Power: 462 hp
+Max Speed: 80 kph
+
+MAN TGS18500:
+Price: 130.000 $
+Power: 500 hp
+Max Speed: 80 kph
+
+Brantner DD 24073:
+Price: 39.650 $
+
+Changelog 1.0.0.1:
+- fixed missing elements]]>
+		</en>
+		<de>
+<![CDATA[Dieser Mod enthält zwei allradgetriebene LKW mit Ladeflächen zum Transport von Paletten. Beide unterstützen Pallet-Autoload von Achimobil. Der Mod enthält auch einen Anhänger mit Unterstützung für Pallet-Autoload.
+
+Der Tatra Phoenix 6x6 Agro-Truck ist ein Lkw mit Sechsradantrieb, der MAN TGS18500 ist ein Lkw mit Allradantrieb, beide sollten Sie auf Ihrem Hof überall hinbringen können. Beide LKW haben eine zusätzliche Ladefläche, um mehrere Paletten zu transportieren. Der Brantner DD24073 Anhänger ist ebenfalls im Mod enthalten.
+
+Für diesen Mod muss Pallet-Autoload von Achimobil ebenfalls heruntergeladen und aktiviert werden.
+
+Tatra Phoenix 6x6 Agro-LKW:
+Preis: 129.000 €
+Leistung: 462 PS
+Höchstgeschwindigkeit: 80 km/h
+
+MAN TGS18500:
+Preis: 130.000 €
+Leistung: 500 PS
+Höchstgeschwindigkeit: 80 km/h
+
+Brantner DD 24073:
+Preis: 39.650 €
+
+Changelog 1.0.0.1:
+- Fehlende Elemente gefixt]]>
+		</de>
+		<fr>
+<![CDATA[Ce mod comprend deux camions à traction intégrale avec des lits de camion ajoutés pour transporter des palettes. Les deux prennent en charge le chargement automatique de palettes par Achimobil. Le mod comprend également une remorque avec prise en charge de Pallet Autoload.
+
+Tatra Phoenix 6x6 Agro-Truck est un camion à six roues motrices et MAN TGS18500 est un camion à quatre roues motrices, les deux devraient pouvoir vous emmener n'importe où sur votre ferme. Les deux camions ont un lit de camion ajouté pour transporter plusieurs palettes. La remorque Brantner DD24073 est également incluse dans le mod.
+
+Ce mod nécessite que Pallet Autoload by Achimobil soit également téléchargé et activé.
+
+Tatra Phoenix 6x6 Camion agricole:
+Prix : 129.000 €
+Puissance : 462 cv
+Vitesse maximale : 80 km/h
+
+MAN TGS18500:
+Prix : 130.000 €
+Puissance : 500 cv
+Vitesse maximale : 80 km/h
+
+Brantner DD 24073:
+Prix : 39.650 €
+
+Changelog 1.0.0.1:
+- correction des éléments manquants]]>
+		</fr>
+		<ru>
+<![CDATA[Этот мод включает в себя два полноприводных грузовика с кузовами, добавленными для перевозки поддонов. Оба имеют поддержку автоматической загрузки поддонов от Achimobil. Мод также включает трейлер с поддержкой автозагрузки поддонов.
+
+Tatra Phoenix 6x6 Agro-Truck — это шестиколесный грузовик, а MAN TGS18500 — полноприводный грузовик, оба они должны быть в состоянии доставить вас в любое место на вашей ферме. К обоим грузовикам добавлена платформа для перевозки нескольких поддонов. Прицеп Brantner DD24073 также включен в мод.
+
+Для этого мода также необходимо загрузить и активировать Pallet Autoload by Achimobil.
+
+Tatra Phoenix 6x6 Агро-грузовик:
+Цена: 129.000 $
+Сила: 462 hp
+Максимальная скорость: 80 kph
+
+MAN ТГС18500:
+Цена: 130.000 $
+Сила: 500 hp
+Максимальная скорость: 80 kph
+
+Брантнер ДД 24073:
+Цена: 39.650 $
+
+Changelog 1.0.0.1:
+- исправлены недостающие элементы]]>
+		</ru>
+		<it>
+<![CDATA[Questa mod include due camion a trazione integrale con pianali aggiunti per trasportare i pallet. Entrambi hanno il supporto per Pallet Autoload di Achimobil. La mod include anche un trailer con supporto per Pallet Autoload.
+
+Tatra Phoenix 6x6 Agro-Truck è un camion a sei ruote motrici e MAN TGS18500 è un camion a quattro ruote motrici, entrambi dovrebbero essere in grado di portarti ovunque nella tua fattoria. Entrambi i camion hanno un pianale aggiunto per trasportare più pallet. Il trailer Brantner DD24073 è incluso anche nel mod.
+
+Questa mod richiede il download e l'attivazione anche di Pallet Autoload di Achimobil.
+
+Tatra Phoenix 6x6 Agro-camion:
+Prezzo: 129.000 €
+Potenza: 462 cv
+Velocità massima: 80 km/h
+
+MAN TGS18500:
+Prezzo: 130.000 €
+Potenza: 500 cv
+Velocità massima: 80 hm/h
+
+Brantner DD 24073:
+Prezzo: 39.650 €
+
+Changelog 1.0.0.1:
+- risolti elementi mancanti]]>
+		</it>
+	</description>
+    
+    <iconFilename>icon_AutoloadTruckPackDf.dds</iconFilename>
+    <multiplayer supported="true" />
+    
+    <dependencies>
+        <dependency>FS22_aPalletAutoLoader</dependency>
+    </dependencies>
+
+    <storeItems>
+        <storeItem xmlFilename="tgs18500Df.xml" />
+        <storeItem xmlFilename="phoenixDf.xml" />
+        <storeItem xmlFilename="dd24073Df.xml" />
+    </storeItems>
+    
+    <vehicleTypes>
+        <type name="PalletAutoLoaderCar" parent="car" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+        </type>
+        <type name="PalletAutoLoaderTrailer" parent="trailer" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="FS22_aPalletAutoLoader.aPalletAutoLoader"/>
+        </type>
+    </vehicleTypes>    
+    
+    <l10n>
+        <text name="function_PalletAutoload_Trailer"> 
+            <en>Vehicle with Autoload for pallets</en> 
+            <de>Fahrzeug mit Autoload für Paletten</de> 
+			<fr>Véhicule avec Autoload pour palettes</fr>	
+            <ru>Автомобиль с автозагрузкой для поддонов</ru>
+            <it>Veicolo con caricamento automatico per pallet</it>
+        </text>
+        <text name="configuration_palletLoadingWagon"> 
+            <en>Autoload for pallets</en> 
+            <de>Autoload für Paletten</de> 
+			<fr>Chargement automatique des palettes</fr>	
+            <ru>С автопогрузкой поддонов</ru>
+            <it>Caricamento automatico per pallet</it>
+        </text>
+        <text name="PalletAutoload_Trailer"> 
+            <en>Pallet Autoload</en>
+            <de>Paletten Autoloader</de>
+			<fr>Chargement automatique des palettes</fr>	
+            <ru>Автопогрузка поддонов</ru>
+            <it>Caricatore automatico di pallet</it>
+        </text>
+    </l10n>
+</modDesc>

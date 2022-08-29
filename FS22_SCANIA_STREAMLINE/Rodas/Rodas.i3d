@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Rodas_Agro_Mods" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="12" filename="$data/shared/default_normal.dds"/>
+    <File fileId="14" filename="../textures/SPEEDLINE_specular.dds"/>
+    <File fileId="13" filename="../textures/SPEEDLINEtras_specular.dds"/>
+    <File fileId="2" filename="../textures/alcooa_normal.dds"/>
+    <File fileId="3" filename="../textures/alcooa_specular.dds"/>
+    <File fileId="9" filename="../textures/cubos_normal.dds"/>
+    <File fileId="10" filename="../textures/cubos_specular.dds"/>
+    <File fileId="15" filename="../textures/ferro_normal.dds"/>
+    <File fileId="16" filename="../textures/ferro_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="alcooa_color" materialId="4" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 3"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="crome_cubos" materialId="5" diffuseColor="1 1 1 1" customShaderId="4">
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="ferro_color" materialId="6" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="4">
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="ferro_color" materialId="7" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="15" bumpDepth="0"/>
+      <Glossmap fileId="16"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.8 0.8 27"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Material" materialId="8" diffuseColor="0.8 0.8 0.8 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="12" bumpDepth="0"/>
+      <Glossmap fileId="14"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="parafuso_color" materialId="9" diffuseColor="0.8 0.8 0.8 1" customShaderId="4">
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="pecas_wheels_mat" materialId="10" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="4">
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="SPEED_LINE_MAT" materialId="11" diffuseColor="0.8 0.121569 0.00784314 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="12" bumpDepth="0"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="0.1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Rodas.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Aro" nodeId="60">
+        <TransformGroup name="transform" nodeId="61"/>
+        <Shape shapeId="1" name="ALCOOAtRAS" clipDistance="300" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="2" name="BELGAS" clipDistance="300" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="ALCOOAFRONT" clipDistance="300" nodeId="64" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="4" name="BELGAS" clipDistance="300" nodeId="65" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="SpeedLineTraseira3" clipDistance="300" nodeId="66" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="BELGAS" clipDistance="300" nodeId="67" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="7" name="SpeedLineFrontal" clipDistance="300" nodeId="68" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="8" name="BELGAS" clipDistance="300" nodeId="69" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="9" name="FERROFRONTAL" clipDistance="300" nodeId="70" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="10" name="PARAFUSOS.001" clipDistance="300" nodeId="71" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="11" name="ferro_tras" clipDistance="300" nodeId="72" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="12" name="PARAFUSOS.001" clipDistance="300" nodeId="73" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="13" name="FERROFRONTALpreta" clipDistance="300" nodeId="74" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="14" name="PARAFUSOS.001" clipDistance="300" nodeId="75" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="Cubo" nodeId="76">
+        <TransformGroup name="transform" nodeId="77"/>
+        <Shape shapeId="15" name="cubo_simples" clipDistance="300" nodeId="78" materialIds="10" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="16" name="PANELAO" clipDistance="300" nodeId="79" materialIds="10" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="17" name="cubo_simples_crome" clipDistance="300" nodeId="80" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </Shape>
+        <Shape shapeId="18" name="CUBO_SCANIA_TRACAO.001" clipDistance="300" nodeId="81" materialIds="10" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="19" name="CUBO_SCANIA_TRACAO" clipDistance="300" nodeId="82" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="PANELAO" clipDistance="300" nodeId="83" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="21" name="ARO_FRONT" clipDistance="300" nodeId="84" materialIds="10" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="22" name="ARO_FRONT_CROME" clipDistance="300" nodeId="85" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="PANELAO" clipDistance="300" nodeId="86" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="24" name="REDUTOR" clipDistance="300" nodeId="87" materialIds="10" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="Aro" nodeId="118">
+        <TransformGroup name="transform" nodeId="119"/>
+        <Shape shapeId="25" name="ALCOOAtRAS" clipDistance="300" nodeId="120" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="26" name="BELGAS" clipDistance="300" nodeId="121" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="27" name="ALCOOAFRONT" clipDistance="300" nodeId="122" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="28" name="BELGAS" clipDistance="300" nodeId="123" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="29" name="SpeedLineTraseira3" clipDistance="300" nodeId="124" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="30" name="BELGAS" clipDistance="300" nodeId="125" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="31" name="SpeedLineFrontal" clipDistance="300" nodeId="126" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="32" name="BELGAS" clipDistance="300" nodeId="127" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="33" name="FERROFRONTAL" clipDistance="300" nodeId="128" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="34" name="PARAFUSOS.001" clipDistance="300" nodeId="129" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="35" name="ferro_tras" clipDistance="300" nodeId="130" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="36" name="PARAFUSOS.001" clipDistance="300" nodeId="131" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="37" name="FERROFRONTALpreta" clipDistance="300" nodeId="132" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="38" name="PARAFUSOS.001" clipDistance="300" nodeId="133" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="Cubo" nodeId="104">
+        <TransformGroup name="transform" nodeId="105"/>
+        <Shape shapeId="39" name="cubo_simples" clipDistance="300" nodeId="106" materialIds="10" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="40" name="PANELAO" clipDistance="300" nodeId="107" materialIds="10" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="41" name="cubo_simples_crome" clipDistance="300" nodeId="108" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </Shape>
+        <Shape shapeId="42" name="CUBO_SCANIA_TRACAO.001" clipDistance="300" nodeId="109" materialIds="10" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="43" name="CUBO_SCANIA_TRACAO" clipDistance="300" nodeId="110" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="44" name="PANELAO" clipDistance="300" nodeId="111" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="45" name="ARO_FRONT" clipDistance="300" nodeId="112" materialIds="10" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="46" name="ARO_FRONT_CROME" clipDistance="300" nodeId="113" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="47" name="PANELAO" clipDistance="300" nodeId="114" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="48" name="REDUTOR" clipDistance="300" nodeId="115" materialIds="10" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

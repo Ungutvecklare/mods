@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light>
+    <filename>HRFFLicht/Rucklicht/HRFFRucklicht.i3d</filename>
+    <rootNode node="0" />
+    <defaultLight node="0|0" lightTypes="0" intensity="10"/>
+	<defaultLight node="0|1" lightTypes="0" intensity="10"/>
+    <brakeLight node="0|0" />
+	<brakeLight node="0|1" />
+    <turnLightRight node="0|2" />
+	<reverseLight node="0|4" />
+</light>

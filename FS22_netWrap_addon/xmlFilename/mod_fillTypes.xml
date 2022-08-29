@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/fillTypes.xsd">
+    <fillTypes>
+        <fillType name="NETWRAP" title="$l10n_fillType_netWrapLizard" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.01" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.08"/>
+            <image hud="image/hud_fill_netWrap.png"/>
+            <pallet filename="xmlFilename/netWrapPallet.xml"/>
+        </fillType>
+        <fillType name="CLAAS_NETWRAP" title="$l10n_fillType_netWrapClaas" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.01" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.08"/>
+            <image hud="image/hud_fill_netWrap.png"/>
+            <pallet filename="xmlFilename/claas_netWrapPallet.xml"/>
+        </fillType>
+        <fillType name="KUHN_NETWRAP" title="$l10n_fillType_netWrapKuhn" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.01" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.08"/>
+            <image hud="image/hud_fill_netWrap.png"/>
+            <pallet filename="xmlFilename/kuhn_netWrapPallet.xml"/>
+        </fillType>
+        <fillType name="KVERNELAND_NETWRAP" title="$l10n_fillType_netWrapKverneland" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.01" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.08"/>
+            <image hud="image/hud_fill_netWrap.png"/>
+            <pallet filename="xmlFilename/kverneland_netWrapPallet.xml"/>
+        </fillType>
+        <fillType name="POETTINGER_NETWRAP" title="$l10n_fillType_netWrapPoettinger" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.01" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.08"/>
+            <image hud="image/hud_fill_netWrap.png"/>
+            <pallet filename="xmlFilename/poettinger_netWrapPallet.xml"/>
+        </fillType>
+        <fillType name="VICON_NETWRAP" title="$l10n_fillType_netWrapVicon" showOnPriceTable="true" unitShort="$l10n_unit_meterShort">
+            <physics massPerLiter="0.01" maxPhysicalSurfaceAngle="38"/>
+            <economy pricePerLiter="0.08"/>
+            <image hud="image/hud_fill_netWrap.png"/>
+            <pallet filename="xmlFilename/vicon_netWrapPallet.xml"/>
+        </fillType>
+    </fillTypes>
+    <fillTypeCategories>
+        <fillTypeCategory name="NETWRAP">NETWRAP CLAAS_NETWRAP KUHN_NETWRAP KVERNELAND_NETWRAP POETTINGER_NETWRAP VICON_NETWRAP</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">NETWRAP CLAAS_NETWRAP KUHN_NETWRAP KVERNELAND_NETWRAP POETTINGER_NETWRAP VICON_NETWRAP</fillTypeCategory>
+    </fillTypeCategories>
+</map>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<light>
+    <filename>HRFFLicht/HRFF_SW2/HRFF_SW2.i3d</filename>
+    <rootNode node="0" />
+    <defaultLight node="0|0|2" lightTypes="-1" intensity="10" />
+    <defaultLight node="0|0|1" lightTypes="2" intensity="45"/>
+	
+</light>

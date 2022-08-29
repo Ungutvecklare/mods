@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="64">
+    <author>Pascal Kautz</author>
+    <version>1.0.0.0</version>
+    <title>
+		<en>Loading Ramp With Dock Leveler</en>
+		<de>Laderampe Mit Überladebrücke</de>
+		<fr>Rampe De Chargement Avec Niveleur De Quai</fr>
+		<nl>Laad Helling Met Dock Leveller</nl>
+    </title>
+    <description>
+        <en><![CDATA[Loading Ramp with dock leveler
+
+Price: 4350 $
+Daily upkeep: 43$]]></en>
+        <nl><![CDATA[Laad helling met dock leveller
+
+Prijs: 4350 €
+Dagelijks onderhoud: 43 €]]></nl>
+        <fr><![CDATA[Rampe de chargement avec niveleur de quai
+
+Prix: 4350 €
+Entretien quotidien: 43 €]]></fr>		
+        <de><![CDATA[Laderampe mit Überladebrücke
+
+Preis: 4350 €
+Tägliche Pflege: 43 €]]></de>
+    </description>	
+    <iconFilename>icon_loadingRamp.png</iconFilename>
+    <multiplayer supported="true"/>	
+	
+	<l10n>
+		<text name="shopItem_loadingRamp">
+			<en>Loading Ramp with dock leveler</en>
+			<de>Laderampe mit Überladebrücke</de>
+			<fr>Rampe de chargement avec niveleur de quai</fr>
+			<nl>Laad helling met dock leveller</nl>	
+		</text>	
+		<text name="function_loadingRamp">
+			<en>Makes it possible to load from the back.</en>
+			<de>Ermöglicht das Beladen von hinten.</de>
+			<fr>Permet de charger par l'arrière.</fr>
+			<nl>Maakt het mogelijk om van achteren te laden.</nl>	
+		</text>
+		<text name="action_openDockLeveler">
+			<en>Open dockleveler</en>
+			<de>Überladebrücke öffnen</de>
+			<fr>Ouvrir niveleur de quai</fr>
+			<nl>Dockleveller openen</nl>	
+		</text>
+		<text name="action_closeDockLeveler">
+			<en>Close dockleveler</en>
+			<de>Überladebrücke schließen</de>
+			<fr>Fermer niveleur de quai</fr>
+			<nl>Dockleveller sluiten</nl>	
+		</text>			
+	</l10n>
+	
+    <storeItems>
+        <storeItem xmlFilename="loadingRamp.xml"/>		
+    </storeItems>
+</modDesc>

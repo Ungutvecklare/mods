@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<currencies euroFactor="1" dolarFactor="1.13" poundFactor="0.84">
+	<currency text="$l10n_unit_brazilianReal" symbol="R$" prefixSymbol="true" factor="6.29" maxDisplayValue="999999999"/>
+	<currency text="$l10n_unit_chineseYuan" symbol="¥" prefixSymbol="true" factor="7.19" maxDisplayValue="999999999"/>
+	<currency text="$l10n_unit_czechKoruna" symbol="Kč" prefixSymbol="false" factor="25.42" maxDisplayValue="9999999999"/>
+	<currency text="$l10n_unit_hungarianForint" symbol="Ft" prefixSymbol="false" factor="370.85" maxDisplayValue="99999999999"/>
+	<currency text="$l10n_unit_japaneseYen" symbol="¥" prefixSymbol="true" factor="129.30" maxDisplayValue="99999999999"/>
+	<currency text="$l10n_unit_swedishKrona" symbol="kr" prefixSymbol="false" factor="10.08" maxDisplayValue="9999999999"/>
+	<currency text="$l10n_unit_polishZloty" symbol="zł" prefixSymbol="false" factor="4.72" maxDisplayValue="999999999"/>
+	<currency text="$l10n_unit_romanianLeu" symbol="lei" prefixSymbol="false" factor="4.95" maxDisplayValue="999999999"/>
+	<currency text="$l10n_unit_russianRuble" symbol="руб" prefixSymbol="false" factor="84.39" maxDisplayValue="99999999999" iconScale="0.7" yOffset="0.003"/>
+	<currency text="$l10n_unit_southKoreanWon" symbol="₩" prefixSymbol="true" factor="1338.10" maxDisplayValue="999999999999"/>
+	<currency text="$l10n_unit_swissFranc" symbol="CHF" prefixSymbol="true" factor="1.05" maxDisplayValue="999999999" iconScale="0.7" yOffset="0.002"/>
+	<currency text="$l10n_unit_turkishLira" symbol="TL" prefixSymbol="true" factor="13.89" maxDisplayValue="9999999999" iconScale="0.9" yOffset="0.0005"/>
+	<currency text="$l10n_unit_ukrainianHryvnia" symbol="грн" prefixSymbol="false" factor="30.14" maxDisplayValue="9999999999" iconScale="0.7" yOffset="0.003"/>
+</currencies>

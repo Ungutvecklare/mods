@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUIProfiles>
+    <Presets>
+        <Preset name="colorWhite" value="1 1 1 1"/>
+        <Preset name="colorGrayHeader" value="0.4 0.4 0.4 1"/>
+        <Preset name="colorListHeaderBackground" value="0 0 0 0.35" />
+    </Presets>
+    <Profile name="ingameMenuInvoicesRowCell" extends="baseReference">
+        <Value name="textSize" value="18px"/>
+        <Value name="textBold" value="false"/>
+        <Value name="textUpperCase" value="false"/>
+        <Value name="textColor" value="$preset_colorWhite"/>
+        <Value name="textAlignment" value="center"/>
+        <Value name="textVerticalAlignment" value="middle"/>
+        <Value name="size" value="162px 40.77px"/>
+    </Profile>
+    <Profile name="ingameMenuInvoicesHeaderCell" extends="ingameMenuFrameHeaderText" with="anchorMiddleLeft">
+        <Value name="textSize" value="20px"/>
+        <Value name="textBold" value="false"/>
+        <Value name="textUpperCase" value="false"/>
+        <Value name="textColor" value="$preset_colorGrayHeader"/>
+        <Value name="textAlignment" value="center"/>
+        <Value name="textVerticalAlignment" value="middle"/>
+        <Value name="size" value="162px 40.77px"/>
+    </Profile>
+    <Profile name="ingameMenuInvoicesRowBackground" extends="emptyPanel" with="anchorBottomLeft">       
+    
+    </Profile>
+    <Profile name="ingameMenuInvoicesHeaderBox" extends="emptyPanel" with="anchorTopLeft">
+        <Value name="size" value="650px 50px"/>
+        <Value name="position" value="0px -70px"/>
+        <Value name="alignmentX" value="left"/>
+        <Value name="alignmentY" value="middle"/>
+        <Value name="imageColor" value="$preset_colorListHeaderBackground"/>
+        <Value name="flowDirection" value="horizontal"/>
+        <Value name="wrapAround" value="true"/>
+        <Value name="lateralFlowSize" value="200px"/>
+        <Value name="fitToElements" value="false"/>
+        <Value name="autoValidateLayout" value="true"/>
+        <Value name="hasFrame" value="false"/>    
+    </Profile>    
+    <Profile name="ingameMenuInvoicesList" extends="ingameMenuContractsList" with="anchorTopLeft">
+        <Value name="size" value="650px 693.09px"/>
+        <Value name="position" value="0px -120px"/>
+    </Profile>
+    <Profile name="ingameMenuInvoicesListItem" extends="ingameMenuContractsListItem" with="anchorTopLeft">
+        <Value name="size" value="650px 40.77px"/>
+    </Profile> 
+
+    <Profile name="ingameMenuFrameHeaderText2" extends="ingameMenuFrameHeaderText" with="anchorTopLeft">
+        <Value name="textSize" value="26px"/>
+        <Value name="size" value="700px 64px"/>
+    </Profile> 
+    <Profile name="ingameMenuSettingsBoxLeft" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <Value name="size" value="700px 756px"/>
+        <Value name="position" value="0px 0px"/>
+    </Profile> 
+    <Profile name="ingameMenuSettingsBoxRight" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <Value name="size" value="700px 756px"/>
+        <Value name="position" value="700px 0px"/>
+    </Profile> 
+
+    <Profile name="newInvoiceDialog" extends="dialogBg">
+        <Value name="size" value="1540px 800px"/>
+    </Profile>
+
+    <Profile name="invoiceDetailDialog" extends="dialogBg">
+        <Value name="size" value="900px 600px"/>
+    </Profile>
+
+    
+    
+    <Profile name="newInvoiceBox" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <Value name="size" value="1500px 740px"/>
+        <Value name="position" value="20px -50px"/>
+    </Profile> 
+    <Profile name="newInvoiceBox1" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <Value name="size" value="550px 740px"/>
+        <Value name="position" value="0px 0px"/>
+    </Profile> 
+    <Profile name="newInvoiceBox2" extends="ingameMenuSettingsBox" with="anchorTopLeft">
+        <Value name="size" value="900px 740px"/>
+        <Value name="position" value="600px 0px"/>
+    </Profile> 
+    <Profile name="newInvoiceBox2_1" extends="newInvoiceBox2" with="anchorTopRight">
+        <Value name="size" value="400px 740px"/>
+        <Value name="position" value="0px 0px"/>
+    </Profile> 
+    <Profile name="newInvoiceSubTitle" extends="ingameMenuFrameHeaderText" with="anchorTopLeft">
+        <Value name="textSize" value="21px"/>
+        <Value name="position" value="10px 0px"/>
+        <Value name="size" value="400px 50px" />
+    </Profile> 
+    <Profile name="newInvoiceFullList" extends="ingameMenuContractsList" with="anchorTopLeft">
+        <Value name="size" value="530px 460px"/>
+        <Value name="position" value="0px -150px"/>
+    </Profile>
+    <Profile name="newInvoiceFullListItem" extends="ingameMenuContractsListItem" with="anchorBottomLeft">
+        <Value name="size" value="530px 40.77px"/>
+    </Profile> 
+    <Profile name="newInvoiceChooseWork" extends="ingameMenuContractsList" with="anchorTopLeft">
+        <Value name="size" value="450px 650px"/>
+        <Value name="position" value="0px -60px"/>
+    </Profile>
+    <Profile name="newInvoiceAmountFull" extends="ingameMenuFrameHeaderText" with="anchorTopLeft">
+        <Value name="textSize" value="23px"/>
+        <Value name="textBold" value="true"/>
+    </Profile> 
+    <Profile name="newInvoiceAmountFullR" extends="newInvoiceAmountFull" with="anchorTopLeft">
+        <Value name="textAlignment" value="right"/>
+    </Profile> 
+    <Profile name="invoiceDetailsFullList" extends="ingameMenuContractsList" with="anchorTopCenter">
+        <Value name="size" value="850px 330px"/>
+        <Value name="position" value="0px -180px"/>
+    </Profile>
+    <Profile name="invoiceDetailsFullListItem" extends="ingameMenuContractsListItem" with="anchorBottomLeft">
+        <Value name="size" value="850px 40.77px"/>
+    </Profile> 
+    
+    <Profile name="newInvoiceFullListRowCell" extends="ingameMenuInvoicesRowCell">
+        <Value name="size" value="275px 40.77px"/>
+        <Value name="position" value="10px 0px"/>
+        <Value name="textAlignment" value="left"/>
+        <Value name="textSize" value="17px"/>
+    </Profile>
+    <Profile name="newInvoiceFullListRowCellR" extends="newInvoiceFullListRowCell">
+        <Value name="textAlignment" value="right"/>
+    </Profile>
+    <Profile name="newInvoiceChooseWorkRowCell" extends="ingameMenuInvoicesRowCell">
+        <Value name="size" value="175px 40.77px"/>
+        <Value name="position" value="10px 0px"/>
+        <Value name="textAlignment" value="left"/>
+        <Value name="textSize" value="17px"/>
+    </Profile>
+    <Profile name="newInvoiceBoxSeperator" extends="emptyPanel" with="anchorTopLeft">  
+        <Value name="size" value="4px 740px"/>
+        <Value name="position" value="573px 0px"/>
+        <Value name="imageColor" value="$preset_colorGrayHeader"/>
+    </Profile>
+    <Profile name="newInvoiceChooseWorkSlider" extends="verticalListSliderRightDocked" with="anchorTopLeft">  
+        <Value name="size" value="12px 650px"/>
+        <Value name="position" value="460px -60px"/>
+    </Profile>
+
+    <Profile name="newInvoiceBtnAddItem" extends="ingameMenuSettingsPauseButton" with="anchorBottomCenter">  
+        <Value name="size" value="300px 40px"/>
+        <Value name="iconSize" value="16px 34px"/>
+        <Value name="position" value="0px 20px"/>
+        <Value name="iconUVs" value="250px 335px 27px 51px"/>
+        <Value name="textColor" value="$preset_colorWhite"/>
+        <Value name="iconColor" value="$preset_colorWhite"/>
+    </Profile>
+    
+    <Profile name="newInvoiceBtnSelectFarm" extends="newInvoiceBtnAddItem" with="anchorTopLeft">  
+        <Value name="iconUVs" value="825px 140px 41px 41px"/>
+        <Value name="iconSize" value="16px 16px"/>
+    </Profile>
+    <Profile name="newInvoiceBtnSelectField" extends="newInvoiceBtnAddItem" with="anchorTopLeft">  
+        <Value name="iconUVs" value="433px 99px 41px 41px"/>
+        <Value name="iconSize" value="16px 16px"/>
+    </Profile>
+    
+    <Profile name="newInvoiceSettingTitle" extends="multiTextOptionSettingsTitle" with="anchorTopLeft">  
+    
+    </Profile>
+
+    <Profile name="newInvoiceSettingSelect" extends="newInvoiceBtnSelectField" with="anchorTopLeft">  
+    
+    </Profile>
+    <Profile name="newInvoiceSettingTextinput" extends="ingameMenuGameSettingsTextInput" with="anchorTopLeft">  
+    
+    </Profile>   
+
+    <Profile name="newInvoiceSettingEntryAmount" extends="baseReference" with="anchorBottomCenter">
+        <Value name="textSize" value="20px"/>
+        <Value name="textBold" value="true"/>
+        <Value name="textUpperCase" value="false"/>
+        <Value name="textColor" value="$preset_colorWhite"/>
+        <Value name="textAlignment" value="center"/>
+        <Value name="textVerticalAlignment" value="middle"/>
+        <Value name="size" value="380px 40.77px"/>
+    </Profile>
+
+
+
+
+    <Profile name="selectFieldFrame" extends="dialogBg">
+        <Value name="size" value="600px 800px"/>
+    </Profile>
+    <Profile name="selectFieldsHeaderBox" extends="emptyPanel" with="anchorTopCenter">
+        <Value name="size" value="500px 50px"/>
+        <Value name="position" value="0px -70px"/>
+        <Value name="alignmentX" value="left"/>
+        <Value name="alignmentY" value="middle"/>
+        <Value name="imageColor" value="$preset_colorListHeaderBackground"/>
+        <Value name="flowDirection" value="horizontal"/>
+        <Value name="wrapAround" value="true"/>
+        <Value name="lateralFlowSize" value="250px"/>
+        <Value name="fitToElements" value="false"/>
+        <Value name="autoValidateLayout" value="true"/>
+        <Value name="hasFrame" value="false"/>    
+    </Profile>  
+    <Profile name="selectFieldsHeaderCell" extends="ingameMenuFrameHeaderText" with="anchorMiddleLeft">
+        <Value name="textSize" value="20px"/>
+        <Value name="textBold" value="false"/>
+        <Value name="textUpperCase" value="false"/>
+        <Value name="textColor" value="$preset_colorGrayHeader"/>
+        <Value name="textAlignment" value="center"/>
+        <Value name="textVerticalAlignment" value="middle"/>
+    </Profile>
+    <Profile name="selectFieldsList" extends="ingameMenuContractsList" with="anchorTopCenter">
+        <Value name="size" value="500px 640px"/>
+        <Value name="position" value="0px -130px"/>
+    </Profile>
+    <Profile name="selectFieldsListItem" extends="ingameMenuContractsListItem" with="anchorBottomLeft">
+        <Value name="size" value="500px 40.77px"/>
+    </Profile>
+    <Profile name="selectFieldsRowCell" extends="ingameMenuInvoicesRowCell">
+        <Value name="textAlignment" value="center"/>
+        <Value name="textSize" value="17px"/>
+    </Profile>
+    <Profile name="selectFieldsTableSlider" extends="verticalListSliderRightDocked" with="anchorTopRight">  
+    
+    </Profile>  
+    
+
+
+</GUIProfiles>

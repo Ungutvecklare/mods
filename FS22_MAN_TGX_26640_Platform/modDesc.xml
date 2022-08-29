@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+    <author>Farmer_22</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>MAN TGX 26.640 Platform</en>
+		<de>MAN TGX 26.640 Plattform</de>
+		<fr>MAN TGX 26.640 Plateau</fr>
+    </title>
+    <description>
+<en><![CDATA[MAN TGX 26.640 truck equipped with a platform with straps, you can use it to transport your bales or pallets. 
+
+-Price 135.000 $
+-Cabin colour configuration.
+-Beacons configuration
+-Configuration of grids and horns.]]></en>	
+<de><![CDATA[MAN TGX 26.640 LKW, ausgestattet mit einer Plattform mit Gurten, können Sie es verwenden, um Ihre Ballen oder Paletten zu transportieren. 
+
+-Preis 135.000 €
+-Konfiguration der Kabinenfarbe.
+-Konfiguration der Baken
+-Konfiguration von Gittern und Hörnern.]]></de>	
+<fr><![CDATA[Camion MAN TGX 26.640 équipé d'un plateau avec des sangles, vous pouvez l'utiliser pour transporter vos balles ou palettes. 
+
+-Prix 135.000 €
+-Configuration de couleurs cabine.
+-Configuration gyrophares.
+-Configuration des grilles et klaxons.]]></fr>
+    </description>
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true"/>	
+    <l10n>
+		<text name="configuration_Grid"> <en>Grids</en> <de>Gitter</de ><fr>Grilles</fr> </text>
+		<text name="configuration_Horns"> <en>Horns</en> <de>Hörner</de> <fr>Klaxons</fr> </text>
+		<text name="configuration_Grid_Horns"> <en>Grids / Horns</en> <de>Gitter / Hörner</de> <fr>Grilles / Klaxons</fr> </text>		
+		<text name="configuration_Beacons"> <en>Beacons</en> <de>Baken</de> <fr>Gyrophares</fr> </text>	
+	</l10n>
+	<vehicleTypes>
+        <type name="TGX26640" parent="tractor" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua" >
+			<specialization name="tensionBelts" />
+        </type>
+    </vehicleTypes>
+    <storeItems>
+        <storeItem xmlFilename="tgx26640.xml"/>
+    </storeItems>
+</modDesc>
